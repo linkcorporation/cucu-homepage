@@ -1,0 +1,1240 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- favicon  -->
+    <link
+      rel="shortcut icon"
+      href="img/cucu_shortcut_icon.ico"
+      type="image/x-icon"
+    />
+    <!-- swiper css -->
+    <link rel="stylesheet" href="css/plugins/swiper.min.css" />
+    <!-- fancybox css -->
+    <link rel="stylesheet" href="css/plugins/fancybox.min.css" />
+    <!-- orabel css -->
+    <link rel="stylesheet" href="css/style.css" />
+	<!-- font css -->
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP" rel="stylesheet">
+
+    <!-- page title -->
+    <title>CuCu.co.ltd</title>
+  </head>
+
+  <body>
+    <div class="cucu-wrapper">
+      <!-- page loader -->
+      <div class="cucu-loader-frame">
+        <div class="cucu-loader">
+          <div class="cucu-deco-1">
+            <div class="cucu-prog"></div>
+          </div>
+          <div class="cucu-deco-2">
+            <div class="cucu-spiner"></div>
+          </div>
+        </div>
+      </div>
+      <!-- page loader end -->
+      <div id="cucu-dynamic-content" class="transition-fade">
+        <div class="cucu-all-frame">
+			<!-- <div class="cucu-contact">
+				<div class="contact-tag">
+					<img src="img/ui/twitter.svg" alt="twitter">
+				</div>
+				<div class="contact-tag">
+					<img src="img/ui/twitter.svg" alt="twitter">
+				</div>
+			</div> -->
+          <div class="cucu-top-menu-frame">
+            <div class="cucu-waves">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                viewBox="0 24 150 28"
+                preserveAspectRatio="none"
+                shape-rendering="auto"
+              >
+                <defs>
+                  <path
+                    id="gentle-wave"
+                    d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"
+                  />
+                </defs>
+                <g class="parallax">
+                  <use
+                    xlink:href="#gentle-wave"
+                    x="48"
+                    y="0"
+                    fill="rgba(255,255,255,0.7"
+                  />
+                  <use
+                    xlink:href="#gentle-wave"
+                    x="48"
+                    y="3"
+                    fill="rgba(255,255,255,0.5)"
+                  />
+                  <use
+                    xlink:href="#gentle-wave"
+                    x="48"
+                    y="5"
+                    fill="rgba(255,255,255,0.3)"
+                  />
+                  <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+                </g>
+              </svg>
+            </div>
+            <div class="cucu-grid cucu-category-list">
+              <div class="cucu-g cucu-sm-100">
+                <div class="cucu-logo">
+					<img src="/img/cucu_shortcut_icon.ico" alt="Cucu">
+					<div class="cucu-sns">
+						<a href="https://www.youtube.com/user/cucu81com/playlists?app=desktop" target="_blank" data-no-swup><img src="img/ui/youtube.svg" alt="youtube"></a>
+						<a href="https://www.instagram.com/mariko_cucu81/?igshid=YmMyMTA2M2Y%3D" target="_blank" data-no-swup><img src="img/ui/instagram-1.svg" alt="instagram"></a>
+						<a href="https://twitter.com/infocucu" target="_blank" data-no-swup><img src="img/ui/twitter.svg" alt="twitter"></a>
+						<a href="https://www.facebook.com/people/CuCu%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE/100066625219892/" target="_blank" data-no-swup><img src="img/ui/facebook.svg" alt="facebook"></a>
+					</div>
+				</div>
+              </div>
+              <div class="cucu-g cucu-sm-100">
+                <a href="#element" class="cucu-category">
+                  <div class="category-img">
+                    <img
+                      src="/img/category/不動産・ビル管理.jpg"
+                      alt="不動産・ビル管理"
+                    />
+                  </div>
+                  <h2>不動産・ビル管理</h2>
+                  <div class="eng-text">
+                    <p>real estate</p>
+                  </div>
+                </a>
+              </div>
+              <div class="cucu-g cucu-sm-100">
+                <div class="cucu-category">
+                  <div class="category-img">
+                    <img src="/img/category/建築・内装.jpg" alt="建築・内装" />
+                  </div>
+                  <h2>建築・内装</h2>
+                  <div class="eng-text">
+                    <p>construction / interior</p>
+                  </div>
+                </div>
+              </div>
+              <div class="cucu-g cucu-sm-100">
+                <div class="cucu-category">
+                  <div class="category-img">
+                    <img src="/img/category/デザイン.jpg" alt="デザイン" />
+                  </div>
+                  <h2>デザイン</h2>
+                  <div class="eng-text">
+                    <p>design</p>
+                  </div>
+                </div>
+              </div>
+              <div class="cucu-g cucu-sm-100">
+                <div class="cucu-category">
+                  <div class="category-img">
+                    <img src="/img/category/天然石.jpg" alt="天然石" />
+                  </div>
+                  <h2>天然石</h2>
+                  <div class="eng-text">
+                    <p>natural stone</p>
+                  </div>
+                </div>
+              </div>
+              <div class="cucu-g cucu-sm-100">
+                <div class="cucu-category">
+                  <div class="category-img">
+                    <img src="/img/category/LSO.jpg" alt="LSO" />
+                  </div>
+                  <h2>LSO</h2>
+                  <div class="eng-text">
+                    <p>land space operations</p>
+                  </div>
+                </div>
+              </div>
+              <div class="cucu-g cucu-sm-100">
+                <div class="cucu-category">
+                  <div class="category-img">
+                    <img
+                      src="/img/category/カウンセリング・ヒーリング.jpg"
+                      alt="カウンセリング・ヒーリング"
+                    />
+                  </div>
+                  <h2 class="healing">カウンセリング・ヒーリング</h2>
+                  <div class="eng-text">
+                    <p>counseling / healing</p>
+                  </div>
+                </div>
+              </div>
+              <div class="cucu-g cucu-sm-100">
+                <div class="cucu-category">
+                  <div class="category-img">
+                    <img src="/img/category/セミナー.jpg" alt="セミナー" />
+                  </div>
+                  <h2>セミナー</h2>
+                  <div class="eng-text">
+                    <p>Seminar</p>
+                  </div>
+                </div>
+              </div>
+              <div class="cucu-g cucu-sm-100">
+                <div class="cucu-category">
+                  <div class="category-img">
+                    <img src="/img/category/イベント.jpg" alt="イベント" />
+                  </div>
+                  <h2>イベント</h2>
+                  <div class="eng-text">
+                    <p>event</p>
+                  </div>
+                </div>
+              </div>
+              <div class="cucu-g cucu-sm-100">
+                <div class="cucu-category">
+                  <div class="category-img">
+                    <img src="/img/category/SHOP.jpg" alt="SHOP" />
+                  </div>
+                  <h2>SHOP</h2>
+                  <div class="eng-text">
+                    <p>shop</p>
+                  </div>
+                </div>
+              </div>
+              <div class="cucu-g cucu-sm-100">
+                <div class="cucu-category">
+                  <div class="category-img">
+                    <img src="/img/category/会社概要.jpg" alt="会社概要" />
+                  </div>
+                  <h2>会社概要</h2>
+                  <div class="eng-text">
+                    <p>company overview</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- <div class="cucu-top-menu">
+						<a href="index.html" class="cucu-logo-frame">
+							<img src="/img/cucu_shortcut_icon.ico" alt="Cucu">
+						</a>
+						<div class="cucu-right-side">
+							<div class="cucu-menu-frame">
+								<nav>
+									<ul class="cucu-menu">
+										<li class="cucu-has-children">
+											<a href="home-1.html">Home</a>
+											<ul>
+												<li><a href="home-1.html">Home 1</a></li>
+												<li><a href="home-2.html">Home 2</a></li>
+												<li><a href="home-3.html">Home 3</a></li>
+												<li><a href="home-4.html">Home 4</a></li>
+												<li><a href="home-5.html">Home 5</a></li>
+											</ul>
+										</li>
+										<li class="cucu-has-children">
+											<a href="about-1.html">About</a>
+											<ul>
+												<li><a href="about-1.html">Type 1</a></li>
+												<li><a href="about-2.html">Type 2</a></li>
+												<li><a href="about-3.html">Type 3</a></li>
+											</ul>
+										</li>
+										<li class="cucu-has-children">
+											<a href="portfolio-1.html">Portfolio</a>
+											<ul>
+												<li><a href="portfolio-1.html">Type 1</a></li>
+												<li><a href="portfolio-2.html">Type 2</a></li>
+												<li><a href="portfolio-3.html">Type 3</a></li>
+												<li><a href="portfolio-4.html">Type 4</a></li>
+												<li><a href="portfolio-5.html">Type 5</a></li>
+											</ul>
+										</li>
+										<li class="cucu-has-children cucu-current">
+											<a href="blog-1.html">Blog</a>
+											<ul>
+												<li><a href="blog-1.html">Type 1</a></li>
+												<li><a href="blog-2.html">Type 2</a></li>
+												<li><a href="blog-3.html">Classic list</a></li>
+												<li><a href="blog-4.html">Publication</a></li>
+											</ul>
+										</li>
+										<li class="cucu-has-children">
+											<a href="contact-1.html">Contacts</a>
+											<ul>
+												<li><a href="contact-1.html">Type 1</a></li>
+												<li><a href="contact-2.html">Type 2</a></li>
+												<li><a href="contact-3.html">Type 3</a></li>
+											</ul>
+										</li>
+									</ul>
+								</nav>
+							</div>
+						</div>
+						<div class="cucu-menu-btn">
+							<span></span>
+						</div>
+					</div> -->
+          </div>
+
+          <div class="cucu-category-content">
+			<!-- お知らせ BEGIN -->
+			<div id="cucu-news" class="cucu-news">
+				<div class="cucu-banner">
+				  <h1>お知らせ</h1>
+				  <!-- <p>
+					Tenetur est, praesentium nam non expedita molestias nobis labore
+					magnam, <br />dicta incidunt beatae consequuntur iusto suscipit
+					id et possimus.
+				  </p> -->
+				</div>
+	
+				<div class="cucu-news-list">
+				  <div class="cucu-grid cucu-padding-grid">
+					<div class="cucu-g-33 cucu-md-50 cucu-sm-100">
+					  <a href="blog-4.html" class="cucu-blog-card">
+						<div class="cucu-photo-frame cucu-active">
+						  <img src="img/photo/37.jpg" alt="photo" />
+						</div>
+						<div class="cucu-post-text">
+						  <div class="cucu-date">15 March 2022</div>
+						  <h2>
+							タイトルテキストテキストテキストテキスト
+						  </h2>
+						  <p>内容テキスト内容テキスト内容テキスト内容テキスト</p>
+						</div>
+					  </a>
+					</div>
+					<div class="cucu-g-33 cucu-md-50 cucu-sm-100">
+					  <a href="blog-4.html" class="cucu-blog-card">
+						<div class="cucu-photo-frame cucu-active">
+						  <img src="img/photo/5.jpg" alt="photo" />
+						</div>
+						<div class="cucu-post-text">
+						  <div class="cucu-date">15 March 2022</div>
+						  <h2>
+							タイトルテキストテキストテキストテキストテキストテキ
+						  </h2>
+						  <p>
+							内容テキスト内容テキスト内容テキスト内容テキスト内容テキスト内容テキスト
+						  </p>
+						</div>
+					  </a>
+					</div>
+					<div class="cucu-g-33 cucu-md-50 cucu-sm-100">
+					  <a href="blog-4.html" class="cucu-blog-card">
+						<div class="cucu-photo-frame cucu-active">
+						  <img src="img/photo/40.jpg" alt="photo" />
+						</div>
+						<div class="cucu-post-text">
+						  <div class="cucu-date">15 March 2022</div>
+						  <h2>
+							タイトルテキストテキストテキストテキストテキストテキ
+						  </h2>
+						  <p>
+							内容テキスト内容テキスト内容テキスト内容テキスト内容テキスト内容テキスト
+						  </p>
+						</div>
+					  </a>
+					</div>
+				  </div>
+				</div>
+			</div>
+          </div>
+		  <!-- お知らせ END -->
+
+		  <!-- 不動産・ビル管理 END -->
+		  <div id="cucu-real-estate" class="cucu-real-estate">
+			  <div class="cucu-grid">
+				<div class="cucu-g-25 cucu-sm-100">
+					<div class="cucu-position-fix">
+						<div class="cucu-photo-frame cucu-obj-1">
+							<img src="img/不動産/real_estate_01.jpg" alt="real-estate">
+						</div>
+					</div>
+				</div>
+				<div class="cucu-g-50 cucu-sm-100">
+					<div class="cucu-main-title">
+						<div class="cucu-suptitle">
+							<span class="cucu-number">CUCU.</span>
+							<span>Real Estate</span>
+						</div>
+						<h1>不動産・<br>ビル管理</h1>
+						<div class="cucu-button-frame">
+							<div class="cucu-btn-label">テキストテキストテキスト</div>
+							<a href="#" class="cucu-sm-button">
+								<div class="cucu-arrow"><img src="img/ui/arrow-1.svg" alt="arrow"></div>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="cucu-g-25 cucu-sm-100">
+					<div class="cucu-object-frame">
+						<div class="cucu-photo-frame cucu-obj-2">
+							<img src="img/不動産/real_estate_02.jpg" alt="real-estate">
+						</div>
+						<div class="cucu-photo-frame cucu-obj-3">
+							<img src="img/不動産/real_estate_03.jpg" alt="real-estate">
+						</div>
+					</div>
+				</div>
+			</div>
+		  </div>
+		<!-- 不動産・ビル管理 END -->
+
+		<!-- 建築・内装 BEGIN -->
+		<div id="cucu-construction" class="cucu-construction">
+			<div class="swiper-container cucu-slider-1s">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<div class="cucu-content" data-swiper-parallax="-200" data-swiper-parallax-opacity="0">
+							<div class="cucu-grid cucu-sm-reverse">
+								<div class="cucu-g-30 cucu-sm-100">
+									<div class="cucu-position-fix">
+										<span class="cucu-title-2">物件名・<br>情報</span>
+										<div class="cucu-photo-frame cucu-obj-2" data-swiper-parallax-y="100" data-swiper-parallax-scale="0.5" data-swiper-parallax-duration="1250">
+											<img src="img/photo/26.jpg" alt="photo">
+										</div>
+									</div>
+								</div>
+								<div class="cucu-g-70 cucu-sm-100">
+									<div class="rb-object-frame">
+										<div class="cucu-photo-frame cucu-obj-1" data-swiper-parallax-y="-100" data-swiper-parallax-scale="0.5" data-swiper-parallax-duration="1300">
+											<img src="img/photo/25.jpg" alt="photo">
+										</div>
+										<div class="cucu-slide-caption" data-swiper-parallax-y="200" data-swiper-parallax-scale="0.5">
+											<h2>建築・<br>内装</h2>
+											<span class="cucu-suptitle">氣が整うと、もっと人生を真剣に生きたくなる
+												そんな風に思える設計を心掛けています。
+												
+												CuCuの建築設計では
+												九星気学、風水易学等の精神世界の観点から、お客様の五感を磨く空間を創造致します。
+												積極的に新しいことにチャレンジしたいと、日々の生活がワクワクするようになります。
+												「氣が整うと、もっと人生を真剣に生きたくなる」
+												私たちと一緒に、貴方だけの空間を設計しませんか。
+												
+												貴方に最適な空間をお届けするには、設計から作ってしまうことが最も確実です。
+												ベテランスタッフが、風水学に則った最高の建築設計をご提供致します。</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="cucu-content" data-swiper-parallax="-200" data-swiper-parallax-opacity="0">
+							<div class="cucu-grid cucu-sm-reverse">
+								<div class="cucu-g-30 cucu-sm-100">
+									<div class="cucu-position-fix">
+										<span class="cucu-title-2">物件名・<br>情報</span>
+										<div class="cucu-photo-frame cucu-obj-2" data-swiper-parallax-y="100" data-swiper-parallax-scale="0.5" data-swiper-parallax-duration="1250">
+											<img src="img/photo/1.jpg" alt="photo">
+										</div>
+									</div>
+								</div>
+								<div class="cucu-g-70 cucu-sm-100">
+									<div class="rb-object-frame">
+										<div class="cucu-photo-frame cucu-obj-1" data-swiper-parallax-y="-100" data-swiper-parallax-scale="0.5" data-swiper-parallax-duration="1300">
+											<img src="img/photo/3.jpg" alt="photo">
+										</div>
+										<div class="cucu-slide-caption" data-swiper-parallax-y="200" data-swiper-parallax-scale="0.5">
+											<h2>建築・<br>内装</h2>
+											<span class="cucu-suptitle">テキストテキストテキスト</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="cucu-content" data-swiper-parallax="-200" data-swiper-parallax-opacity="0">
+							<div class="cucu-grid cucu-sm-reverse">
+								<div class="cucu-g-30 cucu-sm-100">
+									<div class="cucu-position-fix">
+										<span class="cucu-title-2">物件名・<br>情報</span>
+										<div class="cucu-photo-frame cucu-obj-2" data-swiper-parallax-y="100" data-swiper-parallax-scale="0.5" data-swiper-parallax-duration="1250">
+											<img src="img/photo/13.jpg" alt="photo">
+										</div>
+									</div>
+								</div>
+								<div class="cucu-g-70 cucu-sm-100">
+									<div class="rb-object-frame">
+										<div class="cucu-photo-frame cucu-obj-1" data-swiper-parallax-y="-100" data-swiper-parallax-scale="0.5" data-swiper-parallax-duration="1300">
+											<img src="img/photo/12.jpg" alt="photo">
+										</div>
+										<div class="cucu-slide-caption" data-swiper-parallax-y="200" data-swiper-parallax-scale="0.5">
+											<h2>建築・<br>内装</h2>
+											<span class="cucu-suptitle">テキストテキストテキスト</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="cucu-description">
+					<span></span>
+					<div class="cucu-nav">
+						<div class="cucu-nav-label">Next Object</div>
+						<div class="cucu-prev"><img src="img/ui/arrow-2.svg" alt="arrow"></div>
+						<div class="cucu-next"><img src="img/ui/arrow-2.svg" alt="arrow"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 建築・内装 END -->
+
+		<!-- デザイン BEGIN -->
+		<div id="cucu-design" class="cucu-design">
+			<div class="swiper-container cucu-slider-1s">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<div class="cucu-content" data-swiper-parallax="-200" data-swiper-parallax-opacity="0">
+							<div class="cucu-grid">
+								<div class="cucu-g-30 cucu-sm-100">
+									<div class="cucu-position-fix">
+										<div class="cucu-slide-caption" data-swiper-parallax-y="120" data-swiper-parallax-scale="0.5">
+											<h2>デザイン</h2>
+											<span>商品<br>説明</span></div>
+										<div class="cucu-photo-frame cucu-obj-1" data-swiper-parallax-y="-100" data-swiper-parallax-scale="0.5" data-swiper-parallax-duration="1250">
+											<img src="img/photo/16.jpg" alt="photo">
+											<a data-fancybox="gallery" data-no-swup href="img/photo/16.jpg" class="cucu-zoom"><img src="img/ui/zoom.svg" alt="zoom"></a>
+										</div>
+									</div>
+								</div>
+								<div class="cucu-g-50 cucu-sm-100">
+									<div class="cucu-photo-frame cucu-obj-2" data-swiper-parallax-y="60" data-swiper-parallax-scale="0.5" data-swiper-parallax-duration="1300">
+										<img src="img/photo/17.jpg" alt="photo">
+										<a data-fancybox="gallery" data-no-swup href="img/photo/17.jpg" class="cucu-zoom"><img src="img/ui/zoom.svg" alt="zoom"></a>
+									</div>
+								</div>
+								<div class="cucu-g-20 cucu-sm-100">
+									<div class="cucu-photo-frame cucu-obj-3" data-swiper-parallax-y="-100" data-swiper-parallax-scale="0.5" data-swiper-parallax-duration="1200">
+										<img src="img/photo/18.jpg" alt="photo">
+										<a data-fancybox="gallery" data-no-swup href="img/photo/18.jpg" class="cucu-zoom"><img src="img/ui/zoom.svg" alt="zoom"></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="cucu-content" data-swiper-parallax="-200" data-swiper-parallax-opacity="0">
+							<div class="cucu-grid">
+								<div class="cucu-g-30 cucu-sm-100">
+									<div class="cucu-position-fix">
+										<div class="cucu-slide-caption" data-swiper-parallax-y="120" data-swiper-parallax-scale="0.5" data-swiper-parallax-duration="1800">
+											<h2>デザイン</h2>
+											<span>商品<br>説明</span></div>
+										<div class="cucu-photo-frame cucu-obj-1" data-swiper-parallax-y="-100" data-swiper-parallax-scale="0.5" data-swiper-parallax-duration="1250">
+											<img src="img/photo/19.jpg" alt="photo">
+											<a data-fancybox="gallery" data-no-swup href="img/photo/19.jpg" class="cucu-zoom"><img src="img/ui/zoom.svg" alt="zoom"></a>
+										</div>
+									</div>
+								</div>
+								<div class="cucu-g-50 cucu-sm-100">
+									<div class="cucu-photo-frame cucu-obj-2" data-swiper-parallax-y="60" data-swiper-parallax-scale="0.5" data-swiper-parallax-duration="1300">
+										<img src="img/photo/20.jpg" alt="photo">
+										<a data-fancybox="gallery" data-no-swup href="img/photo/20.jpg" class="cucu-zoom"><img src="img/ui/zoom.svg" alt="zoom"></a>
+									</div>
+								</div>
+								<div class="cucu-g-20 cucu-sm-100">
+									<div class="cucu-photo-frame cucu-obj-3" data-swiper-parallax-y="-100" data-swiper-parallax-scale="0.5" data-swiper-parallax-duration="1200">
+										<img src="img/photo/21.jpg" alt="photo">
+										<a data-fancybox="gallery" data-no-swup href="img/photo/21.jpg" class="cucu-zoom"><img src="img/ui/zoom.svg" alt="zoom"></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="cucu-content" data-swiper-parallax="-200" data-swiper-parallax-opacity="0">
+							<div class="cucu-grid">
+								<div class="cucu-g-30 cucu-sm-100">
+									<div class="cucu-position-fix">
+										<div class="cucu-slide-caption" data-swiper-parallax-y="120" data-swiper-parallax-scale="0.5">
+											<h2>デザイン</h2>
+											<span>商品<br>説明</span></div>
+										<div class="cucu-photo-frame cucu-obj-1" data-swiper-parallax-y="-100" data-swiper-parallax-scale="0.5" data-swiper-parallax-duration="1250">
+											<img src="img/photo/22.jpg" alt="photo">
+											<a data-fancybox="gallery" data-no-swup href="img/photo/22.jpg" class="cucu-zoom"><img src="img/ui/zoom.svg" alt="zoom"></a>
+										</div>
+									</div>
+								</div>
+								<div class="cucu-g-50 cucu-sm-100">
+									<div class="cucu-photo-frame cucu-obj-2" data-swiper-parallax-y="60" data-swiper-parallax-scale="0.5" data-swiper-parallax-duration="1300">
+										<img src="img/photo/23.jpg" alt="photo">
+										<a data-fancybox="gallery" data-no-swup href="img/photo/23.jpg" class="cucu-zoom"><img src="img/ui/zoom.svg" alt="zoom"></a>
+									</div>
+								</div>
+								<div class="cucu-g-20 cucu-sm-100">
+									<div class="cucu-photo-frame cucu-obj-3" data-swiper-parallax-y="-100" data-swiper-parallax-scale="0.5" data-swiper-parallax-duration="1200">
+										<img src="img/photo/24.jpg" alt="photo">
+										<a data-fancybox="gallery" data-no-swup href="img/photo/24.jpg" class="cucu-zoom"><img src="img/ui/zoom.svg" alt="zoom"></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="cucu-description">
+					<div class="cucu-text">
+						<a href="#.">全商品</a>
+						<span></span>
+					</div>
+					<div class="cucu-nav-frame">
+						<div class="cucu-nav">
+							<div class="cucu-prev"><img src="img/ui/arrow-1.svg" alt="arrow"></div>
+							<div class="cucu-next"><img src="img/ui/arrow-1.svg" alt="arrow"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- デザイン END -->
+
+		<!-- 天然石 BEGIN -->
+		<div id="cucu-natural-stone" class="cucu-natural-stone">
+		<div class="swiper-container cucu-slider-3s">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">
+					<div class="cucu-content">
+						<div class="cucu-deco"></div>
+						<div class="cucu-grid">
+							<div class="cucu-g-100 cucu-sm-100">
+								<div class="cucu-object-frame">
+									<div class="cucu-photo-frame cucu-obj-1">
+										<img src="img/photo/27.jpg" alt="photo">
+										<a data-fancybox="gallery" data-no-swup href="img/photo/27.jpg" class="cucu-zoom"><img src="img/ui/zoom.svg" alt="zoom"></a>
+									</div>
+									<div class="cucu-slide-caption">
+										<h2>Beach girl</h2>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="cucu-content">
+						<div class="cucu-deco"></div>
+						<div class="cucu-grid">
+							<div class="cucu-g-100 cucu-sm-100">
+								<div class="cucu-object-frame">
+									<div class="cucu-photo-frame cucu-obj-1">
+										<img src="img/photo/28.jpg" alt="photo">
+										<a data-fancybox="gallery" data-no-swup href="img/photo/28.jpg" class="cucu-zoom"><img src="img/ui/zoom.svg" alt="zoom"></a>
+									</div>
+									<div class="cucu-slide-caption">
+										<h2>Nicole Lifestyle</h2>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="cucu-content">
+						<div class="cucu-deco"></div>
+						<div class="cucu-grid">
+							<div class="cucu-g-100 cucu-sm-100">
+								<div class="cucu-object-frame">
+									<div class="cucu-photo-frame cucu-obj-1">
+										<img src="img/photo/29.jpg" alt="photo">
+										<a data-fancybox="gallery" data-no-swup href="img/photo/29.jpg" class="cucu-zoom"><img src="img/ui/zoom.svg" alt="zoom"></a>
+									</div>
+									<div class="cucu-slide-caption">
+										<h2>Beach girl</h2>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="cucu-content">
+						<div class="cucu-deco"></div>
+						<div class="cucu-grid">
+							<div class="cucu-g-100 cucu-sm-100">
+								<div class="cucu-object-frame">
+									<div class="cucu-photo-frame cucu-obj-1">
+										<img src="img/photo/2.jpg" alt="photo">
+										<a data-fancybox="gallery" data-no-swup href="img/photo/2.jpg" class="cucu-zoom"><img src="img/ui/zoom.svg" alt="zoom"></a>
+									</div>
+									<div class="cucu-slide-caption">
+										<h2>Emma Feritson</h2>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="cucu-content">
+						<div class="cucu-deco"></div>
+						<div class="cucu-grid">
+							<div class="cucu-g-100 cucu-sm-100">
+								<div class="cucu-object-frame">
+									<div class="cucu-photo-frame cucu-obj-1">
+										<img src="img/photo/14.jpg" alt="photo">
+										<a data-fancybox="gallery" data-no-swup href="img/photo/14.jpg" class="cucu-zoom"><img src="img/ui/zoom.svg" alt="zoom"></a>
+									</div>
+									<div class="cucu-slide-caption">
+										<h2>Reils and sleepers</h2>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="cucu-content">
+						<div class="cucu-deco"></div>
+						<div class="cucu-grid">
+							<div class="cucu-g-100 cucu-sm-100">
+								<div class="cucu-object-frame">
+									<div class="cucu-photo-frame cucu-obj-1">
+										<img src="img/photo/20.jpg" alt="photo">
+										<a data-fancybox="gallery" data-no-swup href="img/photo/20.jpg" class="cucu-zoom"><img src="img/ui/zoom.svg" alt="zoom"></a>
+									</div>
+									<div class="cucu-slide-caption">
+										<h2>Monica Fetruchi</h2>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="cucu-nav-frame">
+				<div class="cucu-nav">
+					<div class="cucu-nav-label">Next Work</div>
+					<div class="cucu-prev"><img src="img/ui/arrow-1.svg" alt="arrow"></div>
+					<div class="cucu-next"><img src="img/ui/arrow-1.svg" alt="arrow"></div>
+				</div>
+			</div>
+		</div>
+		</div>
+		<!-- 天然石 END -->
+
+		<!-- LSO BEGIN -->
+		<div id="cucu-land-space-operations" class="cucu-land-space-operations">
+		<div class="cucu-grid cucu-sm-reverse">
+			<div class="cucu-g-40 cucu-sm-100">
+				<div class="rb-object-frame">
+					<div class="cucu-photo-frame cucu-obj-1">
+						<img src="img/photo/49.jpg" alt="photo">
+					</div>
+				</div>
+			</div>
+			<div class="cucu-g-60 cucu-sm-100">
+				<div class="cucu-about-frame">
+					<div class="cucu-grid">
+						<div class="cucu-g-60 cucu-sm-100">
+							<div class="cucu-about-text">
+								<h1>Hello, My name is Anastasia.</h1>
+								<p>Hi, I'm a photographer. I love my job. I often have to communicate with people. I like to photograph unique characters and personalities.</p>
+							</div>
+						</div>
+						<div class="cucu-g-40 cucu-sm-100">
+							<div class="cucu-position-fix">
+								<div class="cucu-deco"></div>
+								<div class="cucu-photo-frame cucu-obj-2">
+									<img src="img/photo/50.jpg" alt="photo">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="cucu-bottom-panel">
+			<div class="cucu-instagram">
+				<span>Instagram</span>
+				<div class="cucu-line"></div>
+				<a href="https://www.instagram.com/" target="_blank" data-no-swup><img src="img/ui/instagram-1.svg" alt="Instagram"></a>
+			</div>
+			<a href="mailto:your.mail@here.com" class="cucu-mail" data-no-swup>anaphoto@gmail.com</a>
+		</div>
+		</div>
+		<!-- LSO END -->
+
+		<!-- カウンセリング・ヒーリング BEGIN -->
+		<div id="cucu-counseling" class="cucu-counseling">
+			<div class="cucu-grid">
+				<div class="cucu-g-40 cucu-sm-100">
+					<div class="rb-object-frame">
+						<div class="cucu-photo-frame cucu-obj-1">
+							<img src="img/photo/46.jpg" alt="photo">
+						</div>
+						<h1>Blog</h1>
+						<div class="cucu-deco"></div>
+					</div>
+				</div>
+				<div class="cucu-g-60 cucu-sm-100">
+					<div class="cucu-blog-frame">
+						<div class="cucu-post-text">
+							<h2>His latest endeavor is The Purpose Hotel, a planned global</h2>
+							<p>Young women, and one black man, in lacy white dresses cavort in slow motion in a rose-strewn field, their hair blowing softly in the breeze, caressing a
+								fragrance bottle with a topper borrowed from a Bernie Sanders bobble head.
+							</p>
+							<p>Well, yes and no. It is an attempt, said Amber Schaefer, a Sanders supporter, comedian and commercial director, to illustrate that Mr. Sanders has a broad
+								support base. While the so-called Bernie Bros — the men, mostly white, who
+								are ardent Sanders fans — get most of the attention, Ms. Schaefer’s spot aims, via a spoof of stereotypically feminine beauty</p>
+							<p>Young women, and one black man, in lacy white dresses cavort in slow motion in a rose-strewn field, their hair blowing softly in the breeze, caressing a
+								fragrance bottle with a topper borrowed from a Bernie Sanders bobble head.
+								Well, yes and no. It is an attempt, said Amber Schaefer, a Sanders supporter, comedian and commercial director, to illustrate that Mr. Sanders has a broad
+								support base. While the so-called Bernie Bros — the men, mostly white, who
+								are ardent Sanders fans — get most of the attention, Ms. Schaefer’s spot aims, via a spoof of stereotypically feminine beauty</p>
+							<p>Young women, and one black man, in lacy white dresses cavort in slow motion in a rose-strewn field, their hair blowing softly in the breeze, caressing a
+								fragrance bottle with a topper borrowed from a Bernie Sanders bobble head.
+							</p>
+						</div>
+						<div class="cucu-post-footer">
+							<div class="cucu-date">22 March 2020</div>
+							<div class="cucu-share"><span>Share post</span><img src="img/ui/share.svg" alt="share"></div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+		<!-- カウンセリング・ヒーリング END -->
+
+		<!-- セミナー BEGIN -->
+		<div id="cucu-seminar" class="cucu-seminar">
+			<div class="cucu-grid cucu-sm-reverse">
+				<div class="cucu-g-40 cucu-sm-100">
+					<div class="rb-object-frame">
+						<div class="cucu-photo-frame cucu-obj-1">
+							<img src="img/photo/51.jpg" alt="photo">
+						</div>
+						<div class="cucu-deco"></div>
+					</div>
+				</div>
+				<div class="cucu-g-60 cucu-sm-100">
+					<div class="cucu-about-frame">
+						<div class="cucu-about-text">
+							<h1>Hi, I'm a photographer.
+								I love my job. I often have to communicate with people.</h1>
+							<div class="cucu-quote">
+								<div class="cucu-quote-frame">
+									<img src="img/ui/quote.svg" alt="quote">
+								</div>
+								<p>I am proud of my work, it gives me a <br>lot of emotions and pleasure. This is <br>what I would do all my life. <span>Anastasiya, Photographer</span></p>
+							</div>
+							<div class="cucu-deco"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- セミナー END -->
+
+		<!-- イベント BEGIN -->
+		<div id="cucu-event" class="cucu-event">
+			<div class="swiper-container cucu-slider-1s">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<div class="cucu-content" data-swiper-parallax="-200" data-swiper-parallax-opacity="0">
+							<div class="cucu-deco" data-swiper-parallax-x="-100%" data-swiper-parallax-duration="1800"></div>
+							<div class="cucu-grid">
+								<div class="cucu-g-20 cucu-sm-30">
+									<div class="cucu-photo-frame cucu-obj-1" data-swiper-parallax-y="-100" data-swiper-parallax-scale="0.5" data-swiper-parallax-duration="1200">
+										<img src="img/photo/1.jpg" alt="photo">
+										<a data-fancybox="gallery" data-no-swup href="img/photo/1.jpg" class="cucu-zoom"><img src="img/ui/zoom.svg" alt="zoom"></a>
+									</div>
+								</div>
+								<div class="cucu-g-35 cucu-sm-70">
+									<div class="cucu-photo-frame cucu-obj-2" data-swiper-parallax-y="100" data-swiper-parallax-scale="0.5" data-swiper-parallax-duration="1250">
+										<img src="img/photo/2.jpg" alt="photo">
+										<a data-fancybox="gallery" data-no-swup href="img/photo/2.jpg" class="cucu-zoom"><img src="img/ui/zoom.svg" alt="zoom"></a>
+									</div>
+								</div>
+								<div class="cucu-g-45 cucu-sm-100">
+									<div class="cucu-photo-frame cucu-obj-3" data-swiper-parallax-y="-100" data-swiper-parallax-scale="0.5" data-swiper-parallax-duration="1300">
+										<img src="img/photo/3.jpg" alt="photo">
+										<a data-fancybox="gallery" data-no-swup href="img/photo/3.jpg" class="cucu-zoom"><img src="img/ui/zoom.svg" alt="zoom"></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="cucu-content" data-swiper-parallax="-200" data-swiper-parallax-opacity="0">
+							<div class="cucu-deco" data-swiper-parallax-x="-100%" data-swiper-parallax-duration="1800"></div>
+							<div class="cucu-grid">
+								<div class="cucu-g-20 cucu-sm-30">
+									<div class="cucu-photo-frame cucu-obj-1" data-swiper-parallax-y="-100" data-swiper-parallax-scale="0.5" data-swiper-parallax-duration="1200">
+										<img src="img/photo/4.jpg" alt="photo">
+										<a data-fancybox="gallery" data-no-swup href="img/photo/4.jpg" class="cucu-zoom"><img src="img/ui/zoom.svg" alt="zoom"></a>
+									</div>
+								</div>
+								<div class="cucu-g-35 cucu-sm-70">
+									<div class="cucu-photo-frame cucu-obj-2" data-swiper-parallax-y="100" data-swiper-parallax-scale="0.5" data-swiper-parallax-duration="1250">
+										<img src="img/photo/5.jpg" alt="photo">
+										<a data-fancybox="gallery" data-no-swup href="img/photo/5.jpg" class="cucu-zoom"><img src="img/ui/zoom.svg" alt="zoom"></a>
+									</div>
+								</div>
+								<div class="cucu-g-45 cucu-sm-100">
+									<div class="cucu-photo-frame cucu-obj-3" data-swiper-parallax-y="-100" data-swiper-parallax-scale="0.5" data-swiper-parallax-duration="1300">
+										<img src="img/photo/6.jpg" alt="photo">
+										<a data-fancybox="gallery" data-no-swup href="img/photo/6.jpg" class="cucu-zoom"><img src="img/ui/zoom.svg" alt="zoom"></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="cucu-content" data-swiper-parallax="-200" data-swiper-parallax-opacity="0">
+							<div class="cucu-deco" data-swiper-parallax-x="-100%" data-swiper-parallax-duration="1800"></div>
+							<div class="cucu-grid">
+								<div class="cucu-g-20 cucu-sm-30">
+									<div class="cucu-photo-frame cucu-obj-1" data-swiper-parallax-y="-100" data-swiper-parallax-scale="0.5" data-swiper-parallax-duration="1200">
+										<img src="img/photo/7.jpg" alt="photo">
+										<a data-fancybox="gallery" data-no-swup href="img/photo/7.jpg" class="cucu-zoom"><img src="img/ui/zoom.svg" alt="zoom"></a>
+									</div>
+								</div>
+								<div class="cucu-g-35 cucu-sm-70">
+									<div class="cucu-photo-frame cucu-obj-2" data-swiper-parallax-y="100" data-swiper-parallax-scale="0.5" data-swiper-parallax-duration="1250">
+										<img src="img/photo/8.jpg" alt="photo">
+										<a data-fancybox="gallery" data-no-swup href="img/photo/8.jpg" class="cucu-zoom"><img src="img/ui/zoom.svg" alt="zoom"></a>
+									</div>
+								</div>
+								<div class="cucu-g-45 cucu-sm-100">
+									<div class="cucu-photo-frame cucu-obj-3" data-swiper-parallax-y="-100" data-swiper-parallax-scale="0.5" data-swiper-parallax-duration="1300">
+										<img src="img/photo/9.jpg" alt="photo">
+										<a data-fancybox="gallery" data-no-swup href="img/photo/9.jpg" class="cucu-zoom"><img src="img/ui/zoom.svg" alt="zoom"></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="cucu-description">
+					<div class="cucu-pagination"></div>
+					<div class="cucu-text">
+						<h1 class="cucu-mb-10">Emma <br>Feritson</h1>
+						<span class="cucu-suptitle">Model</span>
+					</div>
+				</div>
+				<div class="cucu-next-btn">
+					<span>Next <br>photos</span>
+					<div class="cucu-nav">
+						<div class="cucu-prev"><img src="img/ui/arrow-1.svg" alt="arrow"></div>
+						<div class="cucu-next"><img src="img/ui/arrow-1.svg" alt="arrow"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- イベント END -->
+
+		<!-- SHOP BEGIN -->
+		<div id="cucu-shop" class="cucu-shop">
+			<div class="swiper-container cucu-slider-1s">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<div class="cucu-content" data-swiper-parallax="-200" data-swiper-parallax-opacity="0">
+							<div class="cucu-grid cucu-sm-reverse">
+								<div class="cucu-g-33 cucu-sm-100">
+									<div class="cucu-text-frame" data-swiper-parallax-y="60" data-swiper-parallax-scale="0.5" data-swiper-parallax-duration="1250">
+										<div>
+											<a href="blog-4.html" class="cucu-post-title">
+												<h2>My favorite areas are photography of models and photos for fashion magazines</h2>
+											</a>
+											<p>His latest endeavor is The Purpose Hotel, a planned global</p>
+											<div class="cucu-date">15 March 2022</div>
+										</div>
+									</div>
+								</div>
+								<div class="cucu-g-33 cucu-sm-100">
+									<div class="cucu-object-frame">
+										<div class="cucu-deco"></div>
+										<a href="blog-4.html" class="cucu-photo-link" data-swiper-parallax-y="60" data-swiper-parallax-scale="0.5" data-swiper-parallax-duration="1200">
+											<div class="cucu-photo-frame cucu-obj-1">
+												<img src="img/photo/45.jpg" alt="photo">
+											</div>
+										</a>
+									</div>
+								</div>
+								<div class="cucu-g-33 cucu-sm-100">
+									<div class="cucu-addition-post" data-swiper-parallax-y="60" data-swiper-parallax-scale="0.5" data-swiper-parallax-duration="1300">
+										<a href="blog-4.html" class="cucu-photo-link">
+											<div class="cucu-photo-frame cucu-obj-2">
+												<img src="img/photo/46.jpg" alt="photo">
+											</div>
+										</a>
+										<div class="cucu-post-text">
+											<a href="blog-4.html" class="cucu-post-title">
+												<h2>How to choose the right model for taking pictures</h2>
+											</a>
+											<div class="cucu-date">15 March 2022</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="cucu-content" data-swiper-parallax="-200" data-swiper-parallax-opacity="0">
+							<div class="cucu-grid cucu-sm-reverse">
+								<div class="cucu-g-33 cucu-sm-100">
+									<div class="cucu-text-frame" data-swiper-parallax-y="60" data-swiper-parallax-scale="0.5" data-swiper-parallax-duration="1250">
+										<div>
+											<a href="blog-4.html" class="cucu-post-title">
+												<h2>My favorite areas are photography of models and photos for fashion magazines</h2>
+											</a>
+											<p>His latest endeavor is The Purpose Hotel, a planned global</p>
+											<div class="cucu-date">15 March 2022</div>
+										</div>
+									</div>
+								</div>
+								<div class="cucu-g-33 cucu-sm-100">
+									<div class="cucu-object-frame">
+										<div class="cucu-deco"></div>
+										<a href="blog-4.html" class="cucu-photo-link" data-swiper-parallax-y="60" data-swiper-parallax-scale="0.5" data-swiper-parallax-duration="1200">
+											<div class="cucu-photo-frame cucu-obj-1">
+												<img src="img/photo/33.jpg" alt="photo">
+											</div>
+										</a>
+									</div>
+								</div>
+								<div class="cucu-g-33 cucu-sm-100">
+									<div class="cucu-addition-post" data-swiper-parallax-y="60" data-swiper-parallax-scale="0.5" data-swiper-parallax-duration="1300">
+										<a href="blog-4.html" class="cucu-photo-link">
+											<div class="cucu-photo-frame cucu-obj-2">
+												<img src="img/photo/21.jpg" alt="photo">
+											</div>
+										</a>
+										<div class="cucu-post-text">
+											<a href="blog-4.html" class="cucu-post-title">
+												<h2>How to choose the right model for taking pictures</h2>
+											</a>
+											<div class="cucu-date">15 March 2022</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="cucu-content" data-swiper-parallax="-200" data-swiper-parallax-opacity="0">
+							<div class="cucu-grid cucu-sm-reverse">
+								<div class="cucu-g-33 cucu-sm-100">
+									<div class="cucu-text-frame" data-swiper-parallax-y="60" data-swiper-parallax-scale="0.5" data-swiper-parallax-duration="1250">
+										<div>
+											<a href="blog-4.html" class="cucu-post-title">
+												<h2>My favorite areas are photography of models and photos for fashion magazines</h2>
+											</a>
+											<p>His latest endeavor is The Purpose Hotel, a planned global</p>
+											<div class="cucu-date">15 March 2022</div>
+										</div>
+									</div>
+								</div>
+								<div class="cucu-g-33 cucu-sm-100">
+									<div class="cucu-object-frame">
+										<div class="cucu-deco"></div>
+										<a href="blog-4.html" class="cucu-photo-link" data-swiper-parallax-y="60" data-swiper-parallax-scale="0.5" data-swiper-parallax-duration="1200">
+											<div class="cucu-photo-frame cucu-obj-1">
+												<img src="img/photo/6.jpg" alt="photo">
+											</div>
+										</a>
+									</div>
+								</div>
+								<div class="cucu-g-33 cucu-sm-100">
+									<div class="cucu-addition-post" data-swiper-parallax-y="60" data-swiper-parallax-scale="0.5" data-swiper-parallax-duration="1300">
+										<a href="blog-4.html" class="cucu-photo-link">
+											<div class="cucu-photo-frame cucu-obj-2">
+												<img src="img/photo/22.jpg" alt="photo">
+											</div>
+										</a>
+										<div class="cucu-post-text">
+											<a href="blog-4.html" class="cucu-post-title">
+												<h2>How to choose the right model for taking pictures</h2>
+											</a>
+											<div class="cucu-date">15 March 2022</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="cucu-description">
+					<div class="cucu-text">
+						<a href="blog-3.html">All publications</a>
+						<span></span>
+					</div>
+					<div class="cucu-nav-frame">
+						<div class="cucu-nav">
+							<div class="cucu-prev"><img src="img/ui/arrow-1.svg" alt="arrow"></div>
+							<div class="cucu-next"><img src="img/ui/arrow-1.svg" alt="arrow"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- SHOP END -->
+
+		<!-- 会社概要 BEGIN -->
+		<div id="cucu-company" class="cucu-company">
+			<div class="cucu-content">
+				<div class="cucu-grid">
+					<div class="cucu-g-20 cucu-sm-100">
+						<div class="rb-object-frame">
+							<div class="cucu-photo-frame cucu-obj-1">
+								<img src="img/photo/42.jpg" alt="photo">
+							</div>
+						</div>
+					</div>
+					<div class="cucu-g-60 cucu-sm-100">
+						<div class="cucu-form-frame">
+							<div class="cucu-form-content">
+								<form method="POST" id="form" action="php/send.php">
+									<div class="cucu-grid cucu-padding-grid">
+										<div class="cucu-g-50 cucu-sm-100">
+											<div class="cucu-group-input">
+												<input type="text" name="name" placeholder="Name" data-parsley-pattern="^[a-zA-Z\s.]+$" required>
+											</div>
+										</div>
+										<div class="cucu-g-50 cucu-sm-100">
+											<div class="cucu-group-input">
+												<input type="email" name="email" placeholder="E-mail" required>
+											</div>
+										</div>
+										<div class="cucu-g-100">
+											<div class="cucu-group-input">
+												<textarea name="message" placeholder="Your message" data-parsley-pattern="^[a-zA-Z0-9\s.:,!?]+$" required></textarea>
+											</div>
+										</div>
+									</div>
+									<div class="cucu-form-bottom">
+										<button class="cucu-submit-btn">
+											<img src="img/ui/arrow-2.svg" alt="arrow" class="cucu-arrow">
+										</button>
+										<p>I`m open to cooperation <br>and new interesting offers</p>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+					<div class="cucu-g-20 cucu-sm-100">
+						<div class="cucu-position-fix">
+							<div>
+								<div class="cucu-photo-frame cucu-obj-2">
+									<img src="img/photo/43.jpg" alt="photo">
+								</div>
+								<h1>Contact <br>with Me</h1>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="cucu-instagram-frame">
+					<div class="cucu-line"></div>
+					<a href="https://www.instagram.com/" target="_blank" data-no-swup><img src="img/ui/instagram-1.svg" alt="instagram"></a>
+				</div>
+			</div>
+		</div>
+		<!-- 会社概要 END -->
+
+        </div>
+        <!-- <div class="cucu-big-menu-frame">
+          <div class="cucu-big-menu cucu-big-menu-1">
+            <div class="cucu-grid">
+              <div class="cucu-g-30 cucu-md-50 cucu-sm-100">
+                <div class="cucu-menu-frame cucu-fs-menu">
+                  <nav>
+                    <ul class="cucu-menu">
+                      <li class="cucu-has-children">
+                        <a href="#." data-no-swup>Home</a>
+                        <ul>
+                          <li><a href="home-1.html">Home 1</a></li>
+                          <li><a href="home-2.html">Home 2</a></li>
+                          <li><a href="home-3.html">Home 3</a></li>
+                          <li><a href="home-4.html">Home 4</a></li>
+                          <li><a href="home-5.html">Home 5</a></li>
+                        </ul>
+                      </li>
+                      <li class="cucu-has-children">
+                        <a href="#." data-no-swup>About</a>
+                        <ul>
+                          <li><a href="about-1.html">Type 1</a></li>
+                          <li><a href="about-2.html">Type 2</a></li>
+                          <li><a href="about-3.html">Type 3</a></li>
+                        </ul>
+                      </li>
+                      <li class="cucu-has-children">
+                        <a href="#." data-no-swup>Portfolio</a>
+                        <ul>
+                          <li><a href="portfolio-1.html">Type 1</a></li>
+                          <li><a href="portfolio-2.html">Type 2</a></li>
+                          <li><a href="portfolio-3.html">Type 3</a></li>
+                          <li><a href="portfolio-4.html">Type 4</a></li>
+                          <li><a href="portfolio-5.html">Type 5</a></li>
+                        </ul>
+                      </li>
+                      <li class="cucu-has-children cucu-current">
+                        <a href="#." data-no-swup>Blog</a>
+                        <ul>
+                          <li><a href="blog-1.html">Type 1</a></li>
+                          <li><a href="blog-2.html">Type 2</a></li>
+                          <li><a href="blog-3.html">Classic list</a></li>
+                          <li><a href="blog-4.html">Publication</a></li>
+                        </ul>
+                      </li>
+                      <li class="cucu-has-children">
+                        <a href="#." data-no-swup>Contacts</a>
+                        <ul>
+                          <li><a href="contact-1.html">Type 1</a></li>
+                          <li><a href="contact-2.html">Type 2</a></li>
+                          <li><a href="contact-3.html">Type 3</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+              <div class="cucu-g-70 cucu-md-50 cucu-sm-100">
+                <div class="rb-object-frame">
+                  <div class="cucu-photo-frame cucu-obj-1">
+                    <img src="img/photo/39.jpg" alt="photo" />
+                  </div>
+                  <div class="cucu-position-fix">
+                    <div class="cucu-deco"></div>
+                    <div class="cucu-photo-frame cucu-obj-2">
+                      <img src="img/photo/40.jpg" alt="photo" />
+                    </div>
+                  </div>
+                  <div class="cucu-descr">
+                    <div class="cucu-descr-title">
+                      <div>Menu</div>
+                      <div class="cucu-line"></div>
+                    </div>
+                    <p>Stay tuned for news and new work on Instagram</p>
+                    <a
+                      href="https://www.instagram.com/"
+                      target="_blank"
+                      data-no-swup
+                      ><img src="img/ui/instagram-2.svg" alt="Instagram"
+                    /></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> -->
+      </div>
+    </div>
+    <!-- jquery js -->
+    <script src="js/plugins/jquery.min.js"></script>
+    <!-- fancybox js -->
+    <script src="js/plugins/fancybox.min.js"></script>
+    <!-- swup js -->
+    <script src="js/plugins/swup.min.js"></script>
+    <!-- swiper js -->
+    <script src="js/plugins/swiper.min.js"></script>
+    <!-- parsley js -->
+    <script src="js/plugins/parsley.min.js"></script>
+    <!-- orabel js -->
+    <script src="js/main.js"></script>
+  </body>
+</html>
