@@ -5,14 +5,14 @@ $(function () {
 	// =====================================================
 	// FORM VALIDATION
 	// =====================================================
-	// $('#form').parsley();
+	$('#form').parsley();
 
-	// // Clear parsley empty elements
-	// if ($('#form').length > 0) {
-	// 	$('#form').parsley().on('field:success', function () {
-	// 		$('ul.parsley-errors-list').not(':has(li)').remove();
-	// 	});
-	// }
+	// Clear parsley empty elements
+	if ($('#form').length > 0) {
+		$('#form').parsley().on('field:success', function () {
+			$('ul.parsley-errors-list').not(':has(li)').remove();
+		});
+	}
 
 	// =====================================================
 	// PRELOADER
@@ -117,7 +117,7 @@ $(function () {
 
 	var swiper = new Swiper('.cucu-banner-slider', {
 		slidesPerView: 1,
-		speed: 800,
+		speed: 1500,
 		parallax: true,
 		loop: true,
 		effect: 'fade',
@@ -160,14 +160,14 @@ $(function () {
 		// =====================================================
 		// FORM VALIDATION
 		// =====================================================
-		// $('#form').parsley();
+		$('#form').parsley();
 
-		// // Clear parsley empty elements
-		// if ($('#form').length > 0) {
-		// 	$('#form').parsley().on('field:success', function () {
-		// 		$('ul.parsley-errors-list').not(':has(li)').remove();
-		// 	});
-		// }
+		// Clear parsley empty elements
+		if ($('#form').length > 0) {
+			$('#form').parsley().on('field:success', function () {
+				$('ul.parsley-errors-list').not(':has(li)').remove();
+			});
+		}
 
 		// =====================================================
 		// START ANIMATONS
