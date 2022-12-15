@@ -6571,7 +6571,7 @@ label.cbx {
   -webkit-box-align: end;
   -ms-flex-align: end;
   align-items: flex-end;
-  padding-bottom: 170px;
+  padding-bottom: 130px;
   padding-top: 120px;
 }
 
@@ -6579,24 +6579,29 @@ label.cbx {
   width: 100%;
   background-color: #F4EFFC;
   z-index: 2;
-  padding: 60px;
+  padding: 30px 60px;
 }
 
 .cucu-company .cucu-form-content .cucu-info-group{
   display: flex;
-  align-items: center;
-margin-bottom: 10px;
-
+  align-items:  flex-start;;
+margin-bottom: 20px;
+color: #444;
+letter-spacing: 1px;
 }
+
+.cucu-info-group:first-child p{
+color: #F2706D!important;
+}
+
 .cucu-company .cucu-form-content h3{
   font-size: .9rem;
-  width: 70px;
+  width: 95px;
 }
 .cucu-company .cucu-form-content p{
   margin: 0;
 font-size: .85rem;
 margin-left: 20px;
-color: #444;
 }
 
 .cucu-company
@@ -6692,10 +6697,20 @@ color: #444;
   position: relative;
   z-index: 3;
 }
+.cucu-company .cucu-instagram-frame a img{
+  transition: all .3s;
+}
+.cucu-company .cucu-instagram-frame a:hover img{
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 6px;
+  transition: all .3s;
+  width: 35px;
+  padding: 5px;
+}
 
 .cucu-company .cucu-content .cucu-position-fix h1 {
   margin-left: -80px;
-  padding: 55px 20px;
+  padding: 30px 20px;
   text-align: center;
   position: relative;
   z-index: 2;
@@ -8339,9 +8354,15 @@ color: #444;
   width: 20px;
 }
 
-.cucu-land-space-operations .cucu-bottom-panel .cucu-instagram a:hover {
-  -webkit-transform: scale(1.2);
-  transform: scale(1.2);
+.cucu-land-space-operations .cucu-bottom-panel .cucu-instagram a:hover img {
+  /* -webkit-transform: scale(1.2);
+  transform: scale(1.2); */
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 6px;
+  transition: all .3s;
+  width: 35px;
+  padding: 5px;
+  transition: all .3s;
 }
 
 .cucu-land-space-operations .cucu-bottom-panel .cucu-mail {
