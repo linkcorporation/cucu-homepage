@@ -3709,7 +3709,7 @@ label.cbx {
   }
 }
 
-/* CUCU Welcome
+/* CuCu Welcome
 ==================================== */
 
 .cucu-welcome {
@@ -3718,7 +3718,7 @@ label.cbx {
   overflow: hidden;
   background-color: #fff;
   padding: 35px 20px 0 20px;;
-  margin-top: 20px;
+  /* margin-top: 20px; */
 }
 
 /* .cucu-welcome .cucu-waves svg{
@@ -3776,18 +3776,19 @@ label.cbx {
   width: 100%;
   padding-bottom: 0;
   height: calc(var(--vh, 1vh) * 100);
+  /* text-align: center; */
 }
 
 .cucu-welcome .cucu-content .rb-object-frame .cucu-obj-1 video{
   position: absolute;
-  /* height: 100%; */
-  width: 100%;
+  height: 100%;
+  /* width: 100%; */
 }
 
 .cucu-welcome .cucu-content .cucu-caption {
   position: absolute;
   width: 100%;
-  height: 100%;
+  /* height: 100%; */
   padding: 200px 80px 80px;
   z-index: 1;
   top: 50%;
@@ -3910,7 +3911,7 @@ label.cbx {
   text-transform: uppercase;
 } */
 
-.cucu-welcome .cucu-content .cucu-caption .cucu-description .cucu-link {
+.cucu-welcome .cucu-link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3920,7 +3921,7 @@ label.cbx {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  margin-bottom: 40px;
+  margin-bottom: 25px;
 }
 
 .cucu-welcome .cucu-description .cucu-link img {
@@ -4566,7 +4567,7 @@ label.cbx {
 .cucu-shop .cucu-description .cucu-text h1 {
 	font-weight: normal;
 	font-size: 60px;
-	text-transform: uppercase;
+	/* text-transform: uppercase; */
 }
 
 .cucu-shop .cucu-description .cucu-text .cucu-suptitle {
