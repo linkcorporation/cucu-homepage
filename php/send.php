@@ -11,7 +11,7 @@
 	<link rel="stylesheet" href="../css/plugins/swiper.min.css">
 	<!-- fancybox css -->
 	<link rel="stylesheet" href="../css/plugins/fancybox.min.css">
-	<!-- orabel css -->
+	<!-- cucu css -->
 	<link rel="stylesheet" href="../css/style.css">
 	<!-- page title -->
 	<title>CuCu.co.ltd</title>
@@ -81,7 +81,7 @@
 		$to = "websolutions.ultimate@gmail.com"; // Your email goes here	
 		$subject = "Request";
 		
-		$headers = "From: Orabel <replyto@yourdomain.com>";		
+		$headers = "From: cucu <replyto@yourdomain.com>";		
 
 		$message = "Request is arrived with the details below." . "\n\n";
 		$message .= "CONTACT DATA" . "\n";
@@ -100,7 +100,7 @@
 		$usersubject = "Request confirmation";
 		$usermessage = "Dear " . $customer_name . "," . "\n\n" . "Thank you for contacting us. We will reply shortly." . "\n\n";
 		$usermessage .= "Best Regards," . "\n";
-		$usermessage .= "Orabel Team";
+		$usermessage .= "cucu Team";
 
 		// Send to the user
 		mail($user, $usersubject, $usermessage, $headers);
