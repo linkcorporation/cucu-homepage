@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-	<meta name="robots" content="noindex">
-	<meta name="googlebot" content="noindex">
+    <meta name="robots" content="noindex" />
+    <meta name="googlebot" content="noindex" />
     <!-- favicon  -->
     <link
       rel="shortcut icon"
@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="./css/plugins/swiper.min.css" />
     <!-- fancybox css -->
     <link rel="stylesheet" href="./css/plugins/fancybox.min.css" />
-    <!-- orabel css -->
+    <!-- cucu css -->
     <link rel="stylesheet" href="./css/style.css" />
     <!-- font css -->
     <link
@@ -33,26 +33,27 @@
       <!-- page loader -->
       <div class="cucu-loader-frame">
         <div class="cucu-loader">
+          <img src="./img/cucu_logo_white.png" alt="cucu">
           <div class="cucu-deco-1">
             <div class="cucu-prog"></div>
           </div>
-          <div class="cucu-deco-2">
+          <!-- <div class="cucu-deco-2">
             <div class="cucu-spiner"></div>
-          </div>
+          </div> -->
         </div>
       </div>
       <!-- page loader end -->
       <div id="cucu-dynamic-content" class="transition-fade">
         <div class="cucu-all-frame">
-          <div class="cucu-contact">
-            <a href="tel:+123456890" class="contact-tag">
+          <div id="contact-btn" class="cucu-contact">
+            <a href="#cucu-contact-form" class="contact-tag">
               <img src="./img/ui/mail.svg" alt="mail" />
             </a>
             <a href="tel:+86364274149" class="contact-tag">
               <img src="./img/ui/tel.svg" alt="tel" />
             </a>
           </div>
-		  <a href="#" class="cucu-go-top"><h2>TOP</h2></a>
+          <a href="#" id="page-top"><h2>TOP</h2></a>
           <div class="cucu-top-menu-frame">
             <div class="cucu-waves">
               <svg
@@ -91,7 +92,7 @@
                 </g>
               </svg>
             </div>
-            <div class="cucu-grid cucu-category-list">
+            <div id="page-link" class="cucu-grid cucu-category-list">
               <div class="cucu-g cucu-sm-100">
                 <div class="cucu-logo">
                   <img src="./img/cucu_shortcut_icon.ico" alt="Cucu" />
@@ -126,10 +127,7 @@
               <div class="cucu-g cucu-sm-100">
                 <a href="#cucu-real-estate" class="cucu-category">
                   <div class="category-img">
-                    <img
-                      src="./img/category/category_01.jpg"
-                      alt=""
-                    />
+                    <img src="./img/category/category_01.jpg" alt="" />
                   </div>
                   <h2>不動産・ビル管理</h2>
                   <div class="eng-text">
@@ -207,7 +205,7 @@
                 </a>
               </div>
               <div class="cucu-g cucu-sm-100">
-                <div class="cucu-category">
+                <a href="#cucu-event" class="cucu-category">
                   <div class="category-img">
                     <img src="./img/category/category_08.jpg" alt="" />
                   </div>
@@ -215,10 +213,10 @@
                   <div class="eng-text">
                     <p>event</p>
                   </div>
-                </div>
+                </a>
               </div>
               <div class="cucu-g cucu-sm-100">
-                <div class="cucu-category">
+                <a href="#cucu-shop" class="cucu-category">
                   <div class="category-img">
                     <img src="./img/category/category_09.jpg" alt="" />
                   </div>
@@ -226,10 +224,10 @@
                   <div class="eng-text">
                     <p>shop</p>
                   </div>
-                </div>
+                </a>
               </div>
               <div class="cucu-g cucu-sm-100">
-                <div class="cucu-category">
+                <a href="#cucu-company" class="cucu-category">
                   <div class="category-img">
                     <img src="./img/category/category_10.jpg" alt="" />
                   </div>
@@ -237,70 +235,9 @@
                   <div class="eng-text">
                     <p>company overview</p>
                   </div>
-                </div>
+                </a>
               </div>
             </div>
-            <!-- <div class="cucu-top-menu">
-				<a href="index.html" class="cucu-logo-frame">
-					<img src="./img/cucu_shortcut_icon.ico" alt="Cucu">
-				</a>
-				<div class="cucu-right-side">
-					<div class="cucu-menu-frame">
-						<nav>
-							<ul class="cucu-menu">
-								<li class="cucu-has-children">
-									<a href="home-1.html">Home</a>
-									<ul>
-										<li><a href="home-1.html">Home 1</a></li>
-										<li><a href="home-2.html">Home 2</a></li>
-										<li><a href="home-3.html">Home 3</a></li>
-										<li><a href="home-4.html">Home 4</a></li>
-										<li><a href="home-5.html">Home 5</a></li>
-									</ul>
-								</li>
-								<li class="cucu-has-children">
-									<a href="about-1.html">About</a>
-									<ul>
-										<li><a href="about-1.html">Type 1</a></li>
-										<li><a href="about-2.html">Type 2</a></li>
-										<li><a href="about-3.html">Type 3</a></li>
-									</ul>
-								</li>
-								<li class="cucu-has-children">
-									<a href="portfolio-1.html">Portfolio</a>
-									<ul>
-										<li><a href="portfolio-1.html">Type 1</a></li>
-										<li><a href="portfolio-2.html">Type 2</a></li>
-										<li><a href="portfolio-3.html">Type 3</a></li>
-										<li><a href="portfolio-4.html">Type 4</a></li>
-										<li><a href="portfolio-5.html">Type 5</a></li>
-									</ul>
-								</li>
-								<li class="cucu-has-children cucu-current">
-									<a href="blog-1.html">Blog</a>
-									<ul>
-										<li><a href="blog-1.html">Type 1</a></li>
-										<li><a href="blog-2.html">Type 2</a></li>
-										<li><a href="blog-3.html">Classic list</a></li>
-										<li><a href="blog-4.html">Publication</a></li>
-									</ul>
-								</li>
-								<li class="cucu-has-children">
-									<a href="contact-1.html">Contacts</a>
-									<ul>
-										<li><a href="contact-1.html">Type 1</a></li>
-										<li><a href="contact-2.html">Type 2</a></li>
-										<li><a href="contact-3.html">Type 3</a></li>
-									</ul>
-								</li>
-							</ul>
-						</nav>
-					</div>
-				</div>
-				<div class="cucu-menu-btn">
-					<span></span>
-				</div>
-			</div> -->
           </div>
 
           <div class="cucu-category-content">
@@ -308,18 +245,53 @@
             <div id="cucu-news" class="cucu-news">
               <div class="cucu-banner">
                 <h1>お知らせ</h1>
-                <!-- <p>
-					Tenetur est, praesentium nam non expedita molestias nobis labore
-					magnam, <br />dicta incidunt beatae consequuntur iusto suscipit
-					id et possimus.
-				  </p> -->
               </div>
 
               <div class="cucu-news-list">
                 <div class="cucu-grid cucu-padding-grid">
                   <div class="cucu-g-33 cucu-md-50 cucu-sm-100">
                     <a
-                      href="https://www.instagram.com/p/ClBLRbBSxoH/?igshid=NGJjMDIxMWI%3D%22%3Ehttps%3A%2F%2Fwww.instagram.com%2Fp%2FClBLRbBSxoH%2F%3Figshid%3DNGJjMDIxMWI%3D"
+                      href="https://www.instagram.com/p/CmTAOGGLNlQ/"
+                      target="_blank"
+                      class="cucu-blog-card"
+                    >
+                      <div class="cucu-photo-frame cucu-active">
+                        <img
+                          src="https://64.media.tumblr.com/88e21f060116b6d04aedfc7925a7cb22/5bd86012664e56e6-93/s500x750/04f1dc1e54260b1368f3286c15885129d6f6f921.jpg"
+                          alt="photo"
+                        />
+                      </div>
+                      <div class="cucu-post-text">
+                        <div class="cucu-date">18 Dec 2022</div>
+                        <p>
+                          燃える太陽の陽<br />見つめられる光の眼<br />尋ねられた お前は本物か<br />嘘のない人生を創る 自分らしく
+                        </p>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="cucu-g-33 cucu-md-50 cucu-sm-100">
+                    <a
+                      href="https://www.instagram.com/p/CmSYZiEyjJ7/"
+                      target="_blank"
+                      class="cucu-blog-card"
+                    >
+                      <div class="cucu-photo-frame cucu-active">
+                        <img
+                          src="https://64.media.tumblr.com/92b38310ee46e48d7e03bf41e6ed5a1c/283a8fee32356389-f7/s500x750/c03b0492c29f27b47e995392fe0d8e400bc6dd90.jpg"
+                          alt="photo"
+                        />
+                      </div>
+                      <div class="cucu-post-text">
+                        <div class="cucu-date">18 Dec 2022</div>
+                        <p>カラスの名はCool<br />静かに 独りこの街を見張る
+                          彼は 街の異変に敏感だ!<br />感じとる力 私も研く
+                        </p>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="cucu-g-33 cucu-md-50 cucu-sm-100">
+                    <a
+                      href="https://www.instagram.com/p/ClBLRbBSxoH/?igshid=NGJjMDIxMWI="
                       target="_blank"
                       class="cucu-blog-card"
                     >
@@ -331,52 +303,7 @@
                       </div>
                       <div class="cucu-post-text">
                         <div class="cucu-date">16 Nov 2022</div>
-                        <!-- <h2>タイトルテキストテキストテキストテキストテキストテキ</h2> -->
-                        <p>
-                          2022秋の中にこっそり 影が現れる。<br />何かに向かって影は伸びる<br />影が季節を呑み込む
-                        </p>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="cucu-g-33 cucu-md-50 cucu-sm-100">
-                    <a
-                      href="https://www.instagram.com/p/Ck5lu50SNH0/?igshid=NGJjMDIxMWI="
-                      target="_blank"
-                      class="cucu-blog-card"
-                    >
-                      <div class="cucu-photo-frame cucu-active">
-                        <img
-                          src="https://64.media.tumblr.com/da5621f123505c5ea611eb00c66cc483/e8046d88bd58608b-69/s500x750/b854678a96fa112b06f0a9cf7a20ccb3e3ff7a3f.jpg"
-                          alt="photo"
-                        />
-                      </div>
-                      <div class="cucu-post-text">
-                        <div class="cucu-date">13 Nov 2022</div>
-                        <p>
-                          新たな時代の花開く<br />時代の女神登場
-                          (岡本太郎記念館)
-                        </p>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="cucu-g-33 cucu-md-50 cucu-sm-100">
-                    <a
-                      href="https://www.instagram.com/p/CabIh2HvpcF/?utm_medium=tumblr"
-                      target="_blank"
-                      class="cucu-blog-card"
-                    >
-                      <div class="cucu-photo-frame cucu-active">
-                        <img
-                          src="https://64.media.tumblr.com/a400377129b22e984c6ad326577d8b48/2b728da623e80761-c4/s500x750/7904cbfb1398a71d0e103f83ffec7830938260e5.jpg"
-                          alt="photo"
-                        />
-                      </div>
-                      <div class="cucu-post-text">
-                        <div class="cucu-date">15 March 2022</div>
-                        <p>
-                          日本の山 雪に包まれ 純白の山<br />
-                          山も始まりです🏔️
-                        </p>
+                        <p>2022秋の中にこっそり 影が現れる。何かに向かって影は伸びる。<br />影が季節を呑み込む</p>
                       </div>
                     </a>
                   </div>
@@ -390,7 +317,7 @@
           <div id="cucu-real-estate" class="cucu-real-estate">
             <div class="cucu-top-bar-frame">
               <div class="cucu-content cucu-top-bar">
-                <h2>CUCU.<span>Real Estate</span></h2>
+                <h2>CuCu.<span>Real Estate</span></h2>
                 <h1>不動産・ビル管理</h1>
               </div>
             </div>
@@ -711,7 +638,7 @@
                     <div class="cucu-grid cucu-sm-reverse">
                       <div class="cucu-g-30 cucu-sm-100">
                         <div class="cucu-position-fix">
-                          <span class="cucu-title-2">CUCU.</span>
+                          <span class="cucu-title-2">CuCu.</span>
                           <div
                             class="cucu-photo-frame cucu-obj-2"
                             data-swiper-parallax-y="100"
@@ -745,8 +672,60 @@
                           >
                             <h2>建築・<br />内装</h2>
                             <span class="cucu-suptitle"
-                              >氣が整うと、もっと人生を真剣に生きたくなる<br />そんな風に思える設計を心掛けています。<br /><br />CuCuの建築設計では<br />
-                              九星気学、風水易学等の精神世界の観点から、お客様の五感を磨く空間を創造致します。<br />積極的に新しいことにチャレンジしたいと、日々の生活がワクワクするようになります。<br />「氣が整うと、もっと人生を真剣に生きたくなる」<br />私たちと一緒に、貴方だけの空間を設計しませんか。<br /><br />貴方に最適な空間をお届けするには、設計から作ってしまうことが最も確実です。<br />ベテランスタッフが、風水学に則った最高の建築設計をご提供致します。</span
+                              >氣が整うと、もっと人生を真剣に生きたくなる<br />そんな風に思える設計を心掛けています。<br /><br />貴方に最適な空間をお届けするには、設計から作ってしまうことが最も確実です。<br />ベテランスタッフが、風水学に則った最高の建築設計をご提供致します。</span
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- 02 -->
+                <div class="swiper-slide">
+                  <div
+                    class="cucu-content"
+                    data-swiper-parallax="-200"
+                    data-swiper-parallax-opacity="0"
+                  >
+                    <div class="cucu-grid cucu-sm-reverse">
+                      <div class="cucu-g-30 cucu-sm-100">
+                        <div class="cucu-position-fix">
+                          <span class="cucu-title-2">CuCu.</span>
+                          <div
+                            class="cucu-photo-frame cucu-obj-2"
+                            data-swiper-parallax-y="100"
+                            data-swiper-parallax-scale="0.5"
+                            data-swiper-parallax-duration="1250"
+                          >
+                            <img
+                              src="./img/建築・内装/construction_05.jpg"
+                              alt="photo"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="cucu-g-70 cucu-sm-100">
+                        <div class="rb-object-frame">
+                          <div
+                            class="cucu-photo-frame cucu-obj-1"
+                            data-swiper-parallax-y="-100"
+                            data-swiper-parallax-scale="0.5"
+                            data-swiper-parallax-duration="1300"
+                          >
+                            <img
+                              src="./img/建築・内装/construction_06.jpg"
+                              alt="photo"
+                            />
+                          </div>
+                          <div
+                            class="cucu-slide-caption"
+                            data-swiper-parallax-y="200"
+                            data-swiper-parallax-scale="0.5"
+                          >
+                            <h2>建築・<br />内装</h2>
+                            <span class="cucu-suptitle"
+                              >CuCuの建築設計では<br />
+                              九星気学、風水易学等の精神世界の観点から、お客様の五感を磨く空間を創造致します。<br />積極的に新しいことにチャレンジしたいと、日々の生活がワクワクするようになります。<br />「氣が整うと、もっと人生を真剣に生きたくなる」<br /><br />私たちと一緒に、貴方だけの空間を設計しませんか。</span
                             >
                           </div>
                         </div>
@@ -759,12 +738,12 @@
               <div class="cucu-description">
                 <span></span>
                 <div class="cucu-nav">
-                  <div class="cucu-nav-label"></div>
+                  <div class="cucu-nav-label">CuCuの<br>建築設計では...</div>
                   <div class="cucu-prev">
-                    <!-- <img src="./img/ui/arrow-2.svg" alt="arrow" /> -->
+                    <img src="./img/ui/arrow-2.svg" alt="arrow" />
                   </div>
                   <div class="cucu-next">
-                    <!-- <img src="./img/ui/arrow-2.svg" alt="arrow" /> -->
+                    <img src="./img/ui/arrow-2.svg" alt="arrow" />
                   </div>
                 </div>
               </div>
@@ -780,24 +759,24 @@
                   デザイン<span class="sub-title"> - オシノビジャパン</span>
                 </h2>
                 <div>
-					<a
-					  href="https://www.oshinobijapan.com/"
-					  target="_blank"
-					  data-no-swup
-					  ><img src="./img/ui/design-hp.svg" alt="instagram"
-					/></a>
-					<a
+                  <a
+                    href="https://www.oshinobijapan.com/"
+                    target="_blank"
+                    data-no-swup
+                    ><img src="./img/ui/design-hp.svg" alt="instagram"
+                  /></a>
+                  <a
                     href="https://shotaro.fashionstore.jp/"
                     target="_blank"
                     data-no-swup
                     ><img src="./img/ui/shop.svg" alt="instagram"
-					/></a>
-					<a
-					  href="https://www.instagram.com/oshinobijapan/?igshid=YmMyMTA2M2Y%3D"
-					  target="_blank"
-					  data-no-swup
-					  ><img src="./img/ui/design-instagram.svg" alt="instagram"
-					/></a>
+                  /></a>
+                  <a
+                    href="https://www.instagram.com/oshinobijapan/?igshid=YmMyMTA2M2Y%3D"
+                    target="_blank"
+                    data-no-swup
+                    ><img src="./img/ui/design-instagram.svg" alt="instagram"
+                  /></a>
                 </div>
               </div>
             </div>
@@ -828,7 +807,10 @@
                             data-swiper-parallax-scale="0.5"
                             data-swiper-parallax-duration="1250"
                           >
-                            <img src="./img/デザイン/design_01.png" alt="photo" />
+                            <img
+                              src="./img/デザイン/design_01.png"
+                              alt="photo"
+                            />
                             <a
                               data-fancybox="gallery"
                               data-no-swup
@@ -901,7 +883,10 @@
                             data-swiper-parallax-scale="0.5"
                             data-swiper-parallax-duration="1250"
                           >
-                            <img src="./img/デザイン/design_04.png" alt="photo" />
+                            <img
+                              src="./img/デザイン/design_04.png"
+                              alt="photo"
+                            />
                             <a
                               data-fancybox="gallery"
                               data-no-swup
@@ -972,7 +957,10 @@
                             data-swiper-parallax-scale="0.5"
                             data-swiper-parallax-duration="1250"
                           >
-                            <img src="./img/デザイン/design_07.png" alt="photo" />
+                            <img
+                              src="./img/デザイン/design_07.png"
+                              alt="photo"
+                            />
                             <a
                               data-fancybox="gallery"
                               data-no-swup
@@ -1043,7 +1031,10 @@
                             data-swiper-parallax-scale="0.5"
                             data-swiper-parallax-duration="1250"
                           >
-                            <img src="./img/デザイン/design_10.png" alt="photo" />
+                            <img
+                              src="./img/デザイン/design_10.png"
+                              alt="photo"
+                            />
                             <a
                               data-fancybox="gallery"
                               data-no-swup
@@ -1114,7 +1105,10 @@
                             data-swiper-parallax-scale="0.5"
                             data-swiper-parallax-duration="1250"
                           >
-                            <img src="./img/デザイン/design_13.png" alt="photo" />
+                            <img
+                              src="./img/デザイン/design_13.png"
+                              alt="photo"
+                            />
                             <a
                               data-fancybox="gallery"
                               data-no-swup
@@ -1186,29 +1180,36 @@
 
           <!-- 天然石 BEGIN -->
           <div id="cucu-natural-stone" class="cucu-natural-stone">
-			<div class="cucu-top-bar-frame">
-				<div class="cucu-content cucu-top-bar">
-					<div class="cucu-stone-frame">
-						<div class="cucu-stone-title">
-							<h1>天然石</h1>
-						</div>
-						<div class="cucu-grid cucu-padding-grid">
-							<div class="cucu-g-50 cucu-sm-100">
-								<div class="cucu-post-card">
-									<div class="cucu-date">ERI SHINDO Profile</div>
-										<h2><span>Stone Designer</span><br><br>天然石を使った装飾品、服飾品、調度品、室内インテリア等の製作を手掛ける。<br>公益財団法人 日本生涯学習協議会認定「天然石マスター」取得。<br>一般財団法人日本能力開発推進協会「パワーストーンセラピスト資格」取得。<br>益富地学会館認定「鉱物鑑定士」取得</h2>
-								</div>
-							</div>
-							<div class="cucu-g-50 cucu-sm-100">
-								<div class="cucu-post-card">
-									<div class="cucu-date">- Only your Key Stone -</div>
-										<h2>未来はいつだって無限に展開している。<br>わたしたちは無数にある扉の中から一つだけを選択し、また次の扉へと道を進んで行く。<br><br>ーあなたはどんな道を歩んでいきますかー<br><br>ーその時、どんな扉の鍵を望みますかー<br><br>新たな人生の扉を開ける勇気を持つには「パワーストーン」は効果的に力を与えてくれます。この勇気こそが「人生の新たな鍵」となります。自らの望む鍵、あなただけのカ鍵を身に着け進んで行きましょう。<br><br>あなたにベストマッチするKey Stoneに出会いましょう。</h2>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
+            <div class="cucu-top-bar-frame">
+              <div class="cucu-content cucu-top-bar">
+                <div class="cucu-stone-frame">
+                  <div class="cucu-stone-title">
+                    <h1>天然石</h1>
+                  </div>
+                  <div class="cucu-grid cucu-padding-grid">
+                    <div class="cucu-g-50 cucu-sm-100">
+                      <div class="cucu-post-card">
+                        <div class="cucu-date">ERI SHINDO Profile</div>
+                        <h2>
+                          <span>Stone Designer</span
+                          ><br /><br />天然石を使った装飾品、服飾品、調度品、室内インテリア等の製作を手掛ける。<br />公益財団法人
+                          日本生涯学習協議会認定「天然石マスター」取得。<br />一般財団法人日本能力開発推進協会「パワーストーンセラピスト資格」取得。<br />益富地学会館認定「鉱物鑑定士」取得
+                        </h2>
+                      </div>
+                    </div>
+                    <div class="cucu-g-50 cucu-sm-100">
+                      <div class="cucu-post-card">
+                        <div class="cucu-date">- Only your Key Stone -</div>
+                        <h2>
+                          未来はいつだって無限に展開している。<br />わたしたちは無数にある扉の中から一つだけを選択し、また次の扉へと道を進んで行く。<br /><br />ーあなたはどんな道を歩んでいきますかー<br /><br />ーその時、どんな扉の鍵を望みますかー<br /><br />新たな人生の扉を開ける勇気を持つには「パワーストーン」は効果的に力を与えてくれます。この勇気こそが「人生の新たな鍵」となります。自らの望む鍵、あなただけのカ鍵を身に着け進んで行きましょう。<br /><br />あなたにベストマッチするKey
+                          Stoneに出会いましょう。
+                        </h2>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
             <div class="swiper-container cucu-slider-3s">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
@@ -1218,7 +1219,10 @@
                       <div class="cucu-g-100 cucu-sm-100">
                         <div class="cucu-object-frame">
                           <div class="cucu-photo-frame cucu-obj-1">
-                            <img src="./img/天然石/natural_stone_1.jpg" alt="photo" />
+                            <img
+                              src="./img/天然石/natural_stone_1.jpg"
+                              alt="photo"
+                            />
                             <a
                               data-fancybox="gallery"
                               data-no-swup
@@ -1228,7 +1232,11 @@
                             /></a>
                           </div>
                           <div class="cucu-slide-caption">
-                            <h2>Aura Crystal<span>蒸着水晶 - オーラクリスタル</span></h2>
+                            <h2>
+                              Aura Crystal<span
+                                >蒸着水晶 - オーラクリスタル</span
+                              >
+                            </h2>
                           </div>
                         </div>
                       </div>
@@ -1242,7 +1250,10 @@
                       <div class="cucu-g-100 cucu-sm-100">
                         <div class="cucu-object-frame">
                           <div class="cucu-photo-frame cucu-obj-1">
-                            <img src="./img/天然石/natural_stone_2.jpg" alt="photo" />
+                            <img
+                              src="./img/天然石/natural_stone_2.jpg"
+                              alt="photo"
+                            />
                             <a
                               data-fancybox="gallery"
                               data-no-swup
@@ -1252,7 +1263,9 @@
                             /></a>
                           </div>
                           <div class="cucu-slide-caption">
-							<h2>SARDONYX<span>紅縞瑪瑙 - サードオニキス</span></h2>
+                            <h2>
+                              SARDONYX<span>紅縞瑪瑙 - サードオニキス</span>
+                            </h2>
                           </div>
                         </div>
                       </div>
@@ -1266,7 +1279,10 @@
                       <div class="cucu-g-100 cucu-sm-100">
                         <div class="cucu-object-frame">
                           <div class="cucu-photo-frame cucu-obj-1">
-                            <img src="./img/天然石/natural_stone_3.jpg" alt="photo" />
+                            <img
+                              src="./img/天然石/natural_stone_3.jpg"
+                              alt="photo"
+                            />
                             <a
                               data-fancybox="gallery"
                               data-no-swup
@@ -1276,7 +1292,7 @@
                             /></a>
                           </div>
                           <div class="cucu-slide-caption">
-							<h2>Sun Stone<span>日長石 - サンストーン</span></h2>
+                            <h2>Sun Stone<span>日長石 - サンストーン</span></h2>
                           </div>
                         </div>
                       </div>
@@ -1290,7 +1306,10 @@
                       <div class="cucu-g-100 cucu-sm-100">
                         <div class="cucu-object-frame">
                           <div class="cucu-photo-frame cucu-obj-1">
-                            <img src="./img/天然石/natural_stone_4.jpg" alt="photo" />
+                            <img
+                              src="./img/天然石/natural_stone_4.jpg"
+                              alt="photo"
+                            />
                             <a
                               data-fancybox="gallery"
                               data-no-swup
@@ -1300,7 +1319,9 @@
                             /></a>
                           </div>
                           <div class="cucu-slide-caption">
-							<h2>Idoerase<span>ベスブ石 - アイドクレーズ</span></h2>
+                            <h2>
+                              Idoerase<span>ベスブ石 - アイドクレーズ</span>
+                            </h2>
                           </div>
                         </div>
                       </div>
@@ -1314,7 +1335,10 @@
                       <div class="cucu-g-100 cucu-sm-100">
                         <div class="cucu-object-frame">
                           <div class="cucu-photo-frame cucu-obj-1">
-                            <img src="./img/天然石/natural_stone_5.jpg" alt="photo" />
+                            <img
+                              src="./img/天然石/natural_stone_5.jpg"
+                              alt="photo"
+                            />
                             <a
                               data-fancybox="gallery"
                               data-no-swup
@@ -1338,7 +1362,10 @@
                       <div class="cucu-g-100 cucu-sm-100">
                         <div class="cucu-object-frame">
                           <div class="cucu-photo-frame cucu-obj-1">
-                            <img src="./img/天然石/natural_stone_6.jpg" alt="photo" />
+                            <img
+                              src="./img/天然石/natural_stone_6.jpg"
+                              alt="photo"
+                            />
                             <a
                               data-fancybox="gallery"
                               data-no-swup
@@ -1348,7 +1375,11 @@
                             /></a>
                           </div>
                           <div class="cucu-slide-caption">
-							<h2>Limon in Quartz<span>褐鉄鉱 - ライモナイトインクォーツ</span></h2>
+                            <h2>
+                              Limon in Quartz<span
+                                >褐鉄鉱 - ライモナイトインクォーツ</span
+                              >
+                            </h2>
                           </div>
                         </div>
                       </div>
@@ -1362,7 +1393,10 @@
                       <div class="cucu-g-100 cucu-sm-100">
                         <div class="cucu-object-frame">
                           <div class="cucu-photo-frame cucu-obj-1">
-                            <img src="./img/天然石/natural_stone_7.jpg" alt="photo" />
+                            <img
+                              src="./img/天然石/natural_stone_7.jpg"
+                              alt="photo"
+                            />
                             <a
                               data-fancybox="gallery"
                               data-no-swup
@@ -1372,7 +1406,11 @@
                             /></a>
                           </div>
                           <div class="cucu-slide-caption">
-                            <h2>Lemon Auartz<span>レモン水晶 - レモンクォーツ</span></h2>
+                            <h2>
+                              Lemon Auartz<span
+                                >レモン水晶 - レモンクォーツ</span
+                              >
+                            </h2>
                           </div>
                         </div>
                       </div>
@@ -1386,7 +1424,10 @@
                       <div class="cucu-g-100 cucu-sm-100">
                         <div class="cucu-object-frame">
                           <div class="cucu-photo-frame cucu-obj-1">
-                            <img src="./img/天然石/natural_stone_8.jpg" alt="photo" />
+                            <img
+                              src="./img/天然石/natural_stone_8.jpg"
+                              alt="photo"
+                            />
                             <a
                               data-fancybox="gallery"
                               data-no-swup
@@ -1396,7 +1437,11 @@
                             /></a>
                           </div>
                           <div class="cucu-slide-caption">
-                            <h2>Baby in zaisite<span>灰廉石 - ルビーインゾイサイト</span></h2>
+                            <h2>
+                              Baby in zaisite<span
+                                >灰廉石 - ルビーインゾイサイト</span
+                              >
+                            </h2>
                           </div>
                         </div>
                       </div>
@@ -1424,7 +1469,7 @@
             id="cucu-land-space-operations"
             class="cucu-land-space-operations"
           >
-			<div class="cucu-content cucu-top-bar"></div>
+            <div class="cucu-content cucu-top-bar"></div>
             <div class="cucu-grid cucu-sm-reverse">
               <div class="cucu-g-40 cucu-sm-100">
                 <div class="rb-object-frame">
@@ -1438,8 +1483,13 @@
                   <div class="cucu-grid">
                     <div class="cucu-g-60 cucu-sm-100">
                       <div class="cucu-about-text">
-                        <h1>Land<br>Space<br>Operations</h1>
-                        <p>私達は、この地球の大地の上で、建物を建て、そこに住み、生活を営み、仕事を行い、生きています。<br>CuCu(進藤眞理子)が行うLand space operations（風水）は、この地球の上に私達が存在することをしっかりと理解して頂き、<br>いつもお世話になっている大地、地球と正しい方法でコンタクトをとることを目的に実施させて頂いております。<br>私達　人は、この宇宙の中で天と地のエネルギー(氣)を受けとって生きて行けるように成り立ってます。<br>天は陽の氣(+)であり、地は陰の氣(-)であります。<br>天の氣と地の氣が合流した時｢+｣と｢-｣、｢陽｣と｢陰｣が合流して　ゼロ(0)になり、初めて新しい氣が身体の中に<br>生まれるのです。このゼロの氣(0)こそが「元氣」と呼ばれるパワーです。<br><br>『元氣』は、あらゆる事柄を、生み出し、解決し、私たちの暮らしを新しい展開へと繋ぐエネルギーとなります。<br>この天と地のバランスのとれた氣を常時受け取れる場所や、空間を創り出す手法がLand Spece Operationsです。</p>
+                        <h1>Land<br />Space<br />Operations</h1>
+                        <p>
+                          私達は、この地球の大地の上で、建物を建て、そこに住み、生活を営み、仕事を行い、生きています。<br />CuCu(進藤眞理子)が行うLand
+                          space
+                          operations（風水）は、この地球の上に私達が存在することをしっかりと理解して頂き、<br />いつもお世話になっている大地、地球と正しい方法でコンタクトをとることを目的に実施させて頂いております。<br />私達　人は、この宇宙の中で天と地のエネルギー(氣)を受けとって生きて行けるように成り立ってます。<br />天は陽の氣(+)であり、地は陰の氣(-)であります。<br />天の氣と地の氣が合流した時｢+｣と｢-｣、｢陽｣と｢陰｣が合流して　ゼロ(0)になり、初めて新しい氣が身体の中に<br />生まれるのです。このゼロの氣(0)こそが「元氣」と呼ばれるパワーです。<br /><br />『元氣』は、あらゆる事柄を、生み出し、解決し、私たちの暮らしを新しい展開へと繋ぐエネルギーとなります。<br />この天と地のバランスのとれた氣を常時受け取れる場所や、空間を創り出す手法がLand
+                          Spece Operationsです。
+                        </p>
                       </div>
                     </div>
                     <div class="cucu-g-40 cucu-sm-100">
@@ -1472,29 +1522,30 @@
 
           <!-- カウンセリング・ヒーリング BEGIN -->
           <div id="cucu-counseling" class="cucu-counseling">
-			<div class="cucu-content cucu-top-bar"></div>
+            <div class="cucu-content cucu-top-bar"></div>
             <div class="cucu-grid">
               <div class="cucu-g-40 cucu-sm-100">
                 <div class="rb-object-frame">
                   <div class="cucu-photo-frame cucu-obj-1">
-                    <img src="./img/カウンセリング・ヒーリング/counseling_01.jpg" alt="photo" />
+                    <img
+                      src="./img/カウンセリング・ヒーリング/counseling_01.jpg"
+                      alt="photo"
+                    />
                   </div>
-                  <h1>カウンセリング・<br>ヒーリング</h1>
+                  <h1>カウンセリング・<br />ヒーリング</h1>
                   <div class="cucu-deco"></div>
                 </div>
               </div>
               <div class="cucu-g-60 cucu-sm-100">
                 <div class="cucu-blog-frame">
                   <div class="cucu-post-text">
-                    <h2>
-						人は自然界の一部です。
-                    </h2>
+                    <h2>人は自然界の一部です。</h2>
                     <p>
-						人間には、生まれつき自然界のエネルギーが存在する。<br>嬉しい事があると元氣になったり、嫌なことがあると疲労を感じる。<br>これは、人の中に存在する自然エネルギーが揺らいだ瞬間なのです。<br>この自然エネルギーの揺らぎが、人の肉体や精神に影響を及ぼし日々の快・不快を生み出す。<br><br>CuCuのヒーリングは、人の持つ自然エネルギーのバランスを整え<br>先天的エネルギーと後天的エネルギーのバランス調整を行うメソッドです。<br>肉体のエネルギー調整から、段階を経て深くは先天的エネルギーの中にある<br>過去世エネルギーをも調整します。
+                      人間には、生まれつき自然界のエネルギーが存在する。<br />嬉しい事があると元氣になったり、嫌なことがあると疲労を感じる。<br />これは、人の中に存在する自然エネルギーが揺らいだ瞬間なのです。<br />この自然エネルギーの揺らぎが、人の肉体や精神に影響を及ぼし日々の快・不快を生み出す。<br /><br />CuCuのヒーリングは、人の持つ自然エネルギーのバランスを整え<br />先天的エネルギーと後天的エネルギーのバランス調整を行うメソッドです。<br />肉体のエネルギー調整から、段階を経て深くは先天的エネルギーの中にある<br />過去世エネルギーをも調整します。
                     </p>
                   </div>
                   <div class="cucu-post-footer">
-                    <div class="cucu-date">CUCU.</div>
+                    <div class="cucu-date">CuCu.</div>
                     <div class="cucu-share">
                       <span>ご予約専用TEL：03-6427-4149</span>
                     </div>
@@ -1508,7 +1559,7 @@
           <!-- セミナー BEGIN -->
           <div id="cucu-seminar" class="cucu-seminar">
             <div class="cucu-grid cucu-sm-reverse">
-				<!-- 01 -->
+              <!-- 01 -->
               <div class="cucu-g-40 cucu-sm-100 cucu-mb-80">
                 <div class="rb-object-frame">
                   <div class="cucu-photo-frame cucu-obj-1">
@@ -1525,15 +1576,20 @@
                       <div class="cucu-quote-frame">
                         <img src="./img/ui/quote.svg" alt="quote" />
                       </div>
-                      <p>この宇宙には、時間という概念があります。<br>時間は後戻り出来ないものです。<br>CuCuのセミナーでは、日々の時間の流れの中で起こる、変化・特徴を研究し生きる喜びの気付きに触れるための<br>多次元的理解を深める、<br>多種多様なセミナーを行っております。
+                      <p>
+                        この宇宙には、時間という概念があります。<br />時間は後戻り出来ないものです。<br />CuCuのセミナーでは、日々の時間の流れの中で起こる、変化・特徴を研究し生きる喜びの気付きに触れるための<br />多次元的理解を深める、<br />多種多様なセミナーを行っております。
                       </p>
                     </div>
-					<p class="seminar-join">参加ご希望の方は　下記までご連絡下さい（要予約）<br><br><span>【お問い合わせ・お申し込み】</span><br>TEL 03-6427-4139 cucu81@cucu-81.com CuCu株式会社<br>http://cucu-81.tumblr.com/</p>
+                    <p class="seminar-join">
+                      参加ご希望の方は　下記までご連絡下さい（要予約）<br /><br /><span
+                        >【お問い合わせ・お申し込み】</span
+                      ><br />TEL 03-6427-4139 cucu81@cucu-81.com CuCu株式会社<br />http://cucu-81.tumblr.com/
+                    </p>
                     <div class="cucu-deco"></div>
                   </div>
                 </div>
               </div>
-			  <!-- 02 -->
+              <!-- 02 -->
               <div class="cucu-g-60 cucu-sm-100">
                 <div class="cucu-about-frame">
                   <div class="cucu-about-text">
@@ -1542,14 +1598,20 @@
                       <div class="cucu-quote-frame">
                         <img src="./img/ui/quote.svg" alt="quote" />
                       </div>
-                      <p>この宇宙は多次元で成り立っています。<br>たった一つの要因で何かが起こることはなく、<br>沢山の要因がからみ、立体的宇宙を作っています。<br>この宇宙の仕組みを学び、<br>本来の「ヒーリング」を理解して頂きます。<br>あなただけの本来の力を目覚めさせ、<br>あなたとあなたの周り、この世界を大きく変容させていきます。<br>自分の力を知りたい方、目覚めさせたい方、大きく行き方を変えたい方<br>今本質を掴む時です。</p>
+                      <p>
+                        この宇宙は多次元で成り立っています。<br />たった一つの要因で何かが起こることはなく、<br />沢山の要因がからみ、立体的宇宙を作っています。<br />この宇宙の仕組みを学び、<br />本来の「ヒーリング」を理解して頂きます。<br />あなただけの本来の力を目覚めさせ、<br />あなたとあなたの周り、この世界を大きく変容させていきます。<br />自分の力を知りたい方、目覚めさせたい方、大きく行き方を変えたい方<br />今本質を掴む時です。
+                      </p>
                     </div>
-					<p class="seminar-join">参加ご希望の方は　下記までご連絡下さい（要予約）<br><br><span>【お問い合わせ・お申し込み】</span><br>TEL 03-6427-4139 cucu81@cucu-81.com CuCu株式会社<br>http://cucu-81.tumblr.com/</p>
+                    <p class="seminar-join">
+                      参加ご希望の方は　下記までご連絡下さい（要予約）<br /><br /><span
+                        >【お問い合わせ・お申し込み】</span
+                      ><br />TEL 03-6427-4139 cucu81@cucu-81.com CuCu株式会社<br />http://cucu-81.tumblr.com/
+                    </p>
                     <div class="cucu-deco"></div>
                   </div>
                 </div>
               </div>
-			  <div class="cucu-g-40 cucu-sm-100 cucu-mb-80">
+              <div class="cucu-g-40 cucu-sm-100 cucu-mb-80">
                 <div class="rb-object-frame">
                   <div class="cucu-photo-frame cucu-obj-1">
                     <img src="./img/セミナー/seminar_02.jpg" alt="photo" />
@@ -1557,8 +1619,8 @@
                   <div class="cucu-deco"></div>
                 </div>
               </div>
-			  <!-- 03 -->
-			  <div class="cucu-g-40 cucu-sm-100 cucu-mb-80">
+              <!-- 03 -->
+              <div class="cucu-g-40 cucu-sm-100 cucu-mb-80">
                 <div class="rb-object-frame">
                   <div class="cucu-photo-frame cucu-obj-1">
                     <img src="./img/セミナー/seminar_01.jpg" alt="photo" />
@@ -1574,17 +1636,24 @@
                       <div class="cucu-quote-frame">
                         <img src="./img/ui/quote.svg" alt="quote" />
                       </div>
-                      <p>世界にある9種類のオドを学び<br>仕組みを理解しこの宇宙で流れる時の流れを読み作用を知る。<br><br>9種類のod（オド）という概念がある。宇宙に<br>存在する全てのモノから発出してる物質が存在するという考え、<br>北欧の神オーディンにちなんで「オドの生命力」と名付けた。<br><br>
-						<span>ドイツの化学者  カール・フォン・ライヘンバッハ</span>
-						</p>
+                      <p>
+                        世界にある9種類のオドを学び<br />仕組みを理解しこの宇宙で流れる時の流れを読み作用を知る。<br /><br />9種類のod（オド）という概念がある。宇宙に<br />存在する全てのモノから発出してる物質が存在するという考え、<br />北欧の神オーディンにちなんで「オドの生命力」と名付けた。<br /><br />
+                        <span
+                          >ドイツの化学者 カール・フォン・ライヘンバッハ</span
+                        >
+                      </p>
                     </div>
-					<p class="seminar-join">参加ご希望の方は　下記までご連絡下さい（要予約）<br><br><span>【お問い合わせ・お申し込み】</span><br>TEL 03-6427-4139 cucu81@cucu-81.com CuCu株式会社<br>http://cucu-81.tumblr.com/</p>
+                    <p class="seminar-join">
+                      参加ご希望の方は　下記までご連絡下さい（要予約）<br /><br /><span
+                        >【お問い合わせ・お申し込み】</span
+                      ><br />TEL 03-6427-4139 cucu81@cucu-81.com CuCu株式会社<br />http://cucu-81.tumblr.com/
+                    </p>
                     <div class="cucu-deco"></div>
                   </div>
                 </div>
               </div>
-			  <!-- 04 -->
-			  <div class="cucu-g-60 cucu-sm-100">
+              <!-- 04 -->
+              <div class="cucu-g-60 cucu-sm-100">
                 <div class="cucu-about-frame">
                   <div class="cucu-about-text">
                     <h1>石の会</h1>
@@ -1592,14 +1661,20 @@
                       <div class="cucu-quote-frame">
                         <img src="./img/ui/quote.svg" alt="quote" />
                       </div>
-                      <p>クリスタルボウルの音色（Resonance）は<br>わたしたち人間の体と共鳴を起こし、その音色は脊髄から血液の中の水分へと働きかけていきます。<br>（リラクゼーション効果が科学的にも確認されています）<br><br>石と一体となる、心地良い時間を過ごしてみませんか。<br>今まで出会ったことのない、新たな石の世界へとご案内いたします。<br>今月も新しい石を紹介し、クリスタルボウルの音色とともにあなたの意識と肉体に<br>新しい石のエネルギーを響かせます。<br>あなたと石がバイブレーションを起こす度に、不思議な世界へあなたを誘います。<br><br>石のパワーをクリスタルボウルの振動にのせ、<br>あなたの体や精神の深い層へとつなぎます。<br>石のエネルギーを転写させたお水を使用したり、飲むなど<br>CuCuだけの新しい石の世界を楽しんでいただきます。</p>
+                      <p>
+                        クリスタルボウルの音色（Resonance）は<br />わたしたち人間の体と共鳴を起こし、その音色は脊髄から血液の中の水分へと働きかけていきます。<br />（リラクゼーション効果が科学的にも確認されています）<br /><br />石と一体となる、心地良い時間を過ごしてみませんか。<br />今まで出会ったことのない、新たな石の世界へとご案内いたします。<br />今月も新しい石を紹介し、クリスタルボウルの音色とともにあなたの意識と肉体に<br />新しい石のエネルギーを響かせます。<br />あなたと石がバイブレーションを起こす度に、不思議な世界へあなたを誘います。<br /><br />石のパワーをクリスタルボウルの振動にのせ、<br />あなたの体や精神の深い層へとつなぎます。<br />石のエネルギーを転写させたお水を使用したり、飲むなど<br />CuCuだけの新しい石の世界を楽しんでいただきます。
+                      </p>
                     </div>
-					<p class="seminar-join">参加ご希望の方は　下記までご連絡下さい（要予約）<br><br><span>【お問い合わせ・お申し込み】</span><br>TEL 03-6427-4139 cucu81@cucu-81.com CuCu株式会社<br>http://cucu-81.tumblr.com/</p>
+                    <p class="seminar-join">
+                      参加ご希望の方は　下記までご連絡下さい（要予約）<br /><br /><span
+                        >【お問い合わせ・お申し込み】</span
+                      ><br />TEL 03-6427-4139 cucu81@cucu-81.com CuCu株式会社<br />http://cucu-81.tumblr.com/
+                    </p>
                     <div class="cucu-deco"></div>
                   </div>
                 </div>
               </div>
-			  <div class="cucu-g-40 cucu-sm-100 cucu-mb-80">
+              <div class="cucu-g-40 cucu-sm-100 cucu-mb-80">
                 <div class="rb-object-frame">
                   <div class="cucu-photo-frame cucu-obj-1">
                     <img src="./img/セミナー/seminar_04.jpg" alt="photo" />
@@ -1613,147 +1688,278 @@
 
           <!-- イベント BEGIN -->
           <div id="cucu-event" class="cucu-event">
-			<div class="cucu-content cucu-top-bar"></div>
+            <div class="cucu-content cucu-top-bar"></div>
             <div class="cucu-grid">
-				<div class="cucu-g-25 cucu-sm-100">
-					<div class="cucu-position-fix">
-						<div class="cucu-photo-frame cucu-obj-1">
-							<img src="./img/イベント/event_02.jpg" alt="photo">
-						</div>
-					</div>
-				</div>
-				<div class="cucu-g-50 cucu-sm-100">
-					<div class="cucu-main-title">
-						<div class="cucu-suptitle">
-							<span class="cucu-number">CUCU.</span>
-							<span>Event</span>
-						</div>
-						<h1>イベント</h1>
-						<div class="cucu-button-frame">
-							<div class="cucu-btn-label">CuCuのイベントでは、<br>年・月・日・時間の流れの中で起こる、変化・特徴を研究し<br>生きる喜びや元気、気付きに触れるための<br>様々なイベントを行っております。</div>
-							<a href="＃" class="cucu-sm-button">
-								<div class="cucu-arrow"><img src="./img/ui/arrow-1.svg" alt="arrow"></div>
-							</a>
-						</div>
-					</div>
-				</div>
-				<div class="cucu-g-25 cucu-sm-100">
-					<div class="cucu-object-frame">
-						<div class="cucu-photo-frame cucu-obj-2">
-							<img src="./img/イベント/event_03.jpg" alt="photo">
-						</div>
-						<div class="cucu-photo-frame cucu-obj-3">
-							<img src="./img/イベント/event_01.jpg" alt="photo">
-						</div>
-					</div>
-				</div>
-			</div>
+              <div class="cucu-g-25 cucu-sm-100">
+                <div class="cucu-position-fix">
+                  <div class="cucu-photo-frame cucu-obj-1">
+                    <img src="./img/イベント/event_02.jpg" alt="photo" />
+                  </div>
+                </div>
+              </div>
+              <div class="cucu-g-50 cucu-sm-100">
+                <div class="cucu-main-title">
+                  <div class="cucu-suptitle">
+                    <span class="cucu-number">CuCu.</span>
+                    <span>Event</span>
+                  </div>
+                  <h1>イベント</h1>
+                  <div class="cucu-button-frame">
+                    <div class="cucu-btn-label">
+                      CuCuのイベントでは、<br />年・月・日・時間の流れの中で起こる、変化・特徴を研究し<br />生きる喜びや元気、気付きに触れるための<br />様々なイベントを行っております。
+                    </div>
+                    <a href="＃" class="cucu-sm-button">
+                      <div class="cucu-arrow">
+                        <img src="./img/ui/arrow-1.svg" alt="arrow" />
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="cucu-g-25 cucu-sm-100">
+                <div class="cucu-object-frame">
+                  <div class="cucu-photo-frame cucu-obj-2">
+                    <img src="./img/イベント/event_03.jpg" alt="photo" />
+                  </div>
+                  <div class="cucu-photo-frame cucu-obj-3">
+                    <img src="./img/イベント/event_01.jpg" alt="photo" />
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
           <!-- イベント END -->
 
           <!-- SHOP BEGIN -->
           <div id="cucu-shop" class="cucu-shop">
-			<div class="cucu-content cucu-top-bar"></div>
+            <div class="cucu-content cucu-top-bar"></div>
             <div class="swiper-container cucu-slider-1s">
-				<div class="swiper-wrapper">
-					<div class="swiper-slide">
-						<div class="cucu-content" data-swiper-parallax="-200" data-swiper-parallax-opacity="0">
-							<div class="cucu-deco" data-swiper-parallax-x="-100%" data-swiper-parallax-duration="1800"></div>
-							<div class="cucu-grid">
-								<div class="cucu-g-20 cucu-sm-30">
-									<div class="cucu-photo-frame cucu-obj-1" data-swiper-parallax-y="-100" data-swiper-parallax-scale="0.5" data-swiper-parallax-duration="1200">
-										<img src="./img/SHOP/shop_1.jpg" alt="photo">
-										<a data-fancybox="gallery" data-no-swup href="img/SHOP/shop_2.jpg" class="cucu-zoom"><img src="./img/ui/zoom.svg" alt="zoom"></a>
-									</div>
-								</div>
-								<div class="cucu-g-35 cucu-sm-70">
-									<div class="cucu-photo-frame cucu-obj-2" data-swiper-parallax-y="100" data-swiper-parallax-scale="0.5" data-swiper-parallax-duration="1250">
-										<img src="./img/SHOP/shop_2.jpg" alt="photo">
-										<a data-fancybox="gallery" data-no-swup href="img/SHOP/shop_2.jpg" class="cucu-zoom"><img src="./img/ui/zoom.svg" alt="zoom"></a>
-									</div>
-								</div>
-								<div class="cucu-g-45 cucu-sm-100">
-									<div class="cucu-photo-frame cucu-obj-3" data-swiper-parallax-y="-100" data-swiper-parallax-scale="0.5" data-swiper-parallax-duration="1300">
-										<img src="./img/SHOP/shop_3.jpg" alt="photo">
-										<a data-fancybox="gallery" data-no-swup href="img/SHOP/shop_3.jpg" class="cucu-zoom"><img src="./img/ui/zoom.svg" alt="zoom"></a>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="swiper-slide">
-						<div class="cucu-content" data-swiper-parallax="-200" data-swiper-parallax-opacity="0">
-							<div class="cucu-deco" data-swiper-parallax-x="-100%" data-swiper-parallax-duration="1800"></div>
-							<div class="cucu-grid">
-								<div class="cucu-g-20 cucu-sm-30">
-									<div class="cucu-photo-frame cucu-obj-1" data-swiper-parallax-y="-100" data-swiper-parallax-scale="0.5" data-swiper-parallax-duration="1200">
-										<img src="./img/SHOP/shop_5.jpg" alt="photo">
-										<a data-fancybox="gallery" data-no-swup href="img/SHOP/shop_5.jpg" class="cucu-zoom"><img src="./img/ui/zoom.svg" alt="zoom"></a>
-									</div>
-								</div>
-								<div class="cucu-g-35 cucu-sm-70">
-									<div class="cucu-photo-frame cucu-obj-2" data-swiper-parallax-y="100" data-swiper-parallax-scale="0.5" data-swiper-parallax-duration="1250">
-										<img src="./img/SHOP/shop_6.jpg" alt="photo">
-										<a data-fancybox="gallery" data-no-swup href="img/SHOP/shop_6.jpg" class="cucu-zoom"><img src="./img/ui/zoom.svg" alt="zoom"></a>
-									</div>
-								</div>
-								<div class="cucu-g-45 cucu-sm-100">
-									<div class="cucu-photo-frame cucu-obj-3" data-swiper-parallax-y="-100" data-swiper-parallax-scale="0.5" data-swiper-parallax-duration="1300">
-										<img src="./img/SHOP/shop_7.jpg" alt="photo">
-										<a data-fancybox="gallery" data-no-swup href="img/SHOP/shop_7.jpg" class="cucu-zoom"><img src="./img/ui/zoom.svg" alt="zoom"></a>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="swiper-slide">
-						<div class="cucu-content" data-swiper-parallax="-200" data-swiper-parallax-opacity="0">
-							<div class="cucu-deco" data-swiper-parallax-x="-100%" data-swiper-parallax-duration="1800"></div>
-							<div class="cucu-grid">
-								<div class="cucu-g-20 cucu-sm-30">
-									<div class="cucu-photo-frame cucu-obj-1" data-swiper-parallax-y="-100" data-swiper-parallax-scale="0.5" data-swiper-parallax-duration="1200">
-										<img src="./img/SHOP/shop_8.jpg" alt="photo">
-										<a data-fancybox="gallery" data-no-swup href="img/SHOP/shop_8.jpg" class="cucu-zoom"><img src="./img/ui/zoom.svg" alt="zoom"></a>
-									</div>
-								</div>
-								<div class="cucu-g-35 cucu-sm-70">
-									<div class="cucu-photo-frame cucu-obj-2" data-swiper-parallax-y="100" data-swiper-parallax-scale="0.5" data-swiper-parallax-duration="1250">
-										<img src="./img/SHOP/shop_9.jpg" alt="photo">
-										<a data-fancybox="gallery" data-no-swup href="img/SHOP/shop_9.jpg" class="cucu-zoom"><img src="./img/ui/zoom.svg" alt="zoom"></a>
-									</div>
-								</div>
-								<div class="cucu-g-45 cucu-sm-100">
-									<div class="cucu-photo-frame cucu-obj-3" data-swiper-parallax-y="-100" data-swiper-parallax-scale="0.5" data-swiper-parallax-duration="1300">
-										<img src="./img/SHOP/shop_4.jpg" alt="photo">
-										<a data-fancybox="gallery" data-no-swup href="img/SHOP/shop_4.jpg" class="cucu-zoom"><img src="./img/ui/zoom.svg" alt="zoom"></a>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="cucu-description">
-					<div class="cucu-pagination"></div>
-					<div class="cucu-text">
-						<h1 class="cucu-mb-10">CUCU <br>SHOP.</h1>
-						<!-- <span class="cucu-suptitle">Model</span> -->
-					</div>
-				</div>
-				<div class="cucu-next-btn">
-					<span>Next <br>Items</span>
-					<div class="cucu-nav">
-						<div class="cucu-prev"><img src="./img/ui/arrow-1.svg" alt="arrow"></div>
-						<div class="cucu-next"><img src="./img/ui/arrow-1.svg" alt="arrow"></div>
-					</div>
-				</div>
-			</div>
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div
+                    class="cucu-content"
+                    data-swiper-parallax="-200"
+                    data-swiper-parallax-opacity="0"
+                  >
+                    <div
+                      class="cucu-deco"
+                      data-swiper-parallax-x="-100%"
+                      data-swiper-parallax-duration="1800"
+                    ></div>
+                    <div class="cucu-grid">
+                      <div class="cucu-g-20 cucu-sm-30">
+                        <div
+                          class="cucu-photo-frame cucu-obj-1"
+                          data-swiper-parallax-y="-100"
+                          data-swiper-parallax-scale="0.5"
+                          data-swiper-parallax-duration="1200"
+                        >
+                          <img src="./img/SHOP/shop_1.jpg" alt="photo" />
+                          <a
+                            data-fancybox="gallery"
+                            data-no-swup
+                            href="img/SHOP/shop_2.jpg"
+                            class="cucu-zoom"
+                            ><img src="./img/ui/zoom.svg" alt="zoom"
+                          /></a>
+                        </div>
+                      </div>
+                      <div class="cucu-g-35 cucu-sm-70">
+                        <div
+                          class="cucu-photo-frame cucu-obj-2"
+                          data-swiper-parallax-y="100"
+                          data-swiper-parallax-scale="0.5"
+                          data-swiper-parallax-duration="1250"
+                        >
+                          <img src="./img/SHOP/shop_2.jpg" alt="photo" />
+                          <a
+                            data-fancybox="gallery"
+                            data-no-swup
+                            href="img/SHOP/shop_2.jpg"
+                            class="cucu-zoom"
+                            ><img src="./img/ui/zoom.svg" alt="zoom"
+                          /></a>
+                        </div>
+                      </div>
+                      <div class="cucu-g-45 cucu-sm-100">
+                        <div
+                          class="cucu-photo-frame cucu-obj-3"
+                          data-swiper-parallax-y="-100"
+                          data-swiper-parallax-scale="0.5"
+                          data-swiper-parallax-duration="1300"
+                        >
+                          <img src="./img/SHOP/shop_3.jpg" alt="photo" />
+                          <a
+                            data-fancybox="gallery"
+                            data-no-swup
+                            href="img/SHOP/shop_3.jpg"
+                            class="cucu-zoom"
+                            ><img src="./img/ui/zoom.svg" alt="zoom"
+                          /></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div
+                    class="cucu-content"
+                    data-swiper-parallax="-200"
+                    data-swiper-parallax-opacity="0"
+                  >
+                    <div
+                      class="cucu-deco"
+                      data-swiper-parallax-x="-100%"
+                      data-swiper-parallax-duration="1800"
+                    ></div>
+                    <div class="cucu-grid">
+                      <div class="cucu-g-20 cucu-sm-30">
+                        <div
+                          class="cucu-photo-frame cucu-obj-1"
+                          data-swiper-parallax-y="-100"
+                          data-swiper-parallax-scale="0.5"
+                          data-swiper-parallax-duration="1200"
+                        >
+                          <img src="./img/SHOP/shop_5.jpg" alt="photo" />
+                          <a
+                            data-fancybox="gallery"
+                            data-no-swup
+                            href="img/SHOP/shop_5.jpg"
+                            class="cucu-zoom"
+                            ><img src="./img/ui/zoom.svg" alt="zoom"
+                          /></a>
+                        </div>
+                      </div>
+                      <div class="cucu-g-35 cucu-sm-70">
+                        <div
+                          class="cucu-photo-frame cucu-obj-2"
+                          data-swiper-parallax-y="100"
+                          data-swiper-parallax-scale="0.5"
+                          data-swiper-parallax-duration="1250"
+                        >
+                          <img src="./img/SHOP/shop_6.jpg" alt="photo" />
+                          <a
+                            data-fancybox="gallery"
+                            data-no-swup
+                            href="img/SHOP/shop_6.jpg"
+                            class="cucu-zoom"
+                            ><img src="./img/ui/zoom.svg" alt="zoom"
+                          /></a>
+                        </div>
+                      </div>
+                      <div class="cucu-g-45 cucu-sm-100">
+                        <div
+                          class="cucu-photo-frame cucu-obj-3"
+                          data-swiper-parallax-y="-100"
+                          data-swiper-parallax-scale="0.5"
+                          data-swiper-parallax-duration="1300"
+                        >
+                          <img src="./img/SHOP/shop_7.jpg" alt="photo" />
+                          <a
+                            data-fancybox="gallery"
+                            data-no-swup
+                            href="img/SHOP/shop_7.jpg"
+                            class="cucu-zoom"
+                            ><img src="./img/ui/zoom.svg" alt="zoom"
+                          /></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div
+                    class="cucu-content"
+                    data-swiper-parallax="-200"
+                    data-swiper-parallax-opacity="0"
+                  >
+                    <div
+                      class="cucu-deco"
+                      data-swiper-parallax-x="-100%"
+                      data-swiper-parallax-duration="1800"
+                    ></div>
+                    <div class="cucu-grid">
+                      <div class="cucu-g-20 cucu-sm-30">
+                        <div
+                          class="cucu-photo-frame cucu-obj-1"
+                          data-swiper-parallax-y="-100"
+                          data-swiper-parallax-scale="0.5"
+                          data-swiper-parallax-duration="1200"
+                        >
+                          <img src="./img/SHOP/shop_8.jpg" alt="photo" />
+                          <a
+                            data-fancybox="gallery"
+                            data-no-swup
+                            href="img/SHOP/shop_8.jpg"
+                            class="cucu-zoom"
+                            ><img src="./img/ui/zoom.svg" alt="zoom"
+                          /></a>
+                        </div>
+                      </div>
+                      <div class="cucu-g-35 cucu-sm-70">
+                        <div
+                          class="cucu-photo-frame cucu-obj-2"
+                          data-swiper-parallax-y="100"
+                          data-swiper-parallax-scale="0.5"
+                          data-swiper-parallax-duration="1250"
+                        >
+                          <img src="./img/SHOP/shop_9.jpg" alt="photo" />
+                          <a
+                            data-fancybox="gallery"
+                            data-no-swup
+                            href="img/SHOP/shop_9.jpg"
+                            class="cucu-zoom"
+                            ><img src="./img/ui/zoom.svg" alt="zoom"
+                          /></a>
+                        </div>
+                      </div>
+                      <div class="cucu-g-45 cucu-sm-100">
+                        <div
+                          class="cucu-photo-frame cucu-obj-3"
+                          data-swiper-parallax-y="-100"
+                          data-swiper-parallax-scale="0.5"
+                          data-swiper-parallax-duration="1300"
+                        >
+                          <img src="./img/SHOP/shop_4.jpg" alt="photo" />
+                          <a
+                            data-fancybox="gallery"
+                            data-no-swup
+                            href="img/SHOP/shop_4.jpg"
+                            class="cucu-zoom"
+                            ><img src="./img/ui/zoom.svg" alt="zoom"
+                          /></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="cucu-description">
+                <div class="cucu-pagination"></div>
+                <div class="cucu-text">
+                  <h1 class="cucu-mb-10">CuCu <br />SHOP.</h1>
+                  <!-- <span class="cucu-suptitle">Model</span> -->
+                </div>
+              </div>
+              <div class="cucu-next-btn">
+                <span>Next <br />Items</span>
+                <div class="cucu-nav">
+                  <div class="cucu-prev">
+                    <img src="./img/ui/arrow-1.svg" alt="arrow" />
+                  </div>
+                  <div class="cucu-next">
+                    <img src="./img/ui/arrow-1.svg" alt="arrow" />
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
           <!-- SHOP END -->
 
           <!-- 会社概要 BEGIN -->
           <div id="cucu-company" class="cucu-company">
-			<div class="cucu-waves">
-				<svg
+            <div class="cucu-waves">
+              <svg
                 xmlns="http://www.w3.org/2000/svg"
                 xmlns:xlink="http://www.w3.org/1999/xlink"
                 viewBox="0 24 150 28"
@@ -1788,7 +1994,7 @@
                   <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
                 </g>
               </svg>
-			</div>
+            </div>
             <div class="cucu-content">
               <div class="cucu-grid">
                 <div class="cucu-g-15 cucu-sm-100">
@@ -1801,35 +2007,38 @@
                 <div class="cucu-g-70 cucu-sm-100">
                   <div class="cucu-form-frame">
                     <div class="cucu-form-content">
-						<div class="cucu-info-group">
-							<h3>会社名</h3>
-							<p>CuCu株式会社</p>
-						</div>
-						<div class="cucu-info-group">
-							<h3>英文社名</h3>
-							<p>CuCu Co. Ltd.</p>
-						</div>
-						<div class="cucu-info-group">
-							<h3>代表取締役</h3>
-							<p>進藤　眞理子</p>
-						</div>
-						<div class="cucu-info-group">
-							<h3>従業員数</h3>
-					  <p>7名</p>
-						</div>
-						<div class="cucu-info-group">
-							<h3>所在地</h3>
-					  <p>東京都港区南青山六丁目2番地2号 南青山ホームズ601号</p>
-						</div>
-						<div class="cucu-info-group">
-							<h3>TEL</h3>
-					  <p>03-6427-4139（代表）FAX：03-6427-4139</p>
-						</div>
-						<div class="cucu-info-group">
-							<h3>事業内容</h3>
-					  <p>個人カウンセリング・ヒーリング・セミナー・<br>デザイン業務（商品デザイン・ラベルデザイン・名刺・<br>店舗、個人宅デザインコンサルテング他デザインに関する業務一式）・<br><br>個人、企業全てに関する風水業務・空間、土壌改良業務・<br>音楽活動の企画、制作、演出、プロデュース、実施・CD製作、販売・<br>各種イベント企画立案、制作、運営、プロデュース・書籍、雑誌、教材の企画、<br>
-						編集、制作、出版、販売・企業ビジネスコンサルティング、人材育成研修・他、前記に関連する業務一式</p>
-						</div>
+                      <div class="cucu-info-group">
+                        <h3>会社名</h3>
+                        <p>CuCu株式会社</p>
+                      </div>
+                      <div class="cucu-info-group">
+                        <h3>英文社名</h3>
+                        <p>CuCu Co. Ltd.</p>
+                      </div>
+                      <div class="cucu-info-group">
+                        <h3>代表取締役</h3>
+                        <p>進藤　眞理子</p>
+                      </div>
+                      <div class="cucu-info-group">
+                        <h3>従業員数</h3>
+                        <p>7名</p>
+                      </div>
+                      <div class="cucu-info-group">
+                        <h3>所在地</h3>
+                        <p>
+                          東京都港区南青山六丁目2番地2号 南青山ホームズ601号
+                        </p>
+                      </div>
+                      <div class="cucu-info-group">
+                        <h3>TEL</h3>
+                        <p>03-6427-4139（代表）FAX：03-6427-4139</p>
+                      </div>
+                      <div class="cucu-info-group">
+                        <h3>事業内容</h3>
+                        <p>
+                          //個人カウンセリング・ヒーリング・セミナー<br /><br />//デザイン業務<br />- 商品デザイン・ラベルデザイン・名刺・<br />店舗、個人宅デザインコンサルテング他デザインに関する業務一式<br /><br />//個人、企業全てに関する風水業務・空間、土壌改良業務<br /><br />//音楽活動の企画、制作、演出、プロデュース、実施・CD製作、販売<br /><br />//各種イベント企画立案、制作、運営、プロデュース・<br />書籍、雑誌、教材の企画、編集、制作、出版、販売・企業ビジネスコンサルティング、<br />人材育成研修・他、前記に関連する業務一式
+                        </p>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -1846,120 +2055,112 @@
               </div>
               <div class="cucu-instagram-frame">
                 <div class="cucu-line"></div>
-				<a
-                      href="https://www.youtube.com/user/cucu81com/playlists?app=desktop"
-                      target="_blank"
-                      data-no-swup
-                      ><img src="./img/ui/youtube.svg" alt="youtube"
-                    /></a>
-                    <a
-                      href="https://www.instagram.com/mariko_cucu81/?igshid=YmMyMTA2M2Y%3D"
-                      target="_blank"
-                      data-no-swup
-                      ><img src="./img/ui/instagram-1.svg" alt="instagram"
-                    /></a>
-                    <a
-                      href="https://twitter.com/infocucu"
-                      target="_blank"
-                      data-no-swup
-                      ><img src="./img/ui/twitter.svg" alt="twitter"
-                    /></a>
-                    <a
-                      href="https://www.facebook.com/people/CuCu%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE/100066625219892/"
-                      target="_blank"
-                      data-no-swup
-                      ><img src="./img/ui/facebook.svg" alt="facebook"
-                    /></a>
+                <a
+                  href="https://www.youtube.com/user/cucu81com/playlists?app=desktop"
+                  target="_blank"
+                  data-no-swup
+                  ><img src="./img/ui/youtube.svg" alt="youtube"
+                /></a>
+                <a
+                  href="https://www.instagram.com/mariko_cucu81/?igshid=YmMyMTA2M2Y%3D"
+                  target="_blank"
+                  data-no-swup
+                  ><img src="./img/ui/instagram-1.svg" alt="instagram"
+                /></a>
+                <a
+                  href="https://twitter.com/infocucu"
+                  target="_blank"
+                  data-no-swup
+                  ><img src="./img/ui/twitter.svg" alt="twitter"
+                /></a>
+                <a
+                  href="https://www.facebook.com/people/CuCu%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE/100066625219892/"
+                  target="_blank"
+                  data-no-swup
+                  ><img src="./img/ui/facebook.svg" alt="facebook"
+                /></a>
               </div>
             </div>
           </div>
           <!-- 会社概要 END -->
-        </div>
-        <!-- <div class="cucu-big-menu-frame">
-          <div class="cucu-big-menu cucu-big-menu-1">
-            <div class="cucu-grid">
-              <div class="cucu-g-30 cucu-md-50 cucu-sm-100">
-                <div class="cucu-menu-frame cucu-fs-menu">
-                  <nav>
-                    <ul class="cucu-menu">
-                      <li class="cucu-has-children">
-                        <a href="#." data-no-swup>Home</a>
-                        <ul>
-                          <li><a href="home-1.html">Home 1</a></li>
-                          <li><a href="home-2.html">Home 2</a></li>
-                          <li><a href="home-3.html">Home 3</a></li>
-                          <li><a href="home-4.html">Home 4</a></li>
-                          <li><a href="home-5.html">Home 5</a></li>
-                        </ul>
-                      </li>
-                      <li class="cucu-has-children">
-                        <a href="#." data-no-swup>About</a>
-                        <ul>
-                          <li><a href="about-1.html">Type 1</a></li>
-                          <li><a href="about-2.html">Type 2</a></li>
-                          <li><a href="about-3.html">Type 3</a></li>
-                        </ul>
-                      </li>
-                      <li class="cucu-has-children">
-                        <a href="#." data-no-swup>Portfolio</a>
-                        <ul>
-                          <li><a href="portfolio-1.html">Type 1</a></li>
-                          <li><a href="portfolio-2.html">Type 2</a></li>
-                          <li><a href="portfolio-3.html">Type 3</a></li>
-                          <li><a href="portfolio-4.html">Type 4</a></li>
-                          <li><a href="portfolio-5.html">Type 5</a></li>
-                        </ul>
-                      </li>
-                      <li class="cucu-has-children cucu-current">
-                        <a href="#." data-no-swup>Blog</a>
-                        <ul>
-                          <li><a href="blog-1.html">Type 1</a></li>
-                          <li><a href="blog-2.html">Type 2</a></li>
-                          <li><a href="blog-3.html">Classic list</a></li>
-                          <li><a href="blog-4.html">Publication</a></li>
-                        </ul>
-                      </li>
-                      <li class="cucu-has-children">
-                        <a href="#." data-no-swup>Contacts</a>
-                        <ul>
-                          <li><a href="contact-1.html">Type 1</a></li>
-                          <li><a href="contact-2.html">Type 2</a></li>
-                          <li><a href="contact-3.html">Type 3</a></li>
-                        </ul>
-                      </li>
-                    </ul>
-                  </nav>
-                </div>
-              </div>
-              <div class="cucu-g-70 cucu-md-50 cucu-sm-100">
-                <div class="rb-object-frame">
-                  <div class="cucu-photo-frame cucu-obj-1">
-                    <img src="./img/photo/39.jpg" alt="photo" />
-                  </div>
-                  <div class="cucu-position-fix">
-                    <div class="cucu-deco"></div>
-                    <div class="cucu-photo-frame cucu-obj-2">
-                      <img src="./img/photo/40.jpg" alt="photo" />
-                    </div>
-                  </div>
-                  <div class="cucu-descr">
-                    <div class="cucu-descr-title">
-                      <div>Menu</div>
+
+          <!-- アクセス BEGIN -->
+          <div class="cucu-access">
+            <div class="cucu-content">
+
+              <div class="cucu-grid cucu-sm-reverse">
+                <div class="cucu-g-60 cucu-sm-100">
+                  <div class="cucu-form-frame">
+                    <div class="cucu-form-title">
+                      <!-- <h2>アクセス情報</h2> -->
                       <div class="cucu-line"></div>
                     </div>
-                    <p>Stay tuned for news and new work on Instagram</p>
-                    <a
-                      href="https://www.instagram.com/"
-                      target="_blank"
-                      data-no-swup
-                      ><img src="./img/ui/instagram-2.svg" alt="Instagram"
-                    /></a>
+                    <div class="cucu-form-content">
+                      <h5>CｕCｕまで…</h5>
+                      <p>最寄りの駅は地下鉄「表参道」駅です。<br>表参道駅「A5出口」から徒歩7分。<br><br>「B3出口」（地上へのEV、エスカレーター有り）から徒歩10分でお越し頂けます。<br><br>南青山ホームズに着いたらインターホンで<span>601</span>を鳴らしてください。（定休日：月曜日）</p>
+                      <div class="map-root">
+                        <p>「A5出口」からの道順（徒歩7分）</p>
+                        <div class="g-map">
+
+                          <iframe src="https://www.google.com/maps/embed?pb=!1m22!1m8!1m3!1d3854.8661432427884!2d139.71164522277883!3d35.6636249061642!3m2!1i1024!2i768!4f13.1!4m11!3e6!4m3!3m2!1d35.664561!2d139.713362!4m5!1s0x60188b61345aab37%3A0x972fe4e4edda2e9f!2z5Y2X6Z2S5bGx77yW77yN77yS77yN77yS!3m2!1d35.661156!2d139.7151922!5e0!3m2!1sja!2sjp!4v1671679908792!5m2!1sja!2sjp" width="600" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                      </div>
+                      <div class="map-root">
+                        <p>「B3出口」からの 道順（徒歩10分）</p>
+                        <div class="g-map">
+
+                          <iframe src="https://www.google.com/maps/embed?pb=!1m22!1m8!1m3!1d3241.5736334512776!2d139.71373600000004!3d35.662875!3m2!1i1024!2i768!4f13.1!4m11!3e6!4m3!3m2!1d35.664192!2d139.711903!4m5!1s0x60188b61345aab37%3A0x972fe4e4edda2e9f!2z5Y2X6Z2S5bGx77yW77yN77yS77yN77yS!3m2!1d35.661156!2d139.7151922!5e0!3m2!1sja!2sjp!4v1671680003974!5m2!1sja!2sjp" width="600" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="cucu-g-40 cucu-sm-100">
+                  <div class="rb-object-frame">
+                    <h2>アクセス<br>情報</h2>
+                    <div class="cucu-photo-frame cucu-obj-1">
+                      <img src="./img/デザイン/design_10.png" alt="photo">
+                    </div>
+                    <div class="cucu-deco-1"></div>
+                    <div class="cucu-deco-2"></div>
+                    <a href="https://www.instagram.com/" target="_blank" data-no-swup class="cucu-instagram">
+                      <!-- <span>Join to my</span><img src="img/ui/instagram-1.svg" alt="Instagram"><span>Instagram</span> -->
+                    </a>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div> -->
+          <!-- アクセス END -->
+
+          <!-- お問い合わせフォーム END -->
+          <div id="cucu-contact-form" class="cucu-contact-form">
+            <div class="cucu-content">
+
+              <div class="cucu-grid cucu-sm-reverse">
+                <div class="cucu-g-35 cucu-sm-100">
+                  <div class="rb-object-frame">
+                    <div class="cucu-photo-frame cucu-obj-1">
+                      <img src="./img/建築・内装/construction_05.jpg" alt="photo">
+                    </div>
+                    <h1 class="cucu-page-title">お問い合わせ</h1>
+                    <div class="cucu-deco"></div>
+                  </div>
+                </div>
+                <div class="cucu-g-65 cucu-sm-100">
+                  <div class="cucu-form-frame">
+                    <div class="cucu-form-content">
+                      <!-- <h2 class="cucu-form-title">お問い合わせフォーム<br>※お問い合わせはこちらのフォームからどうぞ</h2> -->
+
+                      <iframe height="617" title="Embedded Wufoo Form" allowtransparency="true" frameborder="0" scrolling="no" style="width:100%;border:none" sandbox="allow-popups-to-escape-sandbox allow-top-navigation allow-scripts allow-popups allow-forms allow-same-origin" src="https://cucu81.wufoo.com/embed/z1ueg5ri0kmq8df/"> <a href="https://cucu81.wufoo.com/forms/z1ueg5ri0kmq8df/"></a> </iframe>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- お問い合わせフォーム END -->
+        </div>
       </div>
     </div>
     <!-- jquery js -->
@@ -1972,7 +2173,10 @@
     <script src="./js/plugins/swiper.min.js"></script>
     <!-- parsley js -->
     <script src="./js/plugins/parsley.min.js"></script>
-    <!-- orabel js -->
+    <!-- easing js -->
+    <script src="./js/plugins/easing.min.js"></script>
+    <!-- cucu js -->
     <script src="./js/main.js"></script>
+
   </body>
 </html>
