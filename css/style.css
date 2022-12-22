@@ -1886,6 +1886,17 @@ html.is-animating .transition-fade {
   opacity: 0.999;
 }
 
+.transition-fade .oshirase{
+  position: absolute;
+  bottom: 10px;
+  right: 20px;
+  z-index: 4;
+}
+.transition-fade .oshirase p{
+font-size: .7rem;
+letter-spacing: 1px;
+}
+
 .cucu-loader-frame {
   width: 100%;
   pointer-events: none;
