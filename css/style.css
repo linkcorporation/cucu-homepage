@@ -1895,6 +1895,8 @@ html.is-animating .transition-fade {
 .transition-fade .oshirase p{
 font-size: .7rem;
 letter-spacing: 1px;
+color: #F2706D;
+font-weight: 600;
 }
 
 .cucu-loader-frame {
@@ -4970,7 +4972,7 @@ right:-25px;
   .rb-object-frame
   .cucu-slide-caption
   .cucu-suptitle {
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   font-size: .9rem;
   letter-spacing: 0.3em;
 }
