@@ -141,8 +141,6 @@ body {
   transition: all 0.3s;
 }
 
-
-
 .cucu-all-frame .cucu-top-menu-frame {
   background-color: #ffffff;
   padding: 0;
@@ -536,49 +534,48 @@ ul li {
 
 /*リンクを右下に固定*/
 #page-top {
-	position: fixed;
-	right: 10px;
-	bottom:10px;
-	z-index: 2;
-    /*はじめは非表示*/
-	opacity: 0;
-	transform: translateX(100px);
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  z-index: 2;
+  /*はじめは非表示*/
+  opacity: 0;
+  transform: translateX(100px);
 }
 
 /*　左の動き　*/
 
-#page-top.LeftMove{
-	animation: LeftAnime 0.5s forwards;
+#page-top.LeftMove {
+  animation: LeftAnime 0.5s forwards;
   z-index: 5;
 }
 
-@keyframes LeftAnime{
+@keyframes LeftAnime {
   from {
     opacity: 0;
-	transform: translateX(100px);
+    transform: translateX(100px);
   }
   to {
     opacity: 1;
-	transform: translateX(0);
+    transform: translateX(0);
   }
 }
 
 /*　右の動き　*/
 
-#page-top.RightMove{
-	animation: RightAnime 0.5s forwards;
+#page-top.RightMove {
+  animation: RightAnime 0.5s forwards;
 }
-@keyframes RightAnime{
+@keyframes RightAnime {
   from {
-  	opacity: 1;
-	transform: translateX(0);
+    opacity: 1;
+    transform: translateX(0);
   }
   to {
-  	opacity: 1;
-	transform: translateX(100px);
+    opacity: 1;
+    transform: translateX(100px);
   }
 }
-
 
 /* Menu
 ==================================== */
@@ -1888,17 +1885,17 @@ html.is-animating .transition-fade {
   opacity: 0.999;
 }
 
-.transition-fade .oshirase{
+.transition-fade .oshirase {
   position: absolute;
   bottom: 10px;
   right: 20px;
   z-index: 4;
 }
-.transition-fade .oshirase p{
-font-size: 11px;
-letter-spacing: 1px;
-color: #F2706D;
-font-weight: 600;
+.transition-fade .oshirase p {
+  font-size: 11px;
+  letter-spacing: 1px;
+  color: #f2706d;
+  font-weight: 600;
 }
 
 .cucu-loader-frame {
@@ -1941,7 +1938,7 @@ font-weight: 600;
   transition-delay: 1.1s;
 }
 
-.cucu-loader-frame .cucu-loader img{
+.cucu-loader-frame .cucu-loader img {
   position: relative;
   width: 100px;
   left: 50%;
@@ -2610,7 +2607,21 @@ label.cbx {
 }
 
 .cucu-real-estate .cucu-photo-frame:after {
-  background-color: #9c9592;
+  /* background-color: #9c9592; */
+
+  background: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.15) 0%,
+      rgba(0, 0, 0, 0.15) 100%
+    ),
+    radial-gradient(
+        at top center,
+        rgba(255, 255, 255, 0.4) 0%,
+        rgba(0, 0, 0, 0.4) 120%
+      )
+      #989898;
+  background-blend-mode: multiply, multiply;
+  background-image: linear-gradient(to top, #6a85b6 0%, #bac8e0 100%);
 }
 
 .cucu-real-estate .cucu-photo-frame img {
@@ -2641,7 +2652,7 @@ label.cbx {
 .cucu-real-estate .cucu-content span {
   font-size: 12.5px;
   letter-spacing: 1px;
-  line-height: 16px;
+  line-height: 22px;
   /* line-height: 1.4rem; */
   color: #4e4e4e;
   margin-left: 10px;
@@ -2757,9 +2768,21 @@ label.cbx {
 .cucu-real-estate .cucu-content .cucu-slide-caption .cucu-main-title .h1,
 .cucu-real-estate .cucu-content .cucu-slide-caption .cucu-main-title h1 {
   margin-left: 10%;
-  font-size: 72px;
+  font-size: 66px;
   color: #fff;
   text-transform: uppercase;
+  text-shadow: 0 0 15px #666;
+}
+
+.cucu-real-estate .cucu-content .cucu-slide-caption .cucu-main-title .h1,
+.cucu-real-estate
+  .cucu-content
+  .cucu-slide-caption
+  .cucu-main-title
+  h1
+  .m-size {
+  font-size: 50px;
+  color: #fff;
 }
 
 .cucu-real-estate .cucu-content .cucu-slide-caption .cucu-button-and-descr {
@@ -2779,7 +2802,7 @@ label.cbx {
   .cucu-slide-caption
   .cucu-button-and-descr
   .cucu-description {
-  width: 50%;
+  width: 75%;
   font-size: 18px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2799,8 +2822,9 @@ label.cbx {
   .cucu-description
   span {
   padding-right: 40px;
-  width: 500px;
+  width: 585px;
   color: #ffffff;
+  text-shadow: 0 0 15px #666;
   font-family: "Noto Sans JP";
 }
 
@@ -3111,11 +3135,11 @@ label.cbx {
   right: -40px;
 }
 
-.go-contact-form{
+.go-contact-form {
   /*矢印の基点とするためrelativeを指定*/
-position: relative;
+  position: relative;
   /*ボタンの形状*/
-border: 1px solid #555;
+  border: 1px solid #555;
   padding: 8px 30px;
   display: inline-block;
   text-align: center;
@@ -3124,51 +3148,51 @@ border: 1px solid #555;
   outline: none;
   font-size: 13px;
   /*アニメーションの指定*/
-  transition: all .2s linear;
+  transition: all 0.2s linear;
 }
 
-.go-contact-form:hover{
-background:#333;
-color:#fff;
+.go-contact-form:hover {
+  background: #333;
+  color: #fff;
 }
 
 /*矢印と下線の形状*/
-.go-contact-form::before{
-content:"";
+.go-contact-form::before {
+  content: "";
   /*絶対配置で下線の位置を決める*/
-position: absolute;
-top:50%;
-right:-26px;
+  position: absolute;
+  top: 50%;
+  right: -26px;
   /*下線の形状*/
-width:40px;
-height:1px;
-background:#333;
+  width: 40px;
+  height: 1px;
+  background: #333;
   /*アニメーションの指定*/
-  transition: all .2s linear;
+  transition: all 0.2s linear;
 }
 
-.go-contact-form::after{
-content:"";
+.go-contact-form::after {
+  content: "";
   /*絶対配置で矢印の位置を決める*/
-position: absolute;
+  position: absolute;
   top: 20%;
   right: -21px;
   /*矢印の形状*/
-width:1px;
-height:12px;
-background:#333;
-  transform:skewX(45deg);
+  width: 1px;
+  height: 12px;
+  background: #333;
+  transform: skewX(45deg);
   /*アニメーションの指定*/
-  transition: all .2s linear;
+  transition: all 0.2s linear;
 }
 
 /*hoverした際の移動*/
-.go-contact-form:hover::before{
-right:-30px;
+.go-contact-form:hover::before {
+  right: -30px;
 }
 
-.go-contact-form:hover::after{
-right:-25px;
+.go-contact-form:hover::after {
+  right: -25px;
 }
 
 .real-estate-info .cucu-content .cucu-blog-frame {
@@ -4065,15 +4089,15 @@ right:-25px;
   -ms-flex-pack: justify;
   justify-content: space-between;
   margin-bottom: 25px;
-  transition: all .3s;
+  transition: all 0.3s;
 }
 
-.cucu-welcome .cucu-link:hover{
+.cucu-welcome .cucu-link:hover {
   -webkit-transform: scale(1.5);
-    -moz-transform: scale(1.5);
-    -o-transform: scale(1.5);
-    -ms-transform: scale(1.5);
-    transform: scale(1.5);
+  -moz-transform: scale(1.5);
+  -o-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  transform: scale(1.5);
 }
 
 .cucu-welcome .cucu-description .cucu-link img {
@@ -4243,8 +4267,8 @@ right:-25px;
   white-space: nowrap;
 }
 
-.cucu-natural-stone .cucu-top-bar .cucu-post-card span{
-  color: #FF6E6C;
+.cucu-natural-stone .cucu-top-bar .cucu-post-card span {
+  color: #ff6e6c;
 }
 
 .cucu-natural-stone .cucu-photo-frame:after {
@@ -4883,7 +4907,17 @@ right:-25px;
 }
 
 .cucu-construction .cucu-photo-frame:after {
-  background-color: #e2dddb;
+  /* background-color: #E2DDDB; */
+  /* background-image: linear-gradient(to top, #e6b980 0%, #eacda3 100%); */
+  background: linear-gradient(to bottom, #d5dee7 0%, #e8ebf2 50%, #e2e7ed 100%),
+    linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.02) 50%,
+      rgba(255, 255, 255, 0.02) 61%,
+      rgba(0, 0, 0, 0.02) 73%
+    ),
+    linear-gradient(33deg, rgba(255, 255, 255, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%);
+  background-blend-mode: normal, color-burn;
 }
 
 .cucu-construction .cucu-top-menu-frame {
@@ -4959,8 +4993,8 @@ right:-25px;
   /* font-family: "Libre Baskerville", serif; */
   font-family: "Noto Sans JP";
   position: absolute;
-  top: 5%;
-  left: -19%;
+  top: 8%;
+  left: -10%;
   z-index: 1;
   /* color: #fff; */
   padding: 40px;
@@ -4981,11 +5015,79 @@ right:-25px;
   .cucu-slide-caption
   .cucu-suptitle {
   letter-spacing: 0.3em;
-  font-size: 12.5px;
+  font-size: 13px;
   letter-spacing: 1px;
-  line-height: 30px;
+  line-height: 25px;
   /* line-height: 1.4rem; */
-  color: #4e4e4e;
+  /* color: #4e4e4e; */
+  color: #444;
+  display: block;
+  margin-bottom: 40px;
+}
+
+/*== 線の上を別の線が伸びる */
+
+.cucu-construction .construction-go-form {
+  /*線の基点とするためrelativeを指定*/
+  position: relative;
+  /*リンクの形状*/
+  color: #707070;
+  padding: 0 20px 10px 3px;
+  display: inline;
+  width: 100%;
+  text-decoration: none;
+  outline: none;
+  font-size: 12px;
+}
+
+/*線の設定*/
+.cucu-construction .construction-go-form::before,
+.cucu-construction .construction-go-form::after {
+  content: "";
+  /*絶対配置で線の位置を決める*/
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  left: 0;
+  /*線の形状*/
+  background: #707070;
+  width: 100%;
+  height: 2px;
+  /*アニメーションの指定*/
+  transition: all 0.3s ease-in-out;
+}
+
+/*hover時に伸びる線の形状*/
+.cucu-construction .construction-go-form::after {
+  width: 0;
+  background: #FF6E6C;
+}
+
+/*hover時に100%に伸びる*/
+.cucu-construction .construction-go-form:hover::after {
+  width: 100%;
+}
+
+/*矢印の設定*/
+.cucu-construction .construction-go-form span::after {
+  content: "";
+  /*絶対配置で矢印の位置を決める*/
+  position: absolute;
+  top: 1.3em;
+  right: 20px;
+  /*矢印の形状*/
+  width: 5px;
+  height: 5px;
+  border-top: 1px solid #707070;
+  border-right: 1px solid #707070;
+  transform: rotate(45deg);
+  /*アニメーションの指定*/
+  transition: all 0.3s;
+}
+
+/*hover時に矢印が移動*/
+.cucu-construction .construction-go-form:hover span::after {
+  right: 15px;
 }
 
 .cucu-construction .cucu-content .cucu-position-fix {
@@ -5003,11 +5105,11 @@ right:-25px;
   line-height: 20px;
 }
 
-.cucu-construction .cucu-content .cucu-position-fix .cucu-title-2 span{
+.cucu-construction .cucu-content .cucu-position-fix .cucu-title-2 span {
   font-size: 12.5px;
-    letter-spacing: 1px;
-    color: #4e4e4e;
-    text-transform:capitalize;
+  letter-spacing: 1px;
+  color: #4e4e4e;
+  text-transform: capitalize;
 }
 
 .cucu-construction .cucu-content .cucu-position-fix .cucu-obj-2 {
@@ -5016,19 +5118,35 @@ right:-25px;
   width: 180px;
 }
 
-.cucu-construction .cucu-content .cucu-position-fix .cucu-obj-3{
+.cucu-construction .cucu-content .cucu-position-fix .cucu-obj-3 {
   padding-bottom: 0;
   height: 220px;
   width: 180px;
 }
 
-.cucu-construction .cucu-content .cucu-position-fix .cucu-obj-3::after{
+.cucu-construction .cucu-content .cucu-position-fix .cucu-obj-3::after {
   height: 140px;
   /* width: 100px; */
   border-radius: 0 140px 0 0;
   -moz-border-radius: 0 1px 0 0;
   -webkit-border-radius: 0 140px 0 0;
   margin-top: 100px;
+}
+
+.cucu-construction .cucu-content .cucu-position-fix .cucu-designer {
+  margin-top: 20px;
+  font-size: 11px;
+  line-height: 20px;
+  /* color: #4e4e4e; */
+  color: #9c9592;
+}
+
+.cucu-construction .cucu-content .cucu-position-fix .cucu-designer .name {
+  display: block;
+  color: #67568c;
+  font-size: 16px;
+  margin-bottom: 10px;
+  letter-spacing: 0.1px;
 }
 
 .cucu-construction .cucu-description {
@@ -5074,7 +5192,7 @@ right:-25px;
   color: #fff;
   width: 100px;
   margin-right: 20px;
-  letter-spacing: .2px;
+  letter-spacing: 0.2px;
 }
 
 .cucu-construction .cucu-description .cucu-nav .cucu-next,
@@ -5097,7 +5215,7 @@ right:-25px;
 
 .cucu-construction .cucu-description .cucu-nav .cucu-next:first-child,
 .cucu-construction .cucu-description .cucu-nav .cucu-prev:first-child {
-  margin-left: 0;
+  margin-left: 10px;
 }
 
 .cucu-construction .cucu-description .cucu-nav .cucu-next img,
@@ -5301,9 +5419,10 @@ right:-25px;
 
 .cucu-design {
   padding: 40px 80px 0 80px;
-  background-color: #faf6f4;
+  /* background-color: #faf6f4; */
   margin-bottom: 20px;
   overflow: hidden;
+  background-image: linear-gradient(to top, #c4c5c7 0%, #dcdddf 52%, #ebebeb 100%);
 }
 
 .cucu-design .cucu-top-bar::before {
@@ -5324,20 +5443,25 @@ right:-25px;
 .cucu-design .cucu-top-bar h2 {
   font-size: 50px;
   /* line-height: 40px; */
-  margin-bottom: 20px;
-  display: flex;
-  align-items: center;
-  margin-right: 30px;
+  /* margin-bottom: 20px; */
+  /* display: flex; */
+  /* align-items: center; */
+  /* margin-right: 30px; */
 }
 
-.cucu-design .cucu-top-bar h2 span.sub-title {
+.cucu-design .cucu-top-bar img.sub-title {
   display: inline-block;
-  font-size: 15px;
-  margin-left: 10px;
-  color: #ff6e6c;
+  /* font-size: 15px; */
+  /* margin-left: 10px; */
+  /* color: #ff6e6c; */
+  /* font-family: "Libre Baskerville", serif; */
+  /* font-family: "Noto Sans JP"; */
+  width: 200px;
+  height: 100%;
 }
 
-.cucu-design .cucu-top-bar {
+.cucu-design .cucu-top-bar,
+.cucu-design .cucu-top-bar .sub-content{
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -5352,6 +5476,10 @@ right:-25px;
 
 .cucu-design .cucu-photo-frame:after {
   background-color: #ffffff;
+}
+
+.cucu-design .cucu-photo-frame img{
+  opacity: .85;
 }
 
 .cucu-design .cucu-top-menu-frame {
@@ -5460,8 +5588,8 @@ right:-25px;
   line-height: 6px;
   font-size: 14px;
   font-family: "Libre Baskerville", serif;
-  font-style: italic;
-  color: #442a24;
+  /* font-style: italic; */
+  color: #707070;
   text-decoration: none;
   width: 100px;
   letter-spacing: 1px;
@@ -6533,7 +6661,10 @@ right:-25px;
   background-color: #fff;
 }
 
-.cucu-contact-form .cucu-top-menu-frame .cucu-photo-frame .cucu-top-menu:before {
+.cucu-contact-form
+  .cucu-top-menu-frame
+  .cucu-photo-frame
+  .cucu-top-menu:before {
   right: 0;
   width: 40%;
   opacity: 0.15;
@@ -6586,11 +6717,11 @@ right:-25px;
   align-items: flex-end; */
 }
 
-.cucu-contact-form .cucu-form-content .info{
-  display: none!important;
+.cucu-contact-form .cucu-form-content .info {
+  display: none !important;
 }
 
-form.wufoo input[type=submit] {
+form.wufoo input[type="submit"] {
   width: 100%;
   background-color: #759d46;
   color: white;
@@ -6599,7 +6730,8 @@ form.wufoo input[type=submit] {
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  transition: .5s ease-in-out; }
+  transition: 0.5s ease-in-out;
+}
 
 .cucu-contact-form
   .cucu-content
@@ -7179,29 +7311,29 @@ form.wufoo input[type=submit] {
   position: relative;
 }
 
-.cucu-access .cucu-content h5{
+.cucu-access .cucu-content h5 {
   font-family: "Roboto", sans-serif;
   font-weight: bold;
   font-size: 11px;
   letter-spacing: 0.1em;
-  color: #F2706D;
+  color: #f2706d;
 }
 
-.cucu-access .cucu-content span{
-  color: #F2706D;
+.cucu-access .cucu-content span {
+  color: #f2706d;
 }
 
-.cucu-access .cucu-content p{
+.cucu-access .cucu-content p {
   font-size: 12px;
   letter-spacing: 0.3px;
   line-height: 24px;
   color: #4e4e4e;
   font-family: "Noto Sans JP";
 }
-.cucu-access .cucu-content .map-root{
+.cucu-access .cucu-content .map-root {
   margin-top: 30px;
 }
-.cucu-access .cucu-content .map-root p{
+.cucu-access .cucu-content .map-root p {
   margin-top: 10px;
   font-family: "Libre Baskerville", serif;
 }
@@ -7211,7 +7343,7 @@ form.wufoo input[type=submit] {
   height: calc(var(--vh, 1vh) * 100 - 120px);
 }
 
-.cucu-access .cucu-content .rb-object-frame h2{
+.cucu-access .cucu-content .rb-object-frame h2 {
   position: absolute;
   right: 20%;
   top: 20%;
