@@ -36,6 +36,7 @@ $(function () {
     setTimeout(anim2, 2000);
   });
 
+  
   // =====================================================
   // LINK SCROLL
   // =====================================================
@@ -52,27 +53,6 @@ $(function () {
     $("body,html").animate({ scrollTop: pos }, 500);
     return false;
   });
-
-//   $('.cucu-blog-frame a[href*="#"]').on("click", function () {
-//     var elmHash = $(this).attr("href");
-//     var pos = $(elmHash).offset().top;
-//     $("body,html").animate({ scrollTop: pos }, 500);
-// 	var hash = $( location ).attr('hash');
-// 	if(hash){
-// 	  var target = $(hash).offset().top;
-// 	  $('html,body').animate({scrollTop: target}, 'slow');
-// 	}
-//     return false;
-//   });
-
-//   $(window).on('load',function(){
-// 	var hash = $( location ).attr('hash');
-// 	if(hash){
-// 	  var target = $(hash).offset().top;
-// 	  $('html,body').animate({scrollTop: target}, 'slow');
-// 	}
-//   });
-
 
   //スクロールした際の動きを関数でまとめる
   function PageTopAnime() {
@@ -111,6 +91,31 @@ $(function () {
     return false; //リンク自体の無効化
   });
 
+  // =====================================================
+  // RSS FEED
+  // =====================================================
+  $(document).ready(function() {
+    $.ajax({
+      type: "get",
+      url: "https://cucu-81.tumblr.com/rss"
+    }).done(function(result) {
+      $(result).find("item").each(function() {
+        var title = $(this).find('title').text();
+        var url = $(this).find('link').text();
+        var img = $(this).find('description').attr('href');
+        var category = $(this).find('category').text();
+        var contents = '';
+        firstImg = $(this).find("content\\:encoded, encoded").text();
+        firstImg = $(firstImg).find("img").first().attr("src");
+        var pubDate = $(this).find("pubDate").text();
+        var Dates = new Date(pubDate);
+        var Dday = Dates.getDate();
+        var Dmonth = Dates.getMonth() + 1;
+        var Dyear = Dates.getFullYear();
+        $(".rssbox").append('<a class="" href="' + url + '"><img src="' + firstImg + '"><span>' + category + '</span><span>' + title + '</span><time>' + Dyear + '/' + Dmonth + '/' + Dday + '</time></a>');
+      });
+    });
+  });
   // =====================================================
   // SWUP
   // =====================================================
