@@ -94,29 +94,46 @@ $(function () {
   // =====================================================
   // RSS FEED
   // =====================================================
-  $(document).ready(function() {
-    $.ajax({
-      type: "get",
-      url: "https://cucu-81.tumblr.com/rss"
-    }).done(function(result) {
-      $(result).find("item").each(function() {
-        var title = $(this).find('title').text();
-        var url = $(this).find('link').text();
-        var img = $(this).find('description').attr('href');
-        var category = $(this).find('category').text();
-        var contents = '';
-        firstImg = $(this).find("content\\:encoded, encoded").text();
-        firstImg = $(firstImg).find("img").first().attr("src");
-        var pubDate = $(this).find("pubDate").text();
-        var Dates = new Date(pubDate);
-        var Dday = Dates.getDate();
-        var Dmonth = Dates.getMonth() + 1;
-        var Dyear = Dates.getFullYear();
-        $(".rssbox").append('<a class="" href="' + url + '"><img src="' + firstImg + '"><span>' + category + '</span><span>' + title + '</span><time>' + Dyear + '/' + Dmonth + '/' + Dday + '</time></a>');
-      });
-    });
-  });
-  // =====================================================
+  window.onload = async function () {
+	// rss feed を取得
+	const res = await fetch('https://api.rss2json.com/v1/api.json?rss_url=https://cucu-81.tumblr.com/rss');
+	const data = await res.json();
+	// アイテムを１個ずつ表示
+	for (let i = 0; i < 3; i++){
+		console.log(data.items[i].title); 
+		console.log(data.items[i].description); 
+		console.log(data.items[i].pubDate); 
+		// console.log(data.items[i].description.substring(indexOf('c'), 10)); 
+		// console.log(data.items[i].title); 
+
+		// const new_post = document.getElementById('cucu-news-rss').insertRow();
+
+		// const title = data.items[i].title; 
+		// const description = data.items[i].description; 
+		// const link = data.items[i].link; 
+		// const ins_link = data.items[i].description.substring(indexOf("<a href=") + 2, indexOf(">") - 1);
+		// const pubDate = data.items[i].pubDate; 
+
+		// console.log(data.items[i].link);
+
+	  }
+	// const post = document.getElementById('delay_info').insertRow();
+	// post.insertCell().innerHTML = link;
+	// data.items.forEach(item => {
+	// //   const date = item.pubDate.replace("T", " ").replace("+09:00", ""); // 最終更新日時
+	// //   const company = item.title.substring(item.title.indexOf("【") + 1, item.title.indexOf("】"));
+	// //   const description = item.summary.substring(0, item.summary.lastIndexOf("（")) + '。';
+	// const link = item.link;
+	//   const post = document.getElementById('delay_info').insertRow();
+	//   post.insertCell().innerHTML = link;
+	// //   row.insertCell().innerHTML = company;
+	// //   row.insertCell().innerHTML = description;
+	// });
+
+  };
+
+
+  // =============================================x========
   // SWUP
   // =====================================================
   const options = {

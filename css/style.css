@@ -353,14 +353,16 @@ ul li {
   margin: 0 auto;
   color: #e4e4e4;
   font-family: "Noto Sans JP";
-  font-size: 2rem;
-  letter-spacing: 0.3rem;
+  font-size: 40px;
+  /* font-size: 2rem; */
+  letter-spacing: 0.3px;
   text-orientation: upright;
   transition: all 0.3s ease-in-out;
 }
 
 .cucu-category h2.healing {
-  font-size: 1.6rem !important;
+  font-size: 16px !important;
+  /* font-size: 1.6rem !important; */
 }
 
 .cucu-category .eng-text {
@@ -372,8 +374,8 @@ ul li {
 
 .cucu-category .eng-text p {
   color: #eeeeee;
-  font-size: 0.6rem !important;
-  letter-spacing: 0.03rem;
+  font-size: 11px !important;
+  letter-spacing: 0.3px;
   margin: 0;
   text-transform: capitalize;
 }
@@ -528,7 +530,7 @@ ul li {
 }
 
 #page-top h2 {
-  font-size: 1rem;
+  font-size: 14px;
   color: #444;
 }
 
@@ -1893,7 +1895,7 @@ html.is-animating .transition-fade {
   z-index: 4;
 }
 .transition-fade .oshirase p{
-font-size: .7rem;
+font-size: 11px;
 letter-spacing: 1px;
 color: #F2706D;
 font-weight: 600;
@@ -2637,15 +2639,17 @@ label.cbx {
   color: #ff6e6c;
 }
 .cucu-real-estate .cucu-content span {
-  font-size: 0.8rem;
+  font-size: 12.5px;
   letter-spacing: 1px;
-  line-height: 1.4rem;
+  line-height: 16px;
+  /* line-height: 1.4rem; */
   color: #4e4e4e;
   margin-left: 10px;
   width: 100%;
 }
 .cucu-real-estate .cucu-content h1 {
-  font-size: 3rem;
+  font-size: 30px;
+  /* font-size: 3rem; */
 }
 
 .cucu-real-estate .cucu-content:before {
@@ -2797,6 +2801,7 @@ label.cbx {
   padding-right: 40px;
   width: 500px;
   color: #ffffff;
+  font-family: "Noto Sans JP";
 }
 
 .cucu-real-estate
@@ -3117,7 +3122,7 @@ border: 1px solid #555;
   text-decoration: none;
   color: #444;
   outline: none;
-  font-size: .9rem;
+  font-size: 13px;
   /*アニメーションの指定*/
   transition: all .2s linear;
 }
@@ -3218,7 +3223,7 @@ right:-25px;
 
 .real-estate-info .cucu-date span {
   color: #4e4e4e;
-  font-size: 0.7rem;
+  font-size: 11px;
   letter-spacing: unset;
   text-transform: capitalize;
   margin-left: 15px;
@@ -3745,9 +3750,11 @@ right:-25px;
 }
 
 .cucu-event .cucu-main-title .cucu-button-frame .cucu-btn-label {
-  font-size: 0.85rem;
-  /* font-style: italic; */
-  color: #444;
+  font-size: 12px;
+  letter-spacing: 0.3px;
+  line-height: 24px;
+  color: #4e4e4e;
+  font-family: "Noto Sans JP";
   margin-bottom: 30px;
 }
 
@@ -3991,7 +3998,7 @@ right:-25px;
 }
 
 .cucu-welcome .cucu-content .cucu-caption .cucu-button-frame h3 {
-  font-size: 0.8rem;
+  font-size: 12.5px;
   letter-spacing: 1px;
   color: #fff;
   margin-right: 40px;
@@ -4221,8 +4228,9 @@ right:-25px;
 }
 .cucu-natural-stone .cucu-top-bar .cucu-post-card h2 {
   font-size: 12px;
-  line-height: 25px;
-  color: #444;
+  letter-spacing: 0.3px;
+  line-height: 24px;
+  color: #4e4e4e;
   font-family: "Noto Sans JP";
 }
 .cucu-natural-stone .cucu-top-bar .cucu-post-card .cucu-date {
@@ -4972,9 +4980,12 @@ right:-25px;
   .rb-object-frame
   .cucu-slide-caption
   .cucu-suptitle {
-  /* text-transform: uppercase; */
-  font-size: .9rem;
   letter-spacing: 0.3em;
+  font-size: 12.5px;
+  letter-spacing: 1px;
+  line-height: 30px;
+  /* line-height: 1.4rem; */
+  color: #4e4e4e;
 }
 
 .cucu-construction .cucu-content .cucu-position-fix {
@@ -4985,16 +4996,39 @@ right:-25px;
 .cucu-construction .cucu-content .cucu-position-fix .cucu-title-2 {
   display: block;
   color: #ff6e6c;
-  font-size: 16px;
-  font-style: italic;
+  font-size: 1.5em;
+  /* font-style: italic; */
   font-family: "Libre Baskerville", serif;
   margin-bottom: 20px;
+  line-height: 20px;
+}
+
+.cucu-construction .cucu-content .cucu-position-fix .cucu-title-2 span{
+  font-size: 12.5px;
+    letter-spacing: 1px;
+    color: #4e4e4e;
+    text-transform:capitalize;
 }
 
 .cucu-construction .cucu-content .cucu-position-fix .cucu-obj-2 {
   padding-bottom: 0;
   height: 220px;
   width: 180px;
+}
+
+.cucu-construction .cucu-content .cucu-position-fix .cucu-obj-3{
+  padding-bottom: 0;
+  height: 220px;
+  width: 180px;
+}
+
+.cucu-construction .cucu-content .cucu-position-fix .cucu-obj-3::after{
+  height: 140px;
+  /* width: 100px; */
+  border-radius: 0 140px 0 0;
+  -moz-border-radius: 0 1px 0 0;
+  -webkit-border-radius: 0 140px 0 0;
+  margin-top: 100px;
 }
 
 .cucu-construction .cucu-description {
@@ -5360,11 +5394,11 @@ right:-25px;
 
 .cucu-design .cucu-content .cucu-position-fix .cucu-slide-caption span {
   display: block;
-  color: #444;
+  color: #4e4e4e;
   padding-right: 60px;
   font-family: "Noto Sans JP";
   font-size: 12px;
-  letter-spacing: 0.1rem;
+  letter-spacing: 0.3px;
   line-height: 24px;
 }
 
@@ -6853,12 +6887,12 @@ form.wufoo input[type=submit] {
 }
 
 .cucu-company .cucu-form-content h3 {
-  font-size: 0.9rem;
+  font-size: 13px;
   width: 95px;
 }
 .cucu-company .cucu-form-content p {
   margin: 0;
-  font-size: 0.85rem;
+  font-size: 12.5px;
   margin-left: 20px;
   line-height: 19px;
 }
@@ -7158,9 +7192,11 @@ form.wufoo input[type=submit] {
 }
 
 .cucu-access .cucu-content p{
-  font-size: .8rem;
-  color: #444;
-  letter-spacing: 3px;
+  font-size: 12px;
+  letter-spacing: 0.3px;
+  line-height: 24px;
+  color: #4e4e4e;
+  font-family: "Noto Sans JP";
 }
 .cucu-access .cucu-content .map-root{
   margin-top: 30px;
@@ -7180,7 +7216,8 @@ form.wufoo input[type=submit] {
   right: 20%;
   top: 20%;
   z-index: 2;
-  font-size: 4rem;
+  font-size: 35px;
+  /* font-size: 4rem; */
   color: #444;
 }
 
@@ -8083,12 +8120,12 @@ form.wufoo input[type=submit] {
   box-orient: vertical;
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
-  font-size: 1.1rem;
+  font-size: 16px;
 }
 
 .cucu-blog-card .cucu-post-text p {
   color: #979795;
-  font-size: 0.8rem;
+  font-size: 12.5px;
   letter-spacing: 0.03px;
 }
 
@@ -8140,7 +8177,7 @@ form.wufoo input[type=submit] {
   }
 
   .cucu-blog-card .cucu-post-text h2 {
-    font-size: 1.1rem;
+    font-size: 16px;
   }
 }
 
@@ -8315,9 +8352,11 @@ form.wufoo input[type=submit] {
 }
 
 .cucu-counseling .cucu-blog-frame .cucu-post-text p {
-  font-size: 0.85rem;
-  line-height: 23px;
-  color: #444;
+  font-size: 12px;
+  letter-spacing: 0.3px;
+  line-height: 24px;
+  color: #4e4e4e;
+  font-family: "Noto Sans JP";
   margin-bottom: 40px;
 }
 
@@ -8587,8 +8626,11 @@ form.wufoo input[type=submit] {
 }
 
 .cucu-land-space-operations .cucu-about-frame .cucu-about-text p {
-  font-size: 0.75rem;
-  line-height: 20px;
+  font-size: 12px;
+  letter-spacing: 0.3px;
+  line-height: 24px;
+  color: #4e4e4e;
+  font-family: "Noto Sans JP";
 }
 
 .cucu-land-space-operations .cucu-about-frame .cucu-position-fix {
@@ -8672,7 +8714,7 @@ form.wufoo input[type=submit] {
 
 .cucu-land-space-operations .cucu-bottom-panel .cucu-mail {
   color: #9c9592;
-  font-size: 0.9rem;
+  font-size: 13px;
   font-style: italic;
 }
 
@@ -8829,9 +8871,10 @@ form.wufoo input[type=submit] {
   bottom: 0;
   color: #707070;
   font-family: "Libre Baskerville", serif;
-  font-size: 0.75rem;
+  font-size: 11px;
   letter-spacing: 1px;
-  line-height: 1.1rem;
+  line-height: 14px;
+  /* line-height: 1.1rem; */
 }
 
 .cucu-seminar .cucu-about-frame .seminar-join span {
@@ -8869,10 +8912,12 @@ form.wufoo input[type=submit] {
 .cucu-seminar .cucu-about-frame .cucu-about-text .cucu-quote p {
   display: block;
   padding-left: 40px;
-  font-size: 0.85rem;
-  line-height: 25px;
+  font-size: 12px;
+  letter-spacing: 0.3px;
+  line-height: 24px;
+  color: #4e4e4e;
+  font-family: "Noto Sans JP";
   margin-bottom: 40px;
-  color: #444;
 }
 
 .cucu-seminar .cucu-about-frame .cucu-about-text .cucu-quote p span {
