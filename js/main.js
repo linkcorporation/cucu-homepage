@@ -94,42 +94,68 @@ $(function () {
   // =====================================================
   // RSS FEED
   // =====================================================
+  /**
+   * 文字列からHTMLタグを除去する
+   * @param {string} text - HTMLタグを除去する文字列
+   * @return {string} HTMLタグ除去後の文字列
+   */
+  const getSimpleText = text => {
+    const element = document.createElement('div');
+    element.innerHTML = text;
+    const anchors = element.getElementsByTagName("a");
+    for (let index = 0; index < anchors.length; index++) {
+      anchors[index].remove();
+    }
+    const brs = element.getElementsByTagName("br");
+    for (let index = 0; index < brs.length; index++) {
+      brs[index].remove();
+    }
+    const imgs = element.getElementsByTagName("img");
+    for (let index = 0; index < imgs.length; index++) {
+      imgs[index].remove();
+    }
+    const result = element.textContent;
+    element.remove();
+    return result;
+  }
+  const getInstaLink = text => {
+    const element = document.createElement('div');
+    element.innerHTML = text;
+    const anchors = element.getElementsByTagName("a");
+    const result = anchors[0].getAttribute('href');
+    element.remove();
+    return result;
+  }
   window.onload = async function () {
-	// rss feed を取得
-	const res = await fetch('https://api.rss2json.com/v1/api.json?rss_url=https://cucu-81.tumblr.com/rss');
-	const data = await res.json();
-	// アイテムを１個ずつ表示
-	for (let i = 0; i < 3; i++){
-		console.log(data.items[i].title); 
-		console.log(data.items[i].description); 
-		console.log(data.items[i].pubDate); 
-		// console.log(data.items[i].description.substring(indexOf('c'), 10)); 
-		// console.log(data.items[i].title); 
-
-		// const new_post = document.getElementById('cucu-news-rss').insertRow();
-
-		// const title = data.items[i].title; 
-		// const description = data.items[i].description; 
-		// const link = data.items[i].link; 
-		// const ins_link = data.items[i].description.substring(indexOf("<a href=") + 2, indexOf(">") - 1);
-		// const pubDate = data.items[i].pubDate; 
-
-		// console.log(data.items[i].link);
-
-	  }
-	// const post = document.getElementById('delay_info').insertRow();
-	// post.insertCell().innerHTML = link;
-	// data.items.forEach(item => {
-	// //   const date = item.pubDate.replace("T", " ").replace("+09:00", ""); // 最終更新日時
-	// //   const company = item.title.substring(item.title.indexOf("【") + 1, item.title.indexOf("】"));
-	// //   const description = item.summary.substring(0, item.summary.lastIndexOf("（")) + '。';
-	// const link = item.link;
-	//   const post = document.getElementById('delay_info').insertRow();
-	//   post.insertCell().innerHTML = link;
-	// //   row.insertCell().innerHTML = company;
-	// //   row.insertCell().innerHTML = description;
-	// });
-
+    // rss feed を取得
+    const res = await fetch('https://api.rss2json.com/v1/api.json?rss_url=https://cucu-81.tumblr.com/rss');
+    const data = await res.json();
+    // アイテムを１個ずつ表示
+    for (let i = 0; i < 3; i++){
+      const item = data.items[i];
+      console.log(item); 
+      const thumbnail = item.thumbnail;
+      const pubDate = item.pubDate; 
+      const description = getSimpleText(item.description);
+      const instaUrl = getInstaLink(item.description);
+      // const title = item.title; 
+      // const link = item.link;
+      // // const ins_link = data.items[i].description.substring(indexOf("<a href=") + 2, indexOf(">") - 1);
+      const innerHTML = `
+      <div class="cucu-g-33 cucu-md-50 cucu-sm-100">
+        <a href="${instaUrl}" target="_blank" class="cucu-blog-card">
+          <div class="cucu-photo-frame cucu-active">
+            <img src="${thumbnail}" alt="photo">
+          </div>
+          <div class="cucu-post-text">
+            <div class="cucu-date">${pubDate}</div>
+            <p>${description}</p>
+          </div>
+        </a>
+      </div>
+      `;
+      document.getElementById('cucu-news-rss').innerHTML += innerHTML;
+    }
   };
 
 
