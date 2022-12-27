@@ -9210,6 +9210,11 @@ form.wufoo input[type="submit"] {
 .cucu-seminar .cucu-content .cucu-text-frame {
 	position: relative;
 	/* padding: 80px 80px 60px 0; */
+  display: flex;
+    align-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .cucu-seminar .cucu-content .cucu-text-frame .cucu-post-title {
@@ -9311,7 +9316,7 @@ form.wufoo input[type="submit"] {
 
 .cucu-seminar .cucu-description {
 	position: absolute;
-	bottom: 80px;
+	bottom: -3px;
 	left: 0;
 	z-index: 1;
 	width: 100%;
@@ -9406,6 +9411,12 @@ form.wufoo input[type="submit"] {
 	transform: rotate(180deg);
 }
 
+.cucu-seminar h2{
+  font-size: 42px;
+  color: #444;
+  letter-spacing: 1px;
+}
+
 .cucu-seminar .cucu-quote {
   padding-top: 40px;
   padding-right: 80px;
@@ -9437,6 +9448,72 @@ form.wufoo input[type="submit"] {
   display: block;
   color: #f2706d;
   font-style: italic;
+}
+
+/*== 線の上を別の線が伸びる */
+
+.cucu-seminar .seminar-go-form {
+  /*線の基点とするためrelativeを指定*/
+  position: relative;
+  /*リンクの形状*/
+  color: #707070;
+  padding: 0 20px 10px 3px;
+  display: inline;
+  /* width: 100%; */
+  text-decoration: none;
+  outline: none;
+  font-size: 12px;
+  margin-top: 40px;
+}
+
+/*線の設定*/
+.cucu-seminar .seminar-go-form::before,
+.cucu-seminar .seminar-go-form::after {
+  content: "";
+  /*絶対配置で線の位置を決める*/
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  left: 0;
+  /*線の形状*/
+  background: #707070;
+  width: 100%;
+  height: 2px;
+  /*アニメーションの指定*/
+  transition: all 0.3s ease-in-out;
+}
+
+/*hover時に伸びる線の形状*/
+.cucu-seminar .seminar-go-form::after {
+  width: 0;
+  background: #ff6e6c;
+}
+
+/*hover時に100%に伸びる*/
+.cucu-seminar .seminar-go-form:hover::after {
+  width: 100%;
+}
+
+/*矢印の設定*/
+.cucu-seminar .seminar-go-form span::after {
+  content: "";
+  /*絶対配置で矢印の位置を決める*/
+  position: absolute;
+  top: 1.3em;
+  right: 20px;
+  /*矢印の形状*/
+  width: 5px;
+  height: 5px;
+  border-top: 1px solid #707070;
+  border-right: 1px solid #707070;
+  transform: rotate(45deg);
+  /*アニメーションの指定*/
+  transition: all 0.3s;
+}
+
+/*hover時に矢印が移動*/
+.cucu-seminar .seminar-go-form:hover span::after {
+  right: 15px;
 }
 
 @media (max-width: 1200px) {
