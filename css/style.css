@@ -115,7 +115,7 @@ body {
   position: fixed;
   display: grid;
   justify-items: end;
-  z-index: 4;
+  z-index: 5;
   right: 0;
   top: 40%;
 }
