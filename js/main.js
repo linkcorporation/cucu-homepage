@@ -138,9 +138,6 @@ $(function () {
       const pubDate = item.pubDate; 
       const description = getSimpleText(item.description);
       const instaUrl = getInstaLink(item.description);
-      // const title = item.title; 
-      // const link = item.link;
-      // // const ins_link = data.items[i].description.substring(indexOf("<a href=") + 2, indexOf(">") - 1);
       const innerHTML = `
       <div class="cucu-g-33 cucu-md-50 cucu-sm-100">
         <a href="${instaUrl}" target="_blank" class="cucu-blog-card">
