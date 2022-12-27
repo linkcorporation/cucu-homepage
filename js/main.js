@@ -94,29 +94,69 @@ $(function () {
   // =====================================================
   // RSS FEED
   // =====================================================
-  $(document).ready(function() {
-    $.ajax({
-      type: "get",
-      url: "https://cucu-81.tumblr.com/rss"
-    }).done(function(result) {
-      $(result).find("item").each(function() {
-        var title = $(this).find('title').text();
-        var url = $(this).find('link').text();
-        var img = $(this).find('description').attr('href');
-        var category = $(this).find('category').text();
-        var contents = '';
-        firstImg = $(this).find("content\\:encoded, encoded").text();
-        firstImg = $(firstImg).find("img").first().attr("src");
-        var pubDate = $(this).find("pubDate").text();
-        var Dates = new Date(pubDate);
-        var Dday = Dates.getDate();
-        var Dmonth = Dates.getMonth() + 1;
-        var Dyear = Dates.getFullYear();
-        $(".rssbox").append('<a class="" href="' + url + '"><img src="' + firstImg + '"><span>' + category + '</span><span>' + title + '</span><time>' + Dyear + '/' + Dmonth + '/' + Dday + '</time></a>');
-      });
-    });
-  });
-  // =====================================================
+  /**
+   * 文字列からHTMLタグを除去する
+   * @param {string} text - HTMLタグを除去する文字列
+   * @return {string} HTMLタグ除去後の文字列
+   */
+  const getSimpleText = text => {
+    const element = document.createElement('div');
+    element.innerHTML = text;
+    const anchors = element.getElementsByTagName("a");
+    for (let index = 0; index < anchors.length; index++) {
+      anchors[index].remove();
+    }
+    const brs = element.getElementsByTagName("br");
+    for (let index = 0; index < brs.length; index++) {
+      brs[index].remove();
+    }
+    const imgs = element.getElementsByTagName("img");
+    for (let index = 0; index < imgs.length; index++) {
+      imgs[index].remove();
+    }
+    const result = element.textContent;
+    element.remove();
+    return result;
+  }
+  const getInstaLink = text => {
+    const element = document.createElement('div');
+    element.innerHTML = text;
+    const anchors = element.getElementsByTagName("a");
+    const result = anchors[0].getAttribute('href');
+    element.remove();
+    return result;
+  }
+  window.onload = async function () {
+    // rss feed を取得
+    const res = await fetch('https://api.rss2json.com/v1/api.json?rss_url=https://cucu-81.tumblr.com/rss');
+    const data = await res.json();
+    // アイテムを１個ずつ表示
+    for (let i = 0; i < 3; i++){
+      const item = data.items[i];
+      console.log(item); 
+      const thumbnail = item.thumbnail;
+      const pubDate = item.pubDate; 
+      const description = getSimpleText(item.description);
+      const instaUrl = getInstaLink(item.description);
+      const innerHTML = `
+      <div class="cucu-g-33 cucu-md-50 cucu-sm-100">
+        <a href="${instaUrl}" target="_blank" class="cucu-blog-card">
+          <div class="cucu-photo-frame cucu-active">
+            <img src="${thumbnail}" alt="photo">
+          </div>
+          <div class="cucu-post-text">
+            <div class="cucu-date">${pubDate}</div>
+            <p>${description}</p>
+          </div>
+        </a>
+      </div>
+      `;
+      document.getElementById('cucu-news-rss').innerHTML += innerHTML;
+    }
+  };
+
+
+  // =============================================x========
   // SWUP
   // =====================================================
   const options = {

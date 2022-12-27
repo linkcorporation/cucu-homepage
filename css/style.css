@@ -141,8 +141,6 @@ body {
   transition: all 0.3s;
 }
 
-
-
 .cucu-all-frame .cucu-top-menu-frame {
   background-color: #ffffff;
   padding: 0;
@@ -353,14 +351,16 @@ ul li {
   margin: 0 auto;
   color: #e4e4e4;
   font-family: "Noto Sans JP";
-  font-size: 2rem;
-  letter-spacing: 0.3rem;
+  font-size: 40px;
+  /* font-size: 2rem; */
+  letter-spacing: 0.3px;
   text-orientation: upright;
   transition: all 0.3s ease-in-out;
 }
 
 .cucu-category h2.healing {
-  font-size: 1.6rem !important;
+  font-size: 16px !important;
+  /* font-size: 1.6rem !important; */
 }
 
 .cucu-category .eng-text {
@@ -372,8 +372,8 @@ ul li {
 
 .cucu-category .eng-text p {
   color: #eeeeee;
-  font-size: 0.6rem !important;
-  letter-spacing: 0.03rem;
+  font-size: 11px !important;
+  letter-spacing: 0.3px;
   margin: 0;
   text-transform: capitalize;
 }
@@ -413,7 +413,7 @@ ul li {
 
 .cucu-top-menu-frame .cucu-top-menu .cucu-logo-frame img path,
 .cucu-top-menu-frame .cucu-top-menu .cucu-logo-frame svg path {
-  fill: #442a24;
+  fill: #9C9592;
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
   -webkit-transition-delay: 1.2s;
@@ -437,7 +437,7 @@ ul li {
   bottom: 0;
   content: "";
   height: 1px;
-  background-color: #442a24;
+  background-color: #9C9592;
 }
 
 .cucu-top-menu-frame.cucu-menu-opened {
@@ -447,12 +447,12 @@ ul li {
 }
 
 .cucu-top-menu-frame.cucu-menu-opened .cucu-top-menu:before {
-  background-color: #442a24 !important;
+  background-color: #9C9592 !important;
 }
 
 .cucu-top-menu-frame.cucu-menu-opened .cucu-top-menu .cucu-logo-frame img path,
 .cucu-top-menu-frame.cucu-menu-opened .cucu-top-menu .cucu-logo-frame svg path {
-  fill: #442a24 !important;
+  fill: #9C9592 !important;
   -webkit-transition-delay: 0s;
   transition-delay: 0s;
 }
@@ -466,7 +466,7 @@ ul li {
 .cucu-top-menu-frame.cucu-menu-opened .cucu-menu-btn span,
 .cucu-top-menu-frame.cucu-menu-opened .cucu-menu-btn span:after,
 .cucu-top-menu-frame.cucu-menu-opened .cucu-menu-btn span:before {
-  background-color: #442a24 !important;
+  background-color: #9C9592 !important;
 }
 
 @media (max-width: 992px) {
@@ -528,55 +528,54 @@ ul li {
 }
 
 #page-top h2 {
-  font-size: 1rem;
+  font-size: 14px;
   color: #444;
 }
 
 /*リンクを右下に固定*/
 #page-top {
-	position: fixed;
-	right: 10px;
-	bottom:10px;
-	z-index: 2;
-    /*はじめは非表示*/
-	opacity: 0;
-	transform: translateX(100px);
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  z-index: 2;
+  /*はじめは非表示*/
+  opacity: 0;
+  transform: translateX(100px);
 }
 
 /*　左の動き　*/
 
-#page-top.LeftMove{
-	animation: LeftAnime 0.5s forwards;
+#page-top.LeftMove {
+  animation: LeftAnime 0.5s forwards;
   z-index: 5;
 }
 
-@keyframes LeftAnime{
+@keyframes LeftAnime {
   from {
     opacity: 0;
-	transform: translateX(100px);
+    transform: translateX(100px);
   }
   to {
     opacity: 1;
-	transform: translateX(0);
+    transform: translateX(0);
   }
 }
 
 /*　右の動き　*/
 
-#page-top.RightMove{
-	animation: RightAnime 0.5s forwards;
+#page-top.RightMove {
+  animation: RightAnime 0.5s forwards;
 }
-@keyframes RightAnime{
+@keyframes RightAnime {
   from {
-  	opacity: 1;
-	transform: translateX(0);
+    opacity: 1;
+    transform: translateX(0);
   }
   to {
-  	opacity: 1;
-	transform: translateX(100px);
+    opacity: 1;
+    transform: translateX(100px);
   }
 }
-
 
 /* Menu
 ==================================== */
@@ -610,7 +609,7 @@ ul li {
 .cucu-menu-frame nav .cucu-menu li a {
   white-space: nowrap;
   text-decoration: none;
-  color: #442a24;
+  color: #9C9592;
   font-family: "Roboto", sans-serif;
   font-weight: bold;
   font-size: 11px;
@@ -749,7 +748,7 @@ ul li {
 }
 
 .cucu-menu-frame.cucu-fs-menu nav .cucu-menu li.cucu-has-children ul li a {
-  color: #442a24;
+  color: #9C9592;
   font-size: 11px;
   font-family: "Roboto", sans-serif;
 }
@@ -975,7 +974,7 @@ ul li {
   width: 30px;
   height: 3px;
   border-radius: 1px;
-  background: #442a24;
+  background: #9C9592;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -webkit-transition: 0.3s ease-in-out;
@@ -1008,7 +1007,7 @@ ul li {
 }
 
 .cucu-menu-btn.cucu-active span {
-  background-color: #442a24;
+  background-color: #9C9592;
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
 }
@@ -1814,7 +1813,7 @@ ul li {
   z-index: 2;
   border-radius: 50%;
   border: 1px solid #fff;
-  color: #442a24;
+  color: #9C9592;
   width: 180px;
   height: 180px;
   font-family: "Roboto", sans-serif;
@@ -1868,8 +1867,8 @@ ul li {
   }
 
   .cucu-button:hover {
-    -webkit-box-shadow: 0 0 0 1px #442a24;
-    box-shadow: 0 0 0 1px #442a24;
+    -webkit-box-shadow: 0 0 0 1px #9C9592;
+    box-shadow: 0 0 0 1px #9C9592;
   }
 }
 
@@ -1886,17 +1885,17 @@ html.is-animating .transition-fade {
   opacity: 0.999;
 }
 
-.transition-fade .oshirase{
+.transition-fade .oshirase {
   position: absolute;
   bottom: 10px;
   right: 20px;
   z-index: 4;
 }
-.transition-fade .oshirase p{
-font-size: .7rem;
-letter-spacing: 1px;
-color: #F2706D;
-font-weight: 600;
+.transition-fade .oshirase p {
+  font-size: 11px;
+  letter-spacing: 1px;
+  color: #f2706d;
+  font-weight: 600;
 }
 
 .cucu-loader-frame {
@@ -1939,7 +1938,7 @@ font-weight: 600;
   transition-delay: 1.1s;
 }
 
-.cucu-loader-frame .cucu-loader img{
+.cucu-loader-frame .cucu-loader img {
   position: relative;
   width: 100px;
   left: 50%;
@@ -2143,7 +2142,7 @@ html.is-preload
   font-family: "Libre Baskerville", serif;
   width: 100%;
   border: none;
-  border-bottom: solid 1px #442a24;
+  border-bottom: solid 1px #9C9592;
 }
 
 .cucu-group-input textarea {
@@ -2182,7 +2181,7 @@ html.is-preload
   /* Chrome, Firefox, Opera, Safari 10.1+ */
   font-family: "Libre Baskerville", serif;
   font-size: 18px;
-  color: #442a24;
+  color: #9C9592;
   opacity: 1;
 }
 
@@ -2190,7 +2189,7 @@ html.is-preload
   /* Microsoft Edge */
   font-family: "Libre Baskerville", serif;
   font-size: 18px;
-  color: #442a24;
+  color: #9C9592;
 }
 
 .cucu-access ::placeholder {
@@ -2223,7 +2222,7 @@ label.cbx {
   font-size: 16px;
   font-weight: 500;
   margin-top: 20px;
-  border: solid 1px #442a24;
+  border: solid 1px #9C9592;
   height: 45px;
   padding: 10px 15px;
 }
@@ -2247,7 +2246,7 @@ label.cbx {
   height: 18px;
   transform: scale(1);
   vertical-align: middle;
-  border: 1px solid #442a24;
+  border: 1px solid #9C9592;
   transition: all 0.2s ease;
   margin-right: 10px;
 }
@@ -2415,15 +2414,15 @@ label.cbx {
 .cucu-home-1 .cucu-content .cucu-navigation .cucu-line {
   margin-right: 40px;
   height: 1px;
-  background-color: #442a24;
+  background-color: #9C9592;
   width: calc(100% - 340px);
 }
 
 .cucu-home-1 .cucu-content .cucu-navigation .cucu-button {
   z-index: 2;
   border-radius: 50%;
-  border: 1px solid #442a24;
-  color: #442a24;
+  border: 1px solid #9C9592;
+  color: #9C9592;
   width: 180px;
   height: 180px;
   background-color: #f1ebe5;
@@ -2453,8 +2452,8 @@ label.cbx {
 }
 
 .cucu-home-1 .cucu-content .cucu-navigation .cucu-button:hover {
-  -webkit-box-shadow: 0 0 0 1px #442a24;
-  box-shadow: 0 0 0 1px #442a24;
+  -webkit-box-shadow: 0 0 0 1px #9C9592;
+  box-shadow: 0 0 0 1px #9C9592;
 }
 
 @media (max-width: 1200px) {
@@ -2592,8 +2591,8 @@ label.cbx {
   }
 
   .cucu-home-1 .cucu-content .cucu-navigation .cucu-button:hover {
-    -webkit-box-shadow: 0 0 0 1px #442a24;
-    box-shadow: 0 0 0 1px #442a24;
+    -webkit-box-shadow: 0 0 0 1px #9C9592;
+    box-shadow: 0 0 0 1px #9C9592;
   }
 }
 
@@ -2608,7 +2607,21 @@ label.cbx {
 }
 
 .cucu-real-estate .cucu-photo-frame:after {
-  background-color: #9c9592;
+  /* background-color: #9c9592; */
+
+  background: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.15) 0%,
+      rgba(0, 0, 0, 0.15) 100%
+    ),
+    radial-gradient(
+        at top center,
+        rgba(255, 255, 255, 0.4) 0%,
+        rgba(0, 0, 0, 0.4) 120%
+      )
+      #989898;
+  background-blend-mode: multiply, multiply;
+  background-image: linear-gradient(to top, #6a85b6 0%, #bac8e0 100%);
 }
 
 .cucu-real-estate .cucu-photo-frame img {
@@ -2637,15 +2650,17 @@ label.cbx {
   color: #ff6e6c;
 }
 .cucu-real-estate .cucu-content span {
-  font-size: 0.8rem;
+  font-size: 12.5px;
   letter-spacing: 1px;
-  line-height: 1.4rem;
+  line-height: 22px;
+  /* line-height: 1.4rem; */
   color: #4e4e4e;
   margin-left: 10px;
   width: 100%;
 }
 .cucu-real-estate .cucu-content h1 {
-  font-size: 3rem;
+  font-size: 30px;
+  /* font-size: 3rem; */
 }
 
 .cucu-real-estate .cucu-content:before {
@@ -2753,9 +2768,21 @@ label.cbx {
 .cucu-real-estate .cucu-content .cucu-slide-caption .cucu-main-title .h1,
 .cucu-real-estate .cucu-content .cucu-slide-caption .cucu-main-title h1 {
   margin-left: 10%;
-  font-size: 72px;
+  font-size: 66px;
   color: #fff;
   text-transform: uppercase;
+  text-shadow: 0 0 15px #666;
+}
+
+.cucu-real-estate .cucu-content .cucu-slide-caption .cucu-main-title .h1,
+.cucu-real-estate
+  .cucu-content
+  .cucu-slide-caption
+  .cucu-main-title
+  h1
+  .m-size {
+  font-size: 50px;
+  color: #fff;
 }
 
 .cucu-real-estate .cucu-content .cucu-slide-caption .cucu-button-and-descr {
@@ -2775,7 +2802,7 @@ label.cbx {
   .cucu-slide-caption
   .cucu-button-and-descr
   .cucu-description {
-  width: 50%;
+  width: 75%;
   font-size: 18px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2795,8 +2822,10 @@ label.cbx {
   .cucu-description
   span {
   padding-right: 40px;
-  width: 500px;
+  width: 585px;
   color: #ffffff;
+  text-shadow: 0 0 15px #666;
+  font-family: "Noto Sans JP";
 }
 
 .cucu-real-estate
@@ -2972,8 +3001,8 @@ label.cbx {
     .cucu-slide-caption
     .cucu-button-and-descr
     .cucu-button:hover {
-    -webkit-box-shadow: 0 0 0 1px #442a24;
-    box-shadow: 0 0 0 1px #442a24;
+    -webkit-box-shadow: 0 0 0 1px #9C9592;
+    box-shadow: 0 0 0 1px #9C9592;
   }
 
   .cucu-real-estate
@@ -3062,7 +3091,7 @@ label.cbx {
 
 .real-estate-info .cucu-top-bar-frame .cucu-top-bar:before {
   right: 0;
-  background-color: #442a24;
+  background-color: #9C9592;
   width: 37%;
   opacity: 0.15;
 }
@@ -3106,64 +3135,64 @@ label.cbx {
   right: -40px;
 }
 
-.go-contact-form{
+.go-contact-form {
   /*矢印の基点とするためrelativeを指定*/
-position: relative;
+  position: relative;
   /*ボタンの形状*/
-border: 1px solid #555;
+  border: 1px solid #555;
   padding: 8px 30px;
   display: inline-block;
   text-align: center;
   text-decoration: none;
   color: #444;
   outline: none;
-  font-size: .9rem;
+  font-size: 13px;
   /*アニメーションの指定*/
-  transition: all .2s linear;
+  transition: all 0.2s linear;
 }
 
-.go-contact-form:hover{
-background:#333;
-color:#fff;
+.go-contact-form:hover {
+  background: #333;
+  color: #fff;
 }
 
 /*矢印と下線の形状*/
-.go-contact-form::before{
-content:"";
+.go-contact-form::before {
+  content: "";
   /*絶対配置で下線の位置を決める*/
-position: absolute;
-top:50%;
-right:-26px;
+  position: absolute;
+  top: 50%;
+  right: -26px;
   /*下線の形状*/
-width:40px;
-height:1px;
-background:#333;
+  width: 40px;
+  height: 1px;
+  background: #333;
   /*アニメーションの指定*/
-  transition: all .2s linear;
+  transition: all 0.2s linear;
 }
 
-.go-contact-form::after{
-content:"";
+.go-contact-form::after {
+  content: "";
   /*絶対配置で矢印の位置を決める*/
-position: absolute;
+  position: absolute;
   top: 20%;
   right: -21px;
   /*矢印の形状*/
-width:1px;
-height:12px;
-background:#333;
-  transform:skewX(45deg);
+  width: 1px;
+  height: 12px;
+  background: #333;
+  transform: skewX(45deg);
   /*アニメーションの指定*/
-  transition: all .2s linear;
+  transition: all 0.2s linear;
 }
 
 /*hoverした際の移動*/
-.go-contact-form:hover::before{
-right:-30px;
+.go-contact-form:hover::before {
+  right: -30px;
 }
 
-.go-contact-form:hover::after{
-right:-25px;
+.go-contact-form:hover::after {
+  right: -25px;
 }
 
 .real-estate-info .cucu-content .cucu-blog-frame {
@@ -3218,7 +3247,7 @@ right:-25px;
 
 .real-estate-info .cucu-date span {
   color: #4e4e4e;
-  font-size: 0.7rem;
+  font-size: 11px;
   letter-spacing: unset;
   text-transform: capitalize;
   margin-left: 15px;
@@ -3234,7 +3263,7 @@ right:-25px;
   -ms-flex-align: center;
   align-items: center;
   font-size: 11px;
-  color: #442a24;
+  color: #9C9592;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   background: unset;
@@ -3349,7 +3378,7 @@ right:-25px;
     -ms-flex-align: center;
     align-items: center;
     font-size: 11px;
-    color: #442a24;
+    color: #9C9592;
     letter-spacing: 0.1em;
     text-transform: uppercase;
   }
@@ -3603,7 +3632,7 @@ right:-25px;
   top: 120px;
   content: "";
   height: 1px;
-  background-color: #442a24;
+  background-color: #9C9592;
   left: 0;
   width: 55%;
   opacity: 0.15;
@@ -3731,7 +3760,7 @@ right:-25px;
   margin: 0 auto;
   width: 100px;
   height: 100px;
-  border: solid 1px #442a24;
+  border: solid 1px #9C9592;
   border-radius: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3745,9 +3774,11 @@ right:-25px;
 }
 
 .cucu-event .cucu-main-title .cucu-button-frame .cucu-btn-label {
-  font-size: 0.85rem;
-  /* font-style: italic; */
-  color: #444;
+  font-size: 12px;
+  letter-spacing: 0.3px;
+  line-height: 24px;
+  color: #4e4e4e;
+  font-family: "Noto Sans JP";
   margin-bottom: 30px;
 }
 
@@ -3991,7 +4022,7 @@ right:-25px;
 }
 
 .cucu-welcome .cucu-content .cucu-caption .cucu-button-frame h3 {
-  font-size: 0.8rem;
+  font-size: 12.5px;
   letter-spacing: 1px;
   color: #fff;
   margin-right: 40px;
@@ -4058,15 +4089,15 @@ right:-25px;
   -ms-flex-pack: justify;
   justify-content: space-between;
   margin-bottom: 25px;
-  transition: all .3s;
+  transition: all 0.3s;
 }
 
-.cucu-welcome .cucu-link:hover{
+.cucu-welcome .cucu-link:hover {
   -webkit-transform: scale(1.5);
-    -moz-transform: scale(1.5);
-    -o-transform: scale(1.5);
-    -ms-transform: scale(1.5);
-    transform: scale(1.5);
+  -moz-transform: scale(1.5);
+  -o-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  transform: scale(1.5);
 }
 
 .cucu-welcome .cucu-description .cucu-link img {
@@ -4191,13 +4222,14 @@ right:-25px;
 
 .cucu-natural-stone .cucu-top-bar {
   padding: 0 80px;
+  padding-bottom: 80px;
 }
 .cucu-natural-stone .cucu-top-bar::before {
   position: absolute;
   bottom: 0;
   content: "";
   height: 1px;
-  background-color: #442a24;
+  background-color: #9C9592;
   right: 80px;
   width: 55%;
   opacity: 0.15;
@@ -4206,24 +4238,49 @@ right:-25px;
   border-bottom: solid 1px #707070;
   padding-bottom: 40px;
   margin-bottom: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
 }
 .cucu-natural-stone .cucu-top-bar .cucu-stone-title h1 {
-  /* color: #FFF; */
+  color: #fff;
   font-size: 72px;
   text-transform: uppercase;
+}
+
+.cucu-natural-stone .cucu-top-bar .cucu-stone-title .cucu-title-2 {
+  text-align: right;
+  display: block;
+  color: #ff6e6c;
+  font-size: 1.5em;
+  font-family: "Libre Baskerville", serif;
+  margin-bottom: 20px;
+  line-height: 20px;
+}
+
+.cucu-natural-stone .cucu-top-bar .cucu-stone-title .cucu-title-2 span {
+  font-size: 12.5px;
+  letter-spacing: 1px;
+  color: #4e4e4e;
+  text-transform: capitalize;
 }
 
 .cucu-natural-stone .cucu-top-bar .cucu-post-card {
   display: block;
   position: relative;
-  padding-bottom: 40px;
-  margin-bottom: 20px;
+  /* padding-bottom: 40px; */
+  /* margin-bottom: 20px; */
 }
 .cucu-natural-stone .cucu-top-bar .cucu-post-card h2 {
   font-size: 12px;
-  line-height: 25px;
-  color: #444;
+  letter-spacing: 0.3px;
+  line-height: 24px;
+  color: #4e4e4e;
   font-family: "Noto Sans JP";
+  text-align: justify;
+}
+.cucu-natural-stone .cucu-top-bar .cucu-post-card img {
+  width: 50%;
 }
 .cucu-natural-stone .cucu-top-bar .cucu-post-card .cucu-date {
   color: #444;
@@ -4235,8 +4292,15 @@ right:-25px;
   white-space: nowrap;
 }
 
-.cucu-natural-stone .cucu-top-bar .cucu-post-card span{
-  color: #FF6E6C;
+.cucu-natural-stone .cucu-top-bar .cucu-post-card .stone-designer {
+  color: #ff6e6c;
+  opacity: 1;
+}
+
+.cucu-natural-stone .cucu-top-bar .cucu-post-card span {
+  font-size: 14px;
+  letter-spacing: 1px;
+  font-family: "Libre Baskerville", serif;
 }
 
 .cucu-natural-stone .cucu-photo-frame:after {
@@ -4337,10 +4401,9 @@ right:-25px;
   .cucu-content
   .cucu-object-frame
   .cucu-slide-caption
-  h2
-  span {
+  h2 {
   display: block;
-  font-size: 16px;
+  /* font-size: 16px; */
   margin-top: 5px;
 }
 
@@ -4375,7 +4438,7 @@ right:-25px;
   margin-top: 40px;
   position: absolute;
   z-index: 1;
-  top: calc(100% - 130px);
+  top: calc(100% - 150px);
   font-style: normal;
   font-weight: normal;
 }
@@ -4444,7 +4507,7 @@ right:-25px;
   transform: scale(1.3);
   height: 60px;
   width: 60px;
-  border: solid 1px #442a24;
+  border: solid 1px #9C9592;
   border-radius: 50%;
   cursor: pointer;
   -webkit-transition: 0.3s ease-in-out;
@@ -4693,7 +4756,7 @@ right:-25px;
 }
 
 .cucu-shop .cucu-description .cucu-pagination {
-  border-bottom: solid 1px #442a24;
+  border-bottom: solid 1px #9C9592;
   margin-right: 65%;
   padding-bottom: 50px;
   font-size: 18px;
@@ -4736,7 +4799,7 @@ right:-25px;
   z-index: 2;
   bottom: 30%;
   right: 1px;
-  border: 1px solid #442a24;
+  border: 1px solid #9C9592;
   width: 180px;
   height: 140px;
   font-family: "Roboto", sans-serif;
@@ -4789,8 +4852,8 @@ right:-25px;
 }
 
 .cucu-shop .cucu-next-btn:hover {
-  -webkit-box-shadow: 0 0 0 1px #442a24;
-  box-shadow: 0 0 0 1px #442a24;
+  -webkit-box-shadow: 0 0 0 1px #9C9592;
+  box-shadow: 0 0 0 1px #9C9592;
 }
 
 @media (max-width: 768px) {
@@ -4843,7 +4906,7 @@ right:-25px;
     padding: 0;
     padding-top: 60px;
     border: none;
-    border-top: solid 1px #442a24;
+    border-top: solid 1px #9C9592;
     margin: 0;
     width: 30%;
     text-align: right;
@@ -4875,7 +4938,17 @@ right:-25px;
 }
 
 .cucu-construction .cucu-photo-frame:after {
-  background-color: #e2dddb;
+  /* background-color: #E2DDDB; */
+  /* background-image: linear-gradient(to top, #e6b980 0%, #eacda3 100%); */
+  background: linear-gradient(to bottom, #d5dee7 0%, #e8ebf2 50%, #e2e7ed 100%),
+    linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.02) 50%,
+      rgba(255, 255, 255, 0.02) 61%,
+      rgba(0, 0, 0, 0.02) 73%
+    ),
+    linear-gradient(33deg, rgba(255, 255, 255, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%);
+  background-blend-mode: normal, color-burn;
 }
 
 .cucu-construction .cucu-top-menu-frame {
@@ -4951,8 +5024,8 @@ right:-25px;
   /* font-family: "Libre Baskerville", serif; */
   font-family: "Noto Sans JP";
   position: absolute;
-  top: 5%;
-  left: -19%;
+  top: 8%;
+  left: -10%;
   z-index: 1;
   /* color: #fff; */
   padding: 40px;
@@ -4965,6 +5038,7 @@ right:-25px;
 .cucu-construction .cucu-content .rb-object-frame .cucu-slide-caption h2 {
   font-size: 68px;
   margin-bottom: 20px;
+  color: #444;
 }
 
 .cucu-construction
@@ -4972,9 +5046,80 @@ right:-25px;
   .rb-object-frame
   .cucu-slide-caption
   .cucu-suptitle {
-  /* text-transform: uppercase; */
-  font-size: .9rem;
   letter-spacing: 0.3em;
+  font-size: 13px;
+  letter-spacing: 1px;
+  line-height: 25px;
+  /* line-height: 1.4rem; */
+  /* color: #4e4e4e; */
+  color: #444;
+  display: block;
+  margin-bottom: 40px;
+}
+
+/*== 線の上を別の線が伸びる */
+
+.cucu-construction .construction-go-form {
+  /*線の基点とするためrelativeを指定*/
+  position: relative;
+  /*リンクの形状*/
+  color: #707070;
+  padding: 0 20px 10px 3px;
+  display: inline;
+  width: 100%;
+  text-decoration: none;
+  outline: none;
+  font-size: 12px;
+}
+
+/*線の設定*/
+.cucu-construction .construction-go-form::before,
+.cucu-construction .construction-go-form::after {
+  content: "";
+  /*絶対配置で線の位置を決める*/
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  left: 0;
+  /*線の形状*/
+  background: #707070;
+  width: 100%;
+  height: 2px;
+  /*アニメーションの指定*/
+  transition: all 0.3s ease-in-out;
+}
+
+/*hover時に伸びる線の形状*/
+.cucu-construction .construction-go-form::after {
+  width: 0;
+  background: #ff6e6c;
+}
+
+/*hover時に100%に伸びる*/
+.cucu-construction .construction-go-form:hover::after {
+  width: 100%;
+}
+
+/*矢印の設定*/
+.cucu-construction .construction-go-form span::after {
+  content: "";
+  /*絶対配置で矢印の位置を決める*/
+  position: absolute;
+  top: 1.3em;
+  right: 20px;
+  /*矢印の形状*/
+  width: 5px;
+  height: 5px;
+  border-top: 1px solid #707070;
+  border-right: 1px solid #707070;
+  transform: rotate(45deg);
+  /*アニメーションの指定*/
+  transition: all 0.3s;
+}
+
+/*hover時に矢印が移動*/
+.cucu-construction .construction-go-form:hover span::after {
+  right: 15px;
 }
 
 .cucu-construction .cucu-content .cucu-position-fix {
@@ -4985,16 +5130,55 @@ right:-25px;
 .cucu-construction .cucu-content .cucu-position-fix .cucu-title-2 {
   display: block;
   color: #ff6e6c;
-  font-size: 16px;
-  font-style: italic;
+  font-size: 1.5em;
+  /* font-style: italic; */
   font-family: "Libre Baskerville", serif;
   margin-bottom: 20px;
+  line-height: 20px;
+}
+
+.cucu-construction .cucu-content .cucu-position-fix .cucu-title-2 span {
+  font-size: 12.5px;
+  letter-spacing: 1px;
+  color: #4e4e4e;
+  text-transform: capitalize;
 }
 
 .cucu-construction .cucu-content .cucu-position-fix .cucu-obj-2 {
   padding-bottom: 0;
   height: 220px;
   width: 180px;
+}
+
+.cucu-construction .cucu-content .cucu-position-fix .cucu-obj-3 {
+  padding-bottom: 0;
+  height: 220px;
+  width: 180px;
+}
+
+.cucu-construction .cucu-content .cucu-position-fix .cucu-obj-3::after {
+  height: 140px;
+  /* width: 100px; */
+  border-radius: 0 140px 0 0;
+  -moz-border-radius: 0 1px 0 0;
+  -webkit-border-radius: 0 140px 0 0;
+  margin-top: 100px;
+}
+
+.cucu-construction .cucu-content .cucu-position-fix .cucu-designer {
+  margin-top: 20px;
+  font-size: 11px;
+  line-height: 20px;
+  /* color: #4e4e4e; */
+  color: #9c9592;
+}
+
+.cucu-construction .cucu-content .cucu-position-fix .cucu-designer .name {
+  display: block;
+  color: #707070;
+  font-size: 16px;
+  margin-bottom: 10px;
+  letter-spacing: 0.1px;
 }
 
 .cucu-construction .cucu-description {
@@ -5040,7 +5224,7 @@ right:-25px;
   color: #fff;
   width: 100px;
   margin-right: 20px;
-  letter-spacing: .2px;
+  letter-spacing: 0.2px;
 }
 
 .cucu-construction .cucu-description .cucu-nav .cucu-next,
@@ -5063,7 +5247,7 @@ right:-25px;
 
 .cucu-construction .cucu-description .cucu-nav .cucu-next:first-child,
 .cucu-construction .cucu-description .cucu-nav .cucu-prev:first-child {
-  margin-left: 0;
+  margin-left: 10px;
 }
 
 .cucu-construction .cucu-description .cucu-nav .cucu-next img,
@@ -5267,9 +5451,15 @@ right:-25px;
 
 .cucu-design {
   padding: 40px 80px 0 80px;
-  background-color: #faf6f4;
+  /* background-color: #faf6f4; */
   margin-bottom: 20px;
   overflow: hidden;
+  background-image: linear-gradient(
+    to top,
+    #c4c5c7 0%,
+    #dcdddf 52%,
+    #ebebeb 100%
+  );
 }
 
 .cucu-design .cucu-top-bar::before {
@@ -5281,7 +5471,7 @@ right:-25px;
   bottom: 0;
   content: "";
   height: 1px;
-  background-color: #442a24;
+  background-color: #9C9592;
   right: 0;
   width: 55%;
   opacity: 0.15;
@@ -5289,21 +5479,29 @@ right:-25px;
 
 .cucu-design .cucu-top-bar h2 {
   font-size: 50px;
+  color: #444;
   /* line-height: 40px; */
-  margin-bottom: 20px;
-  display: flex;
-  align-items: center;
-  margin-right: 30px;
+  /* margin-bottom: 20px; */
+  /* display: flex; */
+  /* align-items: center; */
+  /* margin-right: 30px; */
 }
 
-.cucu-design .cucu-top-bar h2 span.sub-title {
+.cucu-design .cucu-top-bar img.sub-title {
   display: inline-block;
-  font-size: 15px;
-  margin-left: 10px;
-  color: #ff6e6c;
+  /* font-size: 15px; */
+  /* margin-left: 10px; */
+  /* color: #ff6e6c; */
+  /* font-family: "Libre Baskerville", serif; */
+  /* font-family: "Noto Sans JP"; */
+  width: 200px;
+  height: 100%;
 }
-
 .cucu-design .cucu-top-bar {
+  padding-bottom: 20px;
+}
+.cucu-design .cucu-top-bar,
+.cucu-design .cucu-top-bar .sub-content {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -5318,6 +5516,10 @@ right:-25px;
 
 .cucu-design .cucu-photo-frame:after {
   background-color: #ffffff;
+}
+
+.cucu-design .cucu-photo-frame img {
+  opacity: 0.85;
 }
 
 .cucu-design .cucu-top-menu-frame {
@@ -5352,20 +5554,20 @@ right:-25px;
 .cucu-design .cucu-content .cucu-position-fix .cucu-slide-caption {
   position: relative;
   font-family: "Roboto", sans-serif;
-  text-transform: uppercase;
   font-weight: 500;
   font-size: 14px;
-  margin-bottom: 60px;
+  margin-bottom: 40px;
 }
 
 .cucu-design .cucu-content .cucu-position-fix .cucu-slide-caption span {
   display: block;
-  color: #444;
+  color: #707070;
   padding-right: 60px;
   font-family: "Noto Sans JP";
   font-size: 12px;
-  letter-spacing: 0.1rem;
+  letter-spacing: 0.3px;
   line-height: 24px;
+  text-align: justify;
 }
 
 .cucu-design .cucu-content .cucu-position-fix .cucu-slide-caption:before {
@@ -5426,8 +5628,8 @@ right:-25px;
   line-height: 6px;
   font-size: 14px;
   font-family: "Libre Baskerville", serif;
-  font-style: italic;
-  color: #442a24;
+  /* font-style: italic; */
+  color: #707070;
   text-decoration: none;
   width: 100px;
   letter-spacing: 1px;
@@ -5436,7 +5638,7 @@ right:-25px;
 .cucu-design .cucu-description .cucu-text span {
   width: calc(100% - 100px);
   height: 1px;
-  background-color: #442a24;
+  background-color: #9C9592;
   z-index: 1;
 }
 
@@ -5458,7 +5660,7 @@ right:-25px;
 .cucu-design .cucu-description .cucu-nav-frame .cucu-nav .cucu-prev {
   height: 60px;
   width: 60px;
-  border: solid 1px #442a24;
+  border: solid 1px #9C9592;
   border-radius: 50%;
   cursor: pointer;
   -webkit-transition: 0.3s ease-in-out;
@@ -6031,7 +6233,7 @@ right:-25px;
 }
 
 .cucu-event .cucu-description .cucu-pagination {
-  border-bottom: solid 1px #442a24;
+  border-bottom: solid 1px #9C9592;
   margin-right: 65%;
   padding-bottom: 50px;
   font-size: 18px;
@@ -6074,7 +6276,7 @@ right:-25px;
   z-index: 2;
   bottom: 30%;
   right: 1px;
-  border: 1px solid #442a24;
+  border: 1px solid #9C9592;
   width: 180px;
   height: 140px;
   font-family: "Roboto", sans-serif;
@@ -6127,8 +6329,8 @@ right:-25px;
 }
 
 .cucu-event .cucu-next-btn:hover {
-  -webkit-box-shadow: 0 0 0 1px #442a24;
-  box-shadow: 0 0 0 1px #442a24;
+  -webkit-box-shadow: 0 0 0 1px #9C9592;
+  box-shadow: 0 0 0 1px #9C9592;
 }
 
 @media (max-width: 768px) {
@@ -6181,7 +6383,7 @@ right:-25px;
     padding: 0;
     padding-top: 60px;
     border: none;
-    border-top: solid 1px #442a24;
+    border-top: solid 1px #9C9592;
     margin: 0;
     width: 30%;
     text-align: right;
@@ -6294,7 +6496,7 @@ right:-25px;
 .cucu-big-menu-1 .rb-object-frame .cucu-descr .cucu-descr-title .cucu-line {
   height: 1px;
   width: calc(100% - 60px);
-  background-color: #442a24;
+  background-color: #9C9592;
 }
 
 .cucu-big-menu-1 .rb-object-frame .cucu-descr p {
@@ -6429,7 +6631,7 @@ right:-25px;
   font-weight: 500;
   font-size: 11px;
   font-family: "Roboto", sans-serif;
-  color: #442a24;
+  color: #9C9592;
 }
 
 .cucu-big-menu-2 .cucu-menu-text-frame .cucu-instagram img {
@@ -6499,7 +6701,10 @@ right:-25px;
   background-color: #fff;
 }
 
-.cucu-contact-form .cucu-top-menu-frame .cucu-photo-frame .cucu-top-menu:before {
+.cucu-contact-form
+  .cucu-top-menu-frame
+  .cucu-photo-frame
+  .cucu-top-menu:before {
   right: 0;
   width: 40%;
   opacity: 0.15;
@@ -6552,11 +6757,11 @@ right:-25px;
   align-items: flex-end; */
 }
 
-.cucu-contact-form .cucu-form-content .info{
-  display: none!important;
+.cucu-contact-form .cucu-form-content .info {
+  display: none !important;
 }
 
-form.wufoo input[type=submit] {
+form.wufoo input[type="submit"] {
   width: 100%;
   background-color: #759d46;
   color: white;
@@ -6565,7 +6770,8 @@ form.wufoo input[type=submit] {
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  transition: .5s ease-in-out; }
+  transition: 0.5s ease-in-out;
+}
 
 .cucu-contact-form
   .cucu-content
@@ -6853,12 +7059,12 @@ form.wufoo input[type=submit] {
 }
 
 .cucu-company .cucu-form-content h3 {
-  font-size: 0.9rem;
+  font-size: 13px;
   width: 95px;
 }
 .cucu-company .cucu-form-content p {
   margin: 0;
-  font-size: 0.85rem;
+  font-size: 12.5px;
   margin-left: 20px;
   line-height: 19px;
 }
@@ -7145,27 +7351,29 @@ form.wufoo input[type=submit] {
   position: relative;
 }
 
-.cucu-access .cucu-content h5{
+.cucu-access .cucu-content h5 {
   font-family: "Roboto", sans-serif;
   font-weight: bold;
   font-size: 11px;
   letter-spacing: 0.1em;
-  color: #F2706D;
+  color: #f2706d;
 }
 
-.cucu-access .cucu-content span{
-  color: #F2706D;
+.cucu-access .cucu-content span {
+  color: #f2706d;
 }
 
-.cucu-access .cucu-content p{
-  font-size: .8rem;
-  color: #444;
-  letter-spacing: 3px;
+.cucu-access .cucu-content p {
+  font-size: 12px;
+  letter-spacing: 0.3px;
+  line-height: 24px;
+  color: #4e4e4e;
+  font-family: "Noto Sans JP";
 }
-.cucu-access .cucu-content .map-root{
+.cucu-access .cucu-content .map-root {
   margin-top: 30px;
 }
-.cucu-access .cucu-content .map-root p{
+.cucu-access .cucu-content .map-root p {
   margin-top: 10px;
   font-family: "Libre Baskerville", serif;
 }
@@ -7175,12 +7383,13 @@ form.wufoo input[type=submit] {
   height: calc(var(--vh, 1vh) * 100 - 120px);
 }
 
-.cucu-access .cucu-content .rb-object-frame h2{
+.cucu-access .cucu-content .rb-object-frame h2 {
   position: absolute;
   right: 20%;
   top: 20%;
   z-index: 2;
-  font-size: 4rem;
+  font-size: 35px;
+  /* font-size: 4rem; */
   color: #444;
 }
 
@@ -7723,7 +7932,7 @@ form.wufoo input[type=submit] {
 }
 
 .cucu-shop .cucu-content .cucu-text-frame .cucu-post-title {
-  color: #442a24;
+  color: #9C9592;
   display: block;
   text-decoration: none;
   margin-bottom: 40px;
@@ -7793,7 +8002,7 @@ form.wufoo input[type=submit] {
 
 .cucu-shop .cucu-content .cucu-addition-post .cucu-post-title {
   display: block;
-  color: #442a24;
+  color: #9C9592;
   text-decoration: none;
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
@@ -7850,7 +8059,7 @@ form.wufoo input[type=submit] {
   font-size: 14px;
   font-family: "Libre Baskerville", serif;
   font-style: italic;
-  color: #442a24;
+  color: #9C9592;
   text-decoration: none;
   width: 150px;
 }
@@ -7858,7 +8067,7 @@ form.wufoo input[type=submit] {
 .cucu-shop .cucu-description .cucu-text span {
   width: calc(100% - 150px);
   height: 1px;
-  background-color: #442a24;
+  background-color: #9C9592;
   z-index: 1;
 }
 
@@ -7880,7 +8089,7 @@ form.wufoo input[type=submit] {
 .cucu-shop .cucu-description .cucu-nav-frame .cucu-nav .cucu-prev {
   height: 60px;
   width: 60px;
-  border: solid 1px #442a24;
+  border: solid 1px #9C9592;
   border-radius: 50%;
   cursor: pointer;
   -webkit-transition: 0.3s ease-in-out;
@@ -7988,7 +8197,7 @@ form.wufoo input[type=submit] {
     .cucu-post-text
     .cucu-post-title {
     display: block;
-    color: #442a24;
+    color: #9C9592;
     text-decoration: none;
     -webkit-transition: 0.3s ease-in-out;
     transition: 0.3s ease-in-out;
@@ -8068,7 +8277,7 @@ form.wufoo input[type=submit] {
 }
 
 .cucu-blog-card .cucu-post-text {
-  color: #442a24;
+  color: #9C9592;
 }
 
 .cucu-blog-card .cucu-post-text h2 {
@@ -8083,13 +8292,14 @@ form.wufoo input[type=submit] {
   box-orient: vertical;
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
-  font-size: 1.1rem;
+  font-size: 16px;
 }
 
 .cucu-blog-card .cucu-post-text p {
   color: #979795;
-  font-size: 0.8rem;
+  font-size: 12.5px;
   letter-spacing: 0.03px;
+  text-align: justify;
 }
 
 .cucu-blog-card .cucu-post-text .cucu-date {
@@ -8118,6 +8328,7 @@ form.wufoo input[type=submit] {
 .cucu-banner h1 {
   font-size: 52px;
   /* margin-bottom: 20px; */
+  color: #444;
 }
 
 .cucu-banner svg {
@@ -8125,7 +8336,7 @@ form.wufoo input[type=submit] {
 }
 
 .cucu-banner svg path {
-  fill: #442a24;
+  fill: #9C9592;
 }
 
 .cucu-banner p {
@@ -8140,7 +8351,7 @@ form.wufoo input[type=submit] {
   }
 
   .cucu-blog-card .cucu-post-text h2 {
-    font-size: 1.1rem;
+    font-size: 16px;
   }
 }
 
@@ -8184,7 +8395,7 @@ form.wufoo input[type=submit] {
 }
 
 .cucu-demo-card .cucu-post-text {
-  color: #442a24;
+  color: #9C9592;
 }
 
 .cucu-demo-card .cucu-post-text h2 {
@@ -8225,7 +8436,7 @@ form.wufoo input[type=submit] {
 ==================================== */
 
 .cucu-counseling {
-  padding: 60px 80px 60px 0;
+  padding: 60px 80px;
   background-color: #bfb8b6;
   margin-bottom: 20px;
 }
@@ -8235,7 +8446,7 @@ form.wufoo input[type=submit] {
   bottom: 0;
   content: "";
   height: 1px;
-  background-color: #442a24;
+  background-color: #9C9592;
   left: 0;
   width: 55%;
   opacity: 0.15;
@@ -8251,7 +8462,7 @@ form.wufoo input[type=submit] {
 
 .cucu-counseling .cucu-top-menu-frame .cucu-top-menu:before {
   right: 0;
-  background-color: #442a24;
+  background-color: #9C9592;
   width: 37%;
   opacity: 0.15;
 }
@@ -8301,13 +8512,13 @@ form.wufoo input[type=submit] {
   padding-left: 120px;
 }
 
-.cucu-counseling .cucu-blog-frame .cucu-post-text {
-  /* padding-right: 80px; */
-  /* overflow-y: scroll; */
+/* .cucu-counseling .cucu-blog-frame .cucu-post-text {
+  padding-right: 80px;
+  overflow-y: scroll;
   width: 100%;
-  /* height: calc(var(--vh, 1vh) * 100 - 400px); */
+  height: calc(var(--vh, 1vh) * 100 - 400px);
   margin-bottom: 80px;
-}
+} */
 
 .cucu-counseling .cucu-blog-frame .cucu-post-text h2 {
   font-size: 36px;
@@ -8315,9 +8526,11 @@ form.wufoo input[type=submit] {
 }
 
 .cucu-counseling .cucu-blog-frame .cucu-post-text p {
-  font-size: 0.85rem;
-  line-height: 23px;
-  color: #444;
+  font-size: 12px;
+  letter-spacing: 0.3px;
+  line-height: 24px;
+  color: #4e4e4e;
+  font-family: "Noto Sans JP";
   margin-bottom: 40px;
 }
 
@@ -8336,12 +8549,19 @@ form.wufoo input[type=submit] {
 }
 
 .cucu-counseling .cucu-blog-frame .cucu-post-footer .cucu-date {
-  font-size: 12px;
-  line-height: 15px;
-  letter-spacing: 0.3em;
-  /* text-transform: uppercase; */
+  font-size: 1.5em;
+  line-height: 20px;
+  /* letter-spacing: 0.3em; */
   color: #ff6e6c;
   font-family: "Libre Baskerville", serif;
+}
+
+.cucu-counseling .cucu-blog-frame .cucu-post-footer .cucu-date span {
+  font-size: 12.5px;
+  letter-spacing: 1px;
+  color: #4e4e4e;
+  margin-left: 10px;
+  text-transform: capitalize;
 }
 
 .cucu-counseling .cucu-blog-frame .cucu-post-footer .cucu-share {
@@ -8447,7 +8667,7 @@ form.wufoo input[type=submit] {
     -ms-flex-align: center;
     align-items: center;
     font-size: 11px;
-    color: #442a24;
+    color: #9C9592;
     letter-spacing: 0.1em;
     text-transform: uppercase;
   }
@@ -8459,6 +8679,206 @@ form.wufoo input[type=submit] {
     .cucu-share
     img {
     margin-left: 10px;
+  }
+}
+
+/* Multidimensional Warp */
+.cucu-counseling .cucu-warp-content {
+  margin-top: 20px;
+}
+.cucu-counseling .cucu-warp-content .rb-object-frame {
+  position: relative;
+}
+
+.cucu-counseling .cucu-warp-content .rb-object-frame .cucu-obj-1 {
+  z-index: 3;
+  margin-top: 80px;
+  width: 100%;
+  height: calc(var(--vh, 1vh) * 100 - 200px);
+}
+
+.cucu-counseling .cucu-warp-content .rb-object-frame .cucu-obj-1 img {
+  -o-object-position: center;
+  object-position: center;
+}
+
+.cucu-counseling .cucu-warp-content .rb-object-frame .cucu-deco {
+  width: 250px;
+  height: 300px;
+  background-color: #67568c;
+  position: absolute;
+  top: -80px;
+  left: -40px;
+}
+
+.cucu-counseling .cucu-warp-content .cucu-blog-frame {
+  /* position: relative; */
+  /* height: calc(var(--vh, 1vh) * 100 - 120px); */
+  height: unset;
+  margin-top: 80px;
+  margin-right: 120px;
+  padding: 0;
+}
+
+.cucu-counseling .cucu-warp-content .cucu-blog-frame .cucu-all-posts {
+  /* position: absolute;
+  bottom: 80px;
+  right: 0; */
+  display: flex;
+  justify-content: space-between;
+}
+
+.cucu-counseling
+  .cucu-warp-content
+  .cucu-blog-frame
+  .cucu-all-posts
+  .cucu-all-btn {
+  color: #4e4e4e;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  /* font-family: "Libre Baskerville", serif; */
+  background-color: transparent;
+  border: none;
+  font-size: 14px;
+  width: 100%;
+  justify-content: flex-end;
+    align-items: center;
+}
+
+.cucu-counseling
+  .cucu-warp-content
+  .cucu-blog-frame
+  .cucu-all-posts
+  .cucu-all-btn
+  .cucu-arrow {
+  margin-left: 20px;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.cucu-counseling
+  .cucu-warp-content
+  .cucu-blog-frame
+  .cucu-all-posts
+  .cucu-all-btn:hover
+  .cucu-arrow {
+  -webkit-transform: translateX(10px);
+  transform: translateX(10px);
+}
+
+.cucu-counseling .cucu-mark {
+  font-size: 1.5em !important;
+  line-height: 20px;
+  color: #ff6e6c !important;
+  font-family: "Libre Baskerville", serif;
+}
+
+.cucu-counseling .cucu-mark .name span {
+  font-size: 12.5px;
+  letter-spacing: 1px;
+  color: #4e4e4e;
+  margin-left: 10px;
+  text-transform: capitalize;
+}
+
+.cucu-counseling .cucu-warp-content .cucu-blog-frame .cucu-blog-title {
+  border-bottom: solid 1px #fff;
+  padding-bottom: 40px;
+  margin-bottom: 40px;
+}
+
+.cucu-counseling .cucu-warp-content .cucu-blog-frame .cucu-blog-title h1 {
+  color: #fff;
+  font-size: 42px;
+  /* text-transform: uppercase; */
+}
+
+.cucu-counseling .cucu-warp-content .cucu-blog-frame .cucu-date {
+  color: #fff;
+  font-size: 10px;
+  text-transform: uppercase;
+  opacity: 0.5;
+  margin-bottom: 20px;
+  letter-spacing: 0.3em;
+  white-space: nowrap;
+}
+
+.cucu-counseling .cucu-warp-content .cucu-blog-frame p {
+  color: #fff;
+  font-size: 12px;
+  letter-spacing: 0.3px;
+  line-height: 24px;
+  /* color: #4e4e4e; */
+  font-family: "Noto Sans JP";
+  margin-bottom: 40px;
+}
+
+/* .cucu-counseling .cucu-warp-content .cucu-blog-frame .cucu-post-card:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  height: 1px;
+  width: 0;
+  background-color: #fff;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.cucu-counseling .cucu-warp-content .cucu-blog-frame .cucu-post-card:hover:after {
+  width: 100%;
+} */
+
+@media (max-width: 992px) {
+  .cucu-counseling .cucu-warp-content .cucu-blog-frame .cucu-blog-title h1 {
+    font-size: 52px;
+  }
+}
+
+@media (max-width: 768px) {
+  .cucu-counseling {
+    padding: 80px 20px 20px;
+  }
+
+  .cucu-counseling .cucu-top-menu-frame {
+    background-color: #bfb8b6;
+  }
+
+  .cucu-counseling .cucu-warp-content .rb-object-frame {
+    margin-bottom: 20px;
+  }
+
+  .cucu-counseling .cucu-warp-content .rb-object-frame .cucu-obj-1 {
+    margin-top: 20px;
+    padding-bottom: 65%;
+    height: auto;
+  }
+
+  .cucu-counseling .cucu-warp-content .rb-object-frame .cucu-deco {
+    height: 100%;
+    top: -20px;
+    right: 0;
+  }
+
+  .cucu-counseling .cucu-warp-content .cucu-blog-frame {
+    height: auto;
+    padding: 0 20px;
+  }
+
+  .cucu-counseling .cucu-warp-content .cucu-blog-frame .cucu-all-posts {
+    position: relative;
+    bottom: 0;
+  }
+
+  .cucu-counseling .cucu-warp-content .cucu-blog-frame .cucu-blog-title {
+    padding-bottom: 20px;
+  }
+
+  .cucu-counseling .cucu-warp-content .cucu-blog-frame .cucu-blog-title h1 {
+    font-size: 38px;
   }
 }
 
@@ -8481,7 +8901,7 @@ form.wufoo input[type=submit] {
   bottom: 0;
   content: "";
   height: 1px;
-  background-color: #442a24;
+  background-color: #9C9592;
   right: 0;
   width: 37%;
   opacity: 0.15;
@@ -8575,7 +8995,7 @@ form.wufoo input[type=submit] {
 }
 
 .cucu-land-space-operations .cucu-about-frame .cucu-about-text {
-  padding-top: 80px;
+  padding-top: 60px;
   color: #444;
   padding-right: 80px;
 }
@@ -8587,8 +9007,12 @@ form.wufoo input[type=submit] {
 }
 
 .cucu-land-space-operations .cucu-about-frame .cucu-about-text p {
-  font-size: 0.75rem;
-  line-height: 20px;
+  font-size: 12px;
+  letter-spacing: 0.3px;
+  line-height: 24px;
+  color: #4e4e4e;
+  font-family: "Noto Sans JP";
+  text-align: justify;
 }
 
 .cucu-land-space-operations .cucu-about-frame .cucu-position-fix {
@@ -8640,13 +9064,13 @@ form.wufoo input[type=submit] {
 
 .cucu-land-space-operations .cucu-bottom-panel .cucu-instagram span {
   width: 80px;
-  color: #ccc;
+  color: #fff;
   font-style: italic;
 }
 
 .cucu-land-space-operations .cucu-bottom-panel .cucu-instagram .cucu-line {
   height: 1px;
-  background-color: #9c9592;
+  background-color: #fff;
   width: calc(100% - 160px);
 }
 
@@ -8672,8 +9096,8 @@ form.wufoo input[type=submit] {
 
 .cucu-land-space-operations .cucu-bottom-panel .cucu-mail {
   color: #9c9592;
-  font-size: 0.9rem;
-  font-style: italic;
+  font-size: 13px;
+  /* font-style: italic; */
 }
 
 @media (max-width: 1200px) {
@@ -8761,121 +9185,253 @@ form.wufoo input[type=submit] {
 ==================================== */
 
 .cucu-seminar {
-  padding: 120px 0 0;
-  /* background-color: #f1ebe5; */
+	padding: 80px;
+	background-color: #FAF6F4;
 }
 
 .cucu-seminar .cucu-photo-frame:after {
-  background-color: #ffffff;
+	background-color: #DDDDD7;
 }
 
-.cucu-seminar .cucu-top-menu-frame {
-  background-color: transparent;
+.cucu-seminar .cucu-top-bar-frame {
+	background-color: transparent;
 }
 
-.cucu-seminar .cucu-top-menu-frame .cucu-top-menu:before {
-  right: 80px;
-  width: 30%;
-  opacity: 0.15;
+.cucu-seminar .cucu-top-bar-frame {
+	background-color: #EAF0EE;
 }
 
-.cucu-seminar .rb-object-frame {
-  position: relative;
+.cucu-seminar .cucu-top-bar-frame .cucu-top-bar:before {
+	left: 80px;
+	width: 37%;
+	opacity: 0.15;
 }
 
-.cucu-seminar .rb-object-frame .cucu-obj-1 {
-  z-index: 1;
-  width: 100%;
-  height: calc(var(--vh, 1vh) * 100 - 120px);
+.cucu-seminar .cucu-content .cucu-text-frame {
+	position: relative;
+	/* padding: 80px 80px 60px 0; */
 }
 
-.cucu-seminar .rb-object-frame .cucu-obj-1 img {
-  -o-object-position: center;
-  object-position: center;
+.cucu-seminar .cucu-content .cucu-text-frame .cucu-post-title {
+	color: #9C9592;
+	display: block;
+	text-decoration: none;
+	margin-bottom: 40px;
+	-webkit-transition: 0.4s ease-in-out;
+	transition: 0.4s ease-in-out;
 }
 
-.cucu-seminar .rb-object-frame .cucu-deco {
-  position: absolute;
-  z-index: 2;
-  bottom: 0;
-  right: -40px;
-  width: 120px;
-  height: 80px;
-  background-color: #67568c;
+.cucu-seminar .cucu-content .cucu-text-frame .cucu-post-title h2 {
+	font-size: 36px;
 }
 
-.cucu-seminar .cucu-about-frame {
-  padding-right: 80px;
-  position: relative;
-  height: calc(var(--vh, 1vh) * 100 - 120px);
-  padding-left: 120px;
+.cucu-seminar .cucu-content .cucu-text-frame .cucu-post-title:hover {
+	color: #C57642;
 }
 
-/* .cucu-seminar .cucu-about-frame .cucu-about-text {
-  padding-top: 80px;
-} */
-
-.cucu-seminar .cucu-about-frame .cucu-about-text .cucu-deco {
-  width: 80px;
-  height: 220px;
-  background-color: #bfb8b6;
-  position: absolute;
-  right: 0;
-  bottom: 80px;
+.cucu-seminar .cucu-content .cucu-text-frame p {
+	font-size: 18px;
+	color: #979795;
+	margin-bottom: 40px;
+  text-align: justify;
 }
 
-.cucu-seminar .cucu-about-frame .seminar-join {
-  position: absolute;
-  bottom: 0;
-  color: #707070;
-  font-family: "Libre Baskerville", serif;
-  font-size: 0.75rem;
-  letter-spacing: 1px;
-  line-height: 1.1rem;
+.cucu-seminar .cucu-content .cucu-text-frame .cucu-date {
+	font-weight: 500;
+	font-family: "Roboto", sans-serif;
+	font-size: 14px;
+	text-transform: uppercase;
 }
 
-.cucu-seminar .cucu-about-frame .seminar-join span {
-  color: #f2706d;
-  margin-top: 20px;
+.cucu-seminar .cucu-content .cucu-object-frame {
+	position: relative;
 }
 
-.cucu-seminar .cucu-about-frame .cucu-about-text h1 {
-  position: relative;
-  z-index: 2;
-  /* -webkit-transform: translateX(-30%);
-  transform: translateX(-30%); */
-  font-size: 40px;
-  line-height: 45px;
-  text-transform: uppercase;
-  margin-bottom: 80px;
-  color: #444;
+.cucu-seminar .cucu-content .cucu-object-frame .cucu-deco {
+	content: '';
+	position: absolute;
+	z-index: 1;
+	bottom: 0;
+	left: -40px;
+	width: 80px;
+	height: 160px;
+	background-color: #C57642;
 }
 
-.cucu-seminar .cucu-about-frame .cucu-about-text .cucu-quote {
-  position: absolute;
-  bottom: 35%;
+.cucu-seminar .cucu-content .cucu-object-frame .cucu-obj-1 {
+	height: calc(var(--vh, 1vh) * 100 - 120px);
+	padding: 0;
+}
+
+.cucu-seminar .cucu-content .cucu-object-frame .cucu-obj-1 img {
+	-o-object-position: center;
+	object-position: center;
+}
+
+.cucu-seminar .cucu-content .cucu-addition-post {
+	display: block;
+	margin-left: 50%;
+	padding-top: 80px;
+}
+
+.cucu-seminar .cucu-content .cucu-addition-post .cucu-photo-link {
+	margin-bottom: 20px;
+}
+
+.cucu-seminar .cucu-content .cucu-addition-post .cucu-photo-link .cucu-obj-2 {
+	padding-bottom: 130%;
+}
+
+.cucu-seminar .cucu-content .cucu-addition-post .cucu-post-title {
+	display: block;
+	color: #9C9592;
+	text-decoration: none;
+	-webkit-transition: 0.4s ease-in-out;
+	transition: 0.4s ease-in-out;
+	margin-bottom: 20px;
+}
+
+.cucu-seminar .cucu-content .cucu-addition-post .cucu-post-title h2 {
+	display: block;
+	font-family: "Roboto", sans-serif;
+	text-transform: uppercase;
+	font-size: 14px;
+}
+
+.cucu-seminar .cucu-content .cucu-addition-post .cucu-post-title:hover {
+	color: #C57642;
+}
+
+.cucu-seminar .cucu-content .cucu-addition-post .cucu-date {
+	font-weight: 500;
+	font-family: "Roboto", sans-serif;
+	font-size: 12px;
+	text-transform: uppercase;
+}
+
+.cucu-seminar .cucu-description {
+	position: absolute;
+	bottom: 80px;
+	left: 0;
+	z-index: 1;
+	width: 100%;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: start;
+	-ms-flex-pack: start;
+	justify-content: flex-start;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+}
+
+.cucu-seminar .cucu-description .cucu-text {
+	width: calc(100% - 170px);
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+}
+
+.cucu-seminar .cucu-description .cucu-text a {
+	line-height: 6px;
+	font-size: 14px;
+	font-family: "Libre Baskerville", serif;
+	font-style: italic;
+	color: #9C9592;
+	text-decoration: none;
+	width: 150px;
+}
+
+.cucu-seminar .cucu-description .cucu-text span {
+	width: calc(100% - 150px);
+	height: 1px;
+	background-color: #9C9592;
+	z-index: 1;
+}
+
+.cucu-seminar .cucu-description .cucu-nav-frame {
+	width: 170px;
+	position: relative;
+}
+
+.cucu-seminar .cucu-description .cucu-nav-frame .cucu-nav {
+	position: absolute;
+	top: -30px;
+	right: 0;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+}
+
+.cucu-seminar .cucu-description .cucu-nav-frame .cucu-nav .cucu-next, .cucu-seminar .cucu-description .cucu-nav-frame .cucu-nav .cucu-prev {
+	height: 60px;
+	width: 60px;
+	border: solid 1px #9C9592;
+	border-radius: 50%;
+	cursor: pointer;
+	-webkit-transition: 0.4s ease-in-out;
+	transition: 0.4s ease-in-out;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	margin-left: 10px;
+}
+
+.cucu-seminar .cucu-description .cucu-nav-frame .cucu-nav .cucu-next:first-child, .cucu-seminar .cucu-description .cucu-nav-frame .cucu-nav .cucu-prev:first-child {
+	margin-left: 0;
+}
+
+.cucu-seminar .cucu-description .cucu-nav-frame .cucu-nav .cucu-next img, .cucu-seminar .cucu-description .cucu-nav-frame .cucu-nav .cucu-prev img {
+	-webkit-transition: 0.4s ease-in-out;
+	transition: 0.4s ease-in-out;
+}
+
+.cucu-seminar .cucu-description .cucu-nav-frame .cucu-nav .cucu-next.swiper-button-disabled, .cucu-seminar .cucu-description .cucu-nav-frame .cucu-nav .cucu-prev.swiper-button-disabled {
+	opacity: 0.2;
+	cursor: not-allowed;
+}
+
+.cucu-seminar .cucu-description .cucu-nav-frame .cucu-nav .cucu-prev img {
+	-webkit-transform: rotate(180deg);
+	transform: rotate(180deg);
+}
+
+.cucu-seminar .cucu-quote {
+  padding-top: 40px;
   padding-right: 80px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.cucu-seminar .cucu-about-frame .cucu-about-text .cucu-quote .cucu-quote-frame {
+.cucu-seminar .cucu-quote .cucu-quote-frame {
   padding: 25px 40px 0 0;
   border-right: solid 1px #67568c;
   padding-bottom: 80px;
 }
 
-.cucu-seminar .cucu-about-frame .cucu-about-text .cucu-quote p {
+.cucu-seminar .cucu-quote p {
   display: block;
   padding-left: 40px;
-  font-size: 0.85rem;
-  line-height: 25px;
+  font-size: 12px!important;
+  letter-spacing: 0.3px;
+  line-height: 24px;
+  color: #4e4e4e!important;
+  font-family: "Noto Sans JP";
   margin-bottom: 40px;
-  color: #444;
 }
 
-.cucu-seminar .cucu-about-frame .cucu-about-text .cucu-quote p span {
+.cucu-seminar .cucu-quote p span {
   font-size: 14px;
   margin-top: 20px;
   display: block;
@@ -8884,65 +9440,94 @@ form.wufoo input[type=submit] {
 }
 
 @media (max-width: 1200px) {
-  .cucu-seminar .cucu-about-frame .cucu-about-text .cucu-deco {
-    display: none;
-  }
+	.cucu-seminar .cucu-content .cucu-text-frame {
+		padding-right: 40px;
+	}
 
-  .cucu-seminar .cucu-about-frame .cucu-about-text h1 {
-    -webkit-transform: none;
-    transform: none;
-  }
-}
-
-@media (max-width: 992px) {
-  .cucu-seminar .cucu-about-frame {
-    padding-left: 80px;
-  }
-
-  .cucu-seminar .cucu-about-frame .cucu-about-text h1 {
-    font-size: 24px;
-  }
+	.cucu-seminar .cucu-content .cucu-text-frame .cucu-post-title h2 {
+		font-size: 22px;
+	}
 }
 
 @media (max-width: 768px) {
-  .cucu-seminar {
-    padding: 80px 20px 20px;
-  }
+	.cucu-seminar {
+		padding: 80px 20px 20px;
+	}
 
-  .cucu-seminar .cucu-top-menu-frame {
-    background-color: #f1ebe5;
-  }
+	.cucu-seminar .cucu-content .cucu-text-frame {
+		padding: 40px 0;
+		margin-bottom: 20px;
+	}
 
-  .cucu-seminar .rb-object-frame {
-    position: relative;
-  }
+	.cucu-seminar .cucu-content .cucu-text-frame .cucu-post-title h2 {
+		font-size: 18px;
+	}
 
-  .cucu-seminar .rb-object-frame .cucu-obj-1 {
-    height: auto;
-    padding-bottom: 100%;
-  }
+	.cucu-seminar .cucu-content .cucu-object-frame .cucu-obj-1 {
+		height: auto;
+		padding-bottom: 100%;
+	}
 
-  .cucu-seminar .rb-object-frame .cucu-obj-1 img {
-    -o-object-position: top;
-    object-position: top;
-  }
+	.cucu-seminar .cucu-content .cucu-addition-post {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		align-items: center;
+		margin: 0;
+		padding-top: 0;
+		margin-bottom: 20px;
+	}
 
-  .cucu-seminar .cucu-about-frame {
-    height: auto;
-    padding: 0;
-  }
+	.cucu-seminar .cucu-content .cucu-addition-post .cucu-photo-link {
+		margin-bottom: 0;
+		width: 200px;
+	}
 
-  .cucu-seminar .cucu-about-frame .cucu-about-text {
-    padding: 40px 0 0;
-  }
+	.cucu-seminar .cucu-content .cucu-addition-post .cucu-photo-link .cucu-obj-2 {
+		margin: 0;
+		padding-bottom: 120%;
+	}
 
-  .cucu-seminar .cucu-about-frame .cucu-about-text h1 {
-    font-size: 20px;
-    line-height: normal;
-    margin-bottom: 40px;
-  }
+	.cucu-seminar .cucu-content .cucu-addition-post .cucu-post-text {
+		padding-left: 20px;
+	}
 
-  .cucu-seminar .cucu-about-frame .cucu-about-text .cucu-quote {
+	.cucu-seminar .cucu-content .cucu-addition-post .cucu-post-text .cucu-post-title {
+		display: block;
+		color: #9C9592;
+		text-decoration: none;
+		-webkit-transition: 0.4s ease-in-out;
+		transition: 0.4s ease-in-out;
+		margin-bottom: 20px;
+	}
+
+	.cucu-seminar .cucu-content .cucu-addition-post .cucu-post-text .cucu-post-title h2 {
+		display: block;
+		font-family: "Roboto", sans-serif;
+		text-transform: uppercase;
+		font-size: 14px;
+	}
+
+	.cucu-seminar .cucu-content .cucu-addition-post .cucu-post-text .cucu-post-title:hover {
+		color: #C57642;
+	}
+
+	.cucu-seminar .cucu-content .cucu-addition-post .cucu-post-text .cucu-date {
+		font-weight: 500;
+		font-family: "Roboto", sans-serif;
+		font-size: 12px;
+		text-transform: uppercase;
+	}
+
+	.cucu-seminar .cucu-description {
+		height: 60px;
+		position: relative;
+		bottom: 20px;
+	}
+
+  .cucu-seminar  .cucu-quote {
     position: relative;
   }
 
@@ -8954,12 +9539,12 @@ form.wufoo input[type=submit] {
     padding: 25px 20px 0 0;
   }
 
-  .cucu-seminar .cucu-about-frame .cucu-about-text .cucu-quote p {
+  .cucu-seminar  .cucu-quote p {
     font-size: 16px;
     margin-bottom: 40px;
   }
 
-  .cucu-seminar .cucu-about-frame .cucu-about-text .cucu-quote p br {
+  .cucu-seminar  .cucu-quote p br {
     display: none;
   }
 }
@@ -9047,7 +9632,7 @@ form.wufoo input[type=submit] {
 }
 
 .cucu-about-3 .cucu-content .cucu-left .cucu-instagram span {
-  color: #442a24;
+  color: #9C9592;
   font-style: italic;
   font-size: 18px;
 }
@@ -9075,7 +9660,7 @@ form.wufoo input[type=submit] {
 .cucu-about-3 .cucu-content .cucu-right .cucu-position-fix .cucu-deco {
   height: 1px;
   position: absolute;
-  background-color: #442a24;
+  background-color: #9C9592;
   width: calc(100% + 80px);
   left: 0;
   -webkit-transform: translateY(80px);
