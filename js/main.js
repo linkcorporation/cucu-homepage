@@ -140,7 +140,7 @@ $(function () {
       const instaUrl = getInstaLink(item.description);
       const innerHTML = `
       <div class="cucu-g-33 cucu-md-50 cucu-sm-100">
-        <a href="${instaUrl}" target="_blank" class="cucu-blog-card">
+        <a href="${instaUrl}" target="_blank" class="cucu-blog-card" data-no-swup="">
           <div class="cucu-photo-frame cucu-active">
             <img src="${thumbnail}" alt="photo">
           </div>
@@ -159,12 +159,12 @@ $(function () {
   // =============================================x========
   // SWUP
   // =====================================================
-  const options = {
-    containers: ["#cucu-dynamic-content"],
-    animateHistoryBrowsing: true,
-    linkSelector: "a:not([data-no-swup])",
-  };
-  const swup = new Swup(options);
+  // const options = {
+  //   containers: ["#cucu-dynamic-content"],
+  //   animateHistoryBrowsing: true,
+  //   linkSelector: "a:not([data-no-swup])",
+  // };
+  // const swup = new Swup(options);
 
   // =====================================================
   // FANCYBOX
