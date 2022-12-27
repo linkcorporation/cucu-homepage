@@ -159,12 +159,12 @@ $(function () {
   // =============================================x========
   // SWUP
   // =====================================================
-  const options = {
-    containers: ["#cucu-dynamic-content"],
-    animateHistoryBrowsing: true,
-    linkSelector: "a:not([data-no-swup])",
-  };
-  const swup = new Swup(options);
+  // const options = {
+  //   containers: ["#cucu-dynamic-content"],
+  //   animateHistoryBrowsing: true,
+  //   linkSelector: "a:not([data-no-swup])",
+  // };
+  // const swup = new Swup(options);
 
   // =====================================================
   // FANCYBOX
