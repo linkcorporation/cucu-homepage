@@ -4058,6 +4058,7 @@ label.cbx {
 
   .cucu-event .cucu-content .cucu-position-fix {
     height: auto;
+    justify-content: flex-start;
   }
 
   .cucu-event .cucu-content .cucu-position-fix .cucu-obj-2 {
