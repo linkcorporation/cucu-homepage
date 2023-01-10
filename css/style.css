@@ -231,9 +231,12 @@ ul li {
 
 .cucu-welcome .cucu-content .rb-object-frame .cucu-obj-1 video {
   position: absolute;
-  height: 100%;
+  height: 100vh;
   width: 100%;
   object-fit: cover;
+  top: 0;
+  left: 0;
+  overflow: hidden;
 }
 
 .cucu-welcome .cucu-content .rb-object-frame::before {
