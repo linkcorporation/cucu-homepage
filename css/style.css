@@ -274,11 +274,12 @@ ul li {
 /* ---------------------------------*/
 
 .cucu-top-menu-frame .cucu-category-list {
-  -webkit-box-pack: start;
+  /* -webkit-box-pack: start;
   -ms-flex-pack: start;
-  justify-content: flex-start;
+  justify-content: flex-start; */
   padding: 20px;
   /* opacity: .9; */
+  height: calc(100vh - 20px)!important;
 }
 
 .cucu-category-list .cucu-logo {
@@ -1445,6 +1446,7 @@ ul li {
     width: 70%;
   }
 
+  .cucu-grid .cucu-g.cucu-md-100,
   .cucu-grid .cucu-g-10.cucu-md-100,
   .cucu-grid .cucu-g-100.cucu-md-100,
   .cucu-grid .cucu-g-15.cucu-md-100,
@@ -1472,6 +1474,47 @@ ul li {
 @media (max-width: 768px) {
   .cucu-grid {
     height: auto;
+  }
+
+  .cucu-grid.cucu-category-list {
+    display: grid;
+    grid-template-rows: 10% 8.5% 8.5% 8.5% 8.5% 8.5% 8.5% 8.5% 8.5% 8.5% 8.5%;  /* gridの割合が8:2になるよう2行用意 */
+  grid-template-columns: 100%;
+  overflow: hidden;
+  }
+
+  .cucu-grid.cucu-category-list .cucu-g {
+    /* grid-row: 1; */
+  grid-column: 1;
+  }
+
+  .cucu-grid.cucu-category-list .cucu-g .cucu-sns {
+    display: flex;
+    top: 5px;
+    right: 5px;
+    left: 0;
+    transform: unset;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  .cucu-grid.cucu-category-list .cucu-g .cucu-sns a {
+    margin-bottom: 0;
+  }
+  .cucu-grid.cucu-category-list .cucu-g .cucu-sns img {
+    width: 30px;
+  }
+  .cucu-grid.cucu-category-list .cucu-g .cucu-category h2 {
+    writing-mode:unset;
+    top: 6px;
+    left: 3%;
+    letter-spacing: 3px;
+    transform: unset;
+    font-size: 30px;
+  }
+
+  .cucu-waves svg{
+    bottom: 0;
   }
 
   .cucu-grid.cucu-sm-reverse {
