@@ -7,13 +7,13 @@ $(function () {
   $("#form").parsley();
 
   // Clear parsley empty elements
-  if ($("#form").length > 0) {
-    $("#form")
-      .parsley()
-      .on("field:success", function () {
-        $("ul.parsley-errors-list").not(":has(li)").remove();
-      });
-  }
+  // if ($("#form").length > 0) {
+  //   $("#form")
+  //     .parsley()
+  //     .on("field:success", function () {
+  //       $("ul.parsley-errors-list").not(":has(li)").remove();
+  //     });
+  // }
 
   // =====================================================
   // PRELOADER
@@ -285,13 +285,13 @@ $(function () {
     $("#form").parsley();
 
     // Clear parsley empty elements
-    if ($("#form").length > 0) {
-      $("#form")
-        .parsley()
-        .on("field:success", function () {
-          $("ul.parsley-errors-list").not(":has(li)").remove();
-        });
-    }
+    // if ($("#form").length > 0) {
+    //   $("#form")
+    //     .parsley()
+    //     .on("field:success", function () {
+    //       $("ul.parsley-errors-list").not(":has(li)").remove();
+    //     });
+    // }
 
     // =====================================================
     // START ANIMATONS
