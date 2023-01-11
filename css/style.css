@@ -227,6 +227,7 @@ ul li {
   width: 100%;
   padding-bottom: 0;
   height: calc(var(--vh, 1vh) * 100);
+  min-height: -webkit-fill-available;
 }
 
 .cucu-welcome .cucu-content .rb-object-frame .cucu-obj-1 video {
@@ -506,6 +507,7 @@ ul li {
 .cucu-top-menu-frame {
   width: 100%;
   height: 100vh;
+  min-height: -webkit-fill-available;
   top: 0;
   left: 0;
 }
@@ -878,7 +880,7 @@ ul li {
     flex-direction: column;
   }
   .row > * {
-    height: calc(90% / 11 + 3px);
+    height: calc(100% / 11);
     /* padding-top: calc(var(--bs-gutter-x) * 0.01);
     padding-bottom: calc(var(--bs-gutter-x) * 0.01); */
     margin-top: 0;
@@ -889,7 +891,7 @@ ul li {
 
 @media (max-width: 576px) {
   .cucu-top-menu-frame .cucu-category-list{
-    height: calc(95vh - 20px) !important;
+    height: calc(100vh - 20px) !important;
   }
 }
 
