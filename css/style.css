@@ -230,13 +230,22 @@ ul li {
 }
 
 .cucu-welcome .cucu-content .rb-object-frame .cucu-obj-1 video {
-  position: absolute;
+  /* position: absolute;
   height: 100vh;
   width: 100%;
   object-fit: cover;
   top: 0;
   left: 0;
-  overflow: hidden;
+  overflow: hidden; */
+
+  min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
 }
 
 .cucu-welcome .cucu-content .rb-object-frame::before {
@@ -5170,8 +5179,7 @@ html.is-preload
     img {
     margin-left: 10px;
   }
-  .cucu-counseling .btn-go-form{
-
+  .cucu-counseling .btn-go-form {
     margin-right: 10px;
   }
 }
@@ -5360,13 +5368,13 @@ html.is-preload
 }
 
 @media (max-width: 576px) {
-  .cucu-counseling .cucu-blog-frame .cucu-post-footer{
+  .cucu-counseling .cucu-blog-frame .cucu-post-footer {
     flex-direction: column;
   }
-  .cucu-counseling .cucu-blog-frame .cucu-post-footer .cucu-date{
+  .cucu-counseling .cucu-blog-frame .cucu-post-footer .cucu-date {
     margin-bottom: 20px;
   }
-  .cucu-counseling .cucu-blog-frame .cucu-post-footer .cucu-share span{
+  .cucu-counseling .cucu-blog-frame .cucu-post-footer .cucu-share span {
     margin: 0;
   }
 }
@@ -5726,7 +5734,7 @@ html.is-preload
   right: 15px;
 }
 
-.cucu-seminars-title{
+.cucu-seminars-title {
   position: absolute;
   right: 0;
   top: -40px;
@@ -5758,7 +5766,7 @@ html.is-preload
 }
 
 @media (max-width: 992px) {
-  .cucu-seminar .cucu-quote{
+  .cucu-seminar .cucu-quote {
     padding-right: 40px;
   }
 }
@@ -6558,8 +6566,8 @@ html.is-preload
     bottom: 180px;
   }
 
-  .cucu-shop .cucu-description .cucu-text h1{
-    border-top:none;
+  .cucu-shop .cucu-description .cucu-text h1 {
+    border-top: none;
   }
 }
 
@@ -6838,18 +6846,18 @@ html.is-preload
 }
 
 @media (max-width: 992px) {
-  .cucu-company .cucu-content .cucu-position-fix h1{
+  .cucu-company .cucu-content .cucu-position-fix h1 {
     font-size: 2.5rem;
     width: calc(100% + 65px);
     margin-left: -60px;
   }
 
-  .cucu-manager-content{
+  .cucu-manager-content {
     padding: 60px 40px 130px;
   }
 
-  .cucu-manager-content .cucu-addition-post{
-    margin-left: 40px!important;
+  .cucu-manager-content .cucu-addition-post {
+    margin-left: 40px !important;
   }
 }
 
@@ -7238,10 +7246,10 @@ html.is-preload
   .cucu-manager-content .cucu-text-frame .cucu-post-title h2 {
     font-size: 3rem;
   }
-  .cucu-manager-content .cucu-text-frame .cucu-date{
+  .cucu-manager-content .cucu-text-frame .cucu-date {
     font-size: 2rem;
   }
-  .cucu-manager-content .cucu-text-frame p{
+  .cucu-manager-content .cucu-text-frame p {
     text-align: center;
   }
 
@@ -7260,7 +7268,7 @@ html.is-preload
     margin-bottom: 20px;
   }
 
-  .cucu-manager-content .cucu-addition-post .cucu-photo-frame{
+  .cucu-manager-content .cucu-addition-post .cucu-photo-frame {
     margin-top: 40px;
   }
 
@@ -7319,17 +7327,17 @@ html.is-preload
     bottom: 20px;
   }
 
-  .cucu-manager-content .cucu-grid.cucu-sm-reverse{
-    flex-direction:unset;
+  .cucu-manager-content .cucu-grid.cucu-sm-reverse {
+    flex-direction: unset;
   }
-  .cucu-manager-content .cucu-text-frame .cucu-post-title{
+  .cucu-manager-content .cucu-text-frame .cucu-post-title {
     text-align: center;
   }
 }
 
 @media (max-width: 576px) {
-  .cucu-manager-content .cucu-addition-post{
-    margin: 0!important;
+  .cucu-manager-content .cucu-addition-post {
+    margin: 0 !important;
   }
 }
 
@@ -7662,7 +7670,7 @@ html.is-preload
 }
 
 @media (max-width: 992px) {
-  .cucu-access .cucu-content .rb-object-frame h2{
+  .cucu-access .cucu-content .rb-object-frame h2 {
     font-size: 4rem;
   }
 }
@@ -7711,7 +7719,7 @@ html.is-preload
 }
 
 @media (max-width: 576px) {
-  .cucu-access .cucu-content .rb-object-frame h2{
+  .cucu-access .cucu-content .rb-object-frame h2 {
     font-size: 3rem;
   }
 }
