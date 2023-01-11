@@ -874,6 +874,8 @@ ul li {
   .row {
     overflow: hidden;
     overflow: -moz-hidden-unscrollable;
+    flex-wrap: wrap;
+    flex-direction: column;
   }
   .row > * {
     height: calc(90% / 11 + 3px);
@@ -881,6 +883,7 @@ ul li {
     padding-bottom: calc(var(--bs-gutter-x) * 0.01); */
     margin-top: 0;
     overflow: hidden;
+
   }
 }
 
