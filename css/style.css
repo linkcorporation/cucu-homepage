@@ -232,13 +232,13 @@ ul li {
 
 .cucu-welcome .cucu-content .rb-object-frame .cucu-obj-1 video {
   min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%);
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
 }
 
 .cucu-welcome .cucu-content .rb-object-frame::before {
@@ -281,7 +281,7 @@ ul li {
   -ms-flex-align: center;
   align-items: center;
   position: relative;
-  font-size: .9rem;
+  font-size: 0.9rem;
   line-height: 12px;
   letter-spacing: 0.3em;
   margin-bottom: 10px;
@@ -491,10 +491,9 @@ ul li {
 }
 
 @media (max-width: 576px) {
-  .cucu-welcome{
-    padding: 0!important;
+  .cucu-welcome {
+    padding: 0 !important;
   }
-
 }
 
 /* Top menu
@@ -570,9 +569,9 @@ ul li {
     margin-bottom: 40px;
   }
 
-  .cucu-waves svg{
+  .cucu-waves svg {
     min-height: 30px;
-  max-height: 60px;
+    max-height: 60px;
   }
 }
 
@@ -890,12 +889,11 @@ ul li {
     padding-bottom: calc(var(--bs-gutter-x) * 0.01); */
     margin-top: 0;
     overflow: hidden;
-
   }
 }
 
 @media (max-width: 576px) {
-  .cucu-top-menu-frame .cucu-category-list{
+  .cucu-top-menu-frame .cucu-category-list {
     height: calc(90vh - 20px) !important;
   }
 }
@@ -2764,7 +2762,11 @@ html.is-preload
     font-size: 1.5rem;
   }
 
-  .cucu-real-estate .cucu-content .cucu-slide-caption .cucu-button-and-descr .cucu-description{
+  .cucu-real-estate
+    .cucu-content
+    .cucu-slide-caption
+    .cucu-button-and-descr
+    .cucu-description {
     width: 100%;
   }
 }
@@ -3638,9 +3640,9 @@ html.is-preload
     margin-bottom: 10px;
   }
 
-  .cucu-construction .construction-go-form{
+  .cucu-construction .construction-go-form {
     white-space: nowrap;
-    font-size: .75rem;
+    font-size: 0.75rem;
   }
 }
 
@@ -4009,7 +4011,7 @@ html.is-preload
   .cucu-design .cucu-top-bar img {
     margin-left: 10px;
   }
-  .cucu-design .cucu-content .cucu-position-fix .cucu-slide-caption{
+  .cucu-design .cucu-content .cucu-position-fix .cucu-slide-caption {
     padding-right: 0;
   }
 }
@@ -4888,7 +4890,7 @@ html.is-preload
 
   .cucu-land-space-operations .cucu-bottom-panel .cucu-mail {
     width: 100%;
-    color: #fff!important;
+    color: #fff !important;
   }
   .cucu-land-space-operations .btn-go-form {
     color: #fff;
@@ -5180,7 +5182,7 @@ html.is-preload
     -ms-flex-align: center;
     align-items: center;
     font-size: 11px;
-    color: #9c9592!important;
+    color: #9c9592 !important;
     letter-spacing: 0.1em;
     text-transform: uppercase;
   }
@@ -5199,10 +5201,10 @@ html.is-preload
 }
 
 @media (max-width: 576px) {
-  .cucu-counseling .rb-object-frame h1{
-font-size: 2rem;
+  .cucu-counseling .rb-object-frame h1 {
+    font-size: 2rem;
   }
-  .cucu-counseling .cucu-blog-frame .cucu-post-footer .cucu-share{
+  .cucu-counseling .cucu-blog-frame .cucu-post-footer .cucu-share {
     flex-direction: column;
   }
 }
@@ -5400,14 +5402,14 @@ font-size: 2rem;
   .cucu-counseling .cucu-blog-frame .cucu-post-footer .cucu-share span {
     margin: 0;
   }
-  .cucu-counseling .cucu-warp-content .cucu-blog-frame .cucu-blog-title h1{
+  .cucu-counseling .cucu-warp-content .cucu-blog-frame .cucu-blog-title h1 {
     font-size: 2rem;
     text-align: center;
   }
-  .cucu-counseling .cucu-warp-content .cucu-blog-frame .cucu-all-posts{
+  .cucu-counseling .cucu-warp-content .cucu-blog-frame .cucu-all-posts {
     flex-direction: column;
   }
-  .cucu-counseling .cucu-mark{
+  .cucu-counseling .cucu-mark {
     text-align: center;
     margin-bottom: 20px;
   }
@@ -6288,13 +6290,13 @@ font-size: 2rem;
 }
 
 @media (max-width: 576px) {
-  .cucu-event .cucu-next-btn{
-    width:120px;
+  .cucu-event .cucu-next-btn {
+    width: 120px;
     height: 120px;
     right: 0;
     left: unset;
   }
-  .cucu-event .cucu-content .cucu-position-fix{
+  .cucu-event .cucu-content .cucu-position-fix {
     justify-content: flex-start;
     margin-left: 30px;
   }
@@ -6724,7 +6726,7 @@ font-size: 2rem;
   display: flex;
   align-items: flex-start;
   margin-bottom: 20px;
-  color: #444!important;
+  color: #444 !important;
   letter-spacing: 1px;
 }
 
