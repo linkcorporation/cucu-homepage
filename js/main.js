@@ -126,6 +126,14 @@ $(function () {
     element.remove();
     return result;
   }
+  const getInstaImage = text => {
+    const element = document.createElement('div');
+    element.innerHTML = text;
+    const anchors = element.getElementsByTagName("img");
+    const result = anchors[0].getAttribute('src');
+    element.remove();
+    return result;
+  }
   window.onload = async function () {
     // rss feed を取得
     const res = await fetch('https://api.rss2json.com/v1/api.json?rss_url=https://cucu-81.tumblr.com/rss');
@@ -133,9 +141,9 @@ $(function () {
     // アイテムを１個ずつ表示
     for (let i = 0; i < 3; i++){
       const item = data.items[i];
-      console.log(item); 
-      const thumbnail = item.thumbnail;
-      const pubDate = item.pubDate; 
+      console.log(item);
+      const thumbnail = getInstaImage(item.description);
+      const pubDate = item.pubDate;
       const description = getSimpleText(item.description);
       const instaUrl = getInstaLink(item.description);
       const innerHTML = `
