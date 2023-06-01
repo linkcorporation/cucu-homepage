@@ -185,7 +185,7 @@ $(function () {
   
       // 記事へのリンクを設定
       let blogPostElement = document.getElementById(`blog-post-${index}`);
-      blogPostElement.addEventListener('click', () => window.open('https://caress2250.github.io/github.io/', '_blank'));
+      blogPostElement.addEventListener('click', () => window.open('http://cucublog.com/', '_blank'));
     })
   }
   
