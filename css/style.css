@@ -8105,4 +8105,18 @@ form.wufoo input[type="submit"] {
   font-size: 4em;
   color: #4b4b4b; /* Font color changed to light grey */
   margin-bottom: 60px;
-} 
+}
+
+
+/* お知らせ  iphone用 */
+
+
+@media (max-width: 375px) {
+  .custom-blog-grid {
+    flex-direction: column;
+  }
+
+  .custom-blog-post {
+    width: 100%;
+  }
+}
