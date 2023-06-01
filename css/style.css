@@ -8111,12 +8111,8 @@ form.wufoo input[type="submit"] {
 /* お知らせ  iphone用 */
 
 
-@media (max-width: 375px) {
-  .custom-blog-grid {
-    flex-direction: column;
-  }
-
-  .custom-blog-post {
-    width: 100%;
+@media (max-width: 1000px) {
+  body {
+    background-color: red;
   }
 }
