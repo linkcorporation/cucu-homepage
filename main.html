@@ -254,22 +254,48 @@
             </div>
           </div>
 
-          <div class="cucu-category-content">
-            <!-- お知らせ BEGIN -->
-            <div id="cucu-news" class="cucu-news">
-              <div class="cucu-banner">
-                <h1>お知らせ</h1>
-              </div>
 
-              <div class="cucu-news-list">
-                <div
-                  id="cucu-news-rss"
-                  class="cucu-grid cucu-padding-grid"
-                ></div>
+
+          <div class="custom-category-content">
+            <!-- custom-category-contentの開始 -->
+            <!-- お知らせ BEGIN -->
+            <div id="custom-news" class="custom-news">
+              <!-- お知らせのコンテナ -->
+              <div class="custom-banner">
+                <!-- バナーの開始 -->
+                <h1>お知らせ</h1>
+                <!-- タイトル -->
+              </div>
+              <div class="custom-news-list">
+                <!-- お知らせリストの開始 -->
+                <div id="custom-news-rss" class="custom-grid custom-padding-grid">
+                  <!-- お知らせの内容が表示される場所 -->
+                  <!-- 最新のブログ記事を表示する部分 -->
+                  <div id="latest-blog-posts" class="custom-blog-grid">
+                    <!-- 個々のブログ記事を表示する部分 -->
+                    <div id="blog-post-0" class="custom-blog-post">
+                      <img id="eyecatch0" loading="lazy">
+                      <div id="date0"></div>
+                      <div id="title0"></div>
+                    </div>
+                    <div id="blog-post-1" class="custom-blog-post">
+                      <img id="eyecatch1" loading="lazy">
+                      <div id="date1"></div>
+                      <div id="title1"></div>
+                    </div>
+                    <div id="blog-post-2" class="custom-blog-post">
+                      <img id="eyecatch2" loading="lazy">
+                      <div id="date2"></div>
+                      <div id="title2"></div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-          <!-- お知らせ END -->
+   <!-- お知らせ END -->
+
+
 
           <!-- 不動産・ビル管理 END -->
           <div id="cucu-real-estate" class="cucu-real-estate">
@@ -2366,7 +2392,7 @@
                 <div class="cucu-g-35 cucu-sm-100">
                   <div class="rb-object-frame">
                     <h1 class="cucu-page-title">お問い合わせ</h1>
-                    <div class="cucu-photo-frame cucu-obj-1"> 
+                    <div class="cucu-photo-frame cucu-obj-1">
                       <img
                         src="./img/建築・内装/construction_05.jpg"
                         alt="photo"
@@ -2396,5 +2422,7 @@
     <script src="./js/plugins/easing.min.js"></script>
     <!-- cucu js -->
     <script src="./js/main.js"></script>
+<!-- cucu time -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
   </body>
 </html>
