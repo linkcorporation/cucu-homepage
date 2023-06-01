@@ -8033,3 +8033,76 @@ form.wufoo input[type="submit"] {
     font-size: 18px;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+.custom-blog-grid {
+  display: flex;
+  flex-wrap: wrap; /* 追加: コンテンツが幅を超えた場合に折り返す */
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.custom-news {
+  padding: 60px 0; /* 上下に50pxの余白を追加、左右の余白はなし */
+}
+
+.custom-blog-post {
+  flex: 1;
+  margin: 2em; /* 上下左右の余白を2emに増加 */
+  text-align: center;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add default shadow */
+  overflow: hidden;
+  transition: all 0.3s ease;
+  width: 80%; /* 横幅を80%に増加 */
+  height: auto;
+  padding: 10px; /* Add padding inside the blog post container */
+  cursor: pointer; /* Add pointer cursor on hover */
+}
+
+.custom-blog-post:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 20px rgba(195, 150, 0, 0.5); /* Change shadow color on hover */
+}
+
+.custom-blog-post img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  padding: 0;
+  margin: auto;
+  margin-bottom: 10px;  /* 画像の下に空白を作る */
+  display: block;
+  transition: all 0.3s ease;
+}
+
+.custom-blog-post:hover img {
+  transform: scale(1.05); /* Reduce the zooming effect */
+}
+
+.custom-blog-post div {
+  padding: 0.5em;
+}
+
+.custom-banner {
+  text-align: center;
+}
+
+.custom-banner h1 {
+  font-family: 'Georgia', serif;
+  font-size: 4em;
+  color: #4b4b4b; /* Font color changed to light grey */
+  margin-bottom: 60px;
+}
