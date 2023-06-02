@@ -8108,11 +8108,19 @@ form.wufoo input[type="submit"] {
 }
 
 
+
+
+
+
 /* お知らせ  iphone用 */
 
 
-@media (max-width: 1000px) {
-  body {
-    background-color: red;
+@media (max-width: 768px) {
+  .custom-blog-grid {
+    flex-direction: column;
+  }
+
+  .custom-blog-post {
+    width: 100%;
   }
 }
