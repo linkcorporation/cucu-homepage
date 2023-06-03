@@ -8045,7 +8045,6 @@ form.wufoo input[type="submit"] {
 
 
 
-
 .custom-blog-grid {
   display: flex;
   flex-wrap: wrap; /* 追加: コンテンツが幅を超えた場合に折り返す */
@@ -8107,17 +8106,16 @@ form.wufoo input[type="submit"] {
   margin-bottom: 60px;
 }
 
-
-
-
-
-
 /* お知らせ  iphone用 */
-
-
 @media (max-width: 768px) {
+  .custom-news-list {
+    display: flex;
+    justify-content: center;
+  }
+
   .custom-blog-grid {
     flex-direction: column;
+    width: 100%; /* 必要に応じて調整 */
   }
 
   .custom-blog-post {
