@@ -8043,35 +8043,36 @@ form.wufoo input[type="submit"] {
 
 
 
+
 .custom-blog-grid {
   display: flex;
-  flex-wrap: wrap; /* 追加: コンテンツが幅を超えた場合に折り返す */
+  flex-wrap: wrap; 
   justify-content: space-between;
   gap: 20px;
 }
 
 .custom-news {
-  padding: 60px 0; /* 上下に50pxの余白を追加、左右の余白はなし */
+  padding: 60px 0; 
 }
 
 .custom-blog-post {
   flex: 1;
-  margin: 2em; /* 上下左右の余白を2emに増加 */
+  margin: 2em; 
   text-align: center;
   background-color: white;
   border-radius: 15px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add default shadow */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
   overflow: hidden;
   transition: all 0.3s ease;
-  width: 80%; /* 横幅を80%に増加 */
+  width: 80%; 
   height: auto;
-  padding: 10px; /* Add padding inside the blog post container */
-  cursor: pointer; /* Add pointer cursor on hover */
+  padding: 10px; 
+  cursor: pointer; 
 }
 
 .custom-blog-post:hover {
   transform: scale(1.02);
-  box-shadow: 0 0 20px rgba(195, 150, 0, 0.5); /* Change shadow color on hover */
+  box-shadow: 0 0 20px rgba(195, 150, 0, 0.5); 
 }
 
 .custom-blog-post img {
@@ -8080,13 +8081,13 @@ form.wufoo input[type="submit"] {
   object-fit: cover;
   padding: 0;
   margin: auto;
-  margin-bottom: 10px;  /* 画像の下に空白を作る */
+  margin-bottom: 10px;
   display: block;
   transition: all 0.3s ease;
 }
 
 .custom-blog-post:hover img {
-  transform: scale(1.05); /* Reduce the zooming effect */
+  transform: scale(1.05);
 }
 
 .custom-blog-post div {
@@ -8100,24 +8101,25 @@ form.wufoo input[type="submit"] {
 .custom-banner h1 {
   font-family: 'Georgia', serif;
   font-size: 4em;
-  color: #4b4b4b; /* Font color changed to light grey */
+  color: #4b4b4b; 
   margin-bottom: 60px;
 }
 
-
-
-
-
-
 /* お知らせ  iphone用 */
-
-
 @media (max-width: 768px) {
+  .custom-news-list {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
   .custom-blog-grid {
     flex-direction: column;
+    justify-content: center;
   }
 
   .custom-blog-post {
     width: 100%;
+    margin: 0 auto;
   }
 }
